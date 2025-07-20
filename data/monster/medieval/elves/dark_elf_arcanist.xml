@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dark Elf Arcanist)" nameDescription="a dark elf arcanist" race="blood" experience="19200" speed="330">
+	<health now ="9600" max ="9600"/>
+	<look type="592" corpse="13576"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="death" interval="2000" chance ="38" target ="1" range ="4" min ="-85" max ="-416">
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="38" target ="0" length ="6" spread ="3" min ="-85" max ="-416"><!-- wave -->
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="23" target ="1" range ="3" min ="-58" max ="-440">
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="23" target ="1" range ="3" min ="-58" max ="-440"><!-- shot -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element holyPercent="20"/>
+		<element deathPercent="-1"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Tha'shi Ab'Dendriel!"/>
+		<voice sentence="Feel the sting of my arrows!"/>
+		<voice sentence="Thy blood will quench the soil's thirst!"/>
+		<voice sentence="Evicor guide my arrow!"/>
+		<voice sentence="Your existence will end here!"/>
+	</voices>
+	<loot>
+		<item id="5921" chance="14600"/><!-- heaven blossom-->
+		<item name="arrow" countmax="12" chance="12000"/>
+		<item name="bow" chance="12200"/>
+		<item name="crystal coin" countmax="3" chance="11400"/>
+		<item name="elven scouting glass" chance="15400"/>
+		<item name="elvish bow" chance="12000"/>
+		<item name="elvish talisman" chance="16600"/>
+		<item name="grapes" chance="11800"/>
+		<item name="poison arrow" countmax="4" chance="11200"/>
+		<item name="Meteoro fire rune" countmax="5" chance="2300"/>
+		<item name="vial of liquid silver" chance="2300"/>
+		<item name="crude umbral blade" chance="2300"/>
+		
+	</loot>
+</monster>

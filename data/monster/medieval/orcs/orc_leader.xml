@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Orc Leader)" nameDescription="a orc leader" race="blood" experience="21600" speed="400">
+	<health now ="10800" max ="10800"/>
+	<look type="678" corpse="13826"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-75" max ="-905"/>
+		<attack name="physical" interval="2000" chance ="25" target ="1" range ="1" min ="-103" max ="-432"><!-- physical -->
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="38" target ="1" range ="1" min ="-86" max ="-437"><!-- shot meele -->
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="25" target ="1" range ="1" min ="-54" max ="-451"><!-- physical -->
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65"/>
+	<elements>
+		<element energyPercent="20"/>
+		<element holyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity fire="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Ulderek futgyr human!"/>
+	</voices>
+	<loot>
+		<item name="mythical shield" chance="2500"/>
+		<item id="2667" chance="19600"/><!-- fish-->
+		<item name="brown mushroom" chance="17600"/>
+		<item name="crystal coin" countmax="3" chance="27400"/>
+		<item name="health potion" chance="10800"/>
+		<item name="orc leather" chance="10000"/>
+		<item name="orc tooth" chance="14000"/>
+		<item name="sword ring" chance="19000"/>
+		<item name="warrior helmet" chance="16400"/>
+		<item name="Ultimate UH rune" countmax="5" chance="3400"/>
+		<item name="brown werewolf amulet" chance="3400"/>
+		<item name="training bow" chance="3400"/>
+	</loot>
+</monster>

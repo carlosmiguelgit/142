@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dwarf General)" nameDescription="a dwarf general" race="blood" experience="44000" speed="390">
+	<health now ="22000" max ="22000"/>
+	<look type="581" corpse="13546"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-78" max ="-1162"/>
+		<attack name="earth" interval="2000" chance ="34" target ="1" range ="6" min ="-116" max ="-626"><!-- shot -->
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-116" max ="-626"><!-- physical -->
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="38" target ="0" radius ="3" min ="-116" max ="-619"><!-- ground -->
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="38" target ="1" range ="1" min ="-116" max ="-619"><!-- physical -->
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70"/>
+	<elements>
+		<element earthPercent="20"/>
+		<element physicalPercent="10"/>
+		<element firePercent="-5"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hail Durin!"/>
+	</voices>
+	<loot>
+		<item name="general dwarf armor" chance="1600"/>
+		<item name="general dwarf mace" chance="1600"/>
+		<item name="general dwarf legs" chance="1700"/>
+		<item name="general dwarf shield" chance="1900"/>
+		<item name="general dwarf sword" chance="2700"/>
+		<item name="general dwarf helmet" chance="2800"/>
+		<item name="general dwarf axe" chance="2900"/>
+		<item name="axe ring" chance="18400"/>
+		<item name="crystal coin" countmax="6" chance="10000"/>
+		<item name="health potion" chance="13000"/>
+		<item name="iron ore" chance="13000"/>
+		<item name="small amethyst" chance="18800"/>
+		<item name="white mushroom" countmax="2" chance="17200"/>
+		<item name="ultimate spirit potion" countmax="5" chance="2200"/>
+		<item name="backpack for Destroy field" chance="2200"/>
+		<item name="icicle bow" chance="2200"/>
+		
+	</loot>
+</monster>

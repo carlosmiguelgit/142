@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Ice Golem)" nameDescription="an ice golem" race="blood" experience="28800" speed="350">
+	<health now ="14400" max ="14400"/>
+	<look type="532" corpse="13407"/>
+	<targetchange interval="2000" chance="5"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="50"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-109" max ="-899"/>
+		<attack name="ice" interval="2000" chance ="23" target ="0" length ="6" spread ="3" min ="-55" max ="-481"><!-- wave -->
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="23" target ="1" range ="1" min ="-55" max ="-481"><!-- physical -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="18" target ="0" length ="6" spread ="3" min ="-61" max ="-435"><!-- wave -->
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="18" target ="1" range ="1" min ="-61" max ="-435"><!-- shot meele -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="66"/>
+	<elements>
+		<element physicalPercent="25"/>
+		<element energyPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity fire="1"/>
+		<immunity ice="1"/>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+		<immunity drunk="1"/>
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="Chrrr."/>
+		<voice sentence="Crrrrk."/>
+		<voice sentence="Gnarr."/>
+	</voices>
+	<loot>
+		<item name="ice sword" chance="1800"/>
+		<item name="ice bow" chance="2200"/>
+		<item name="ice helmet" chance="2800"/>
+		<item name="ice wand" chance="3000"/>
+		<item name="black pearl" chance="22800"/>
+		<item name="crystal coin" countmax="5" chance="10600"/>
+		<item name="crystal sword" chance="22800"/>
+		<item name="frosty heart" chance="15400"/>
+		<item name="glacier mask" chance="17600"/>
+		<item name="ice rapier" chance="17000"/>
+		<item name="shard" chance="14600"/>
+		<item name="small diamond" chance="26000"/>
+		<item name="small sapphire" chance="28200"/>
+		<item name="strong health potion" chance="19600"/>
+		<item name="Onyx Marble" chance="3600"/>
+		<item name="buggy backpack" chance="3600"/>
+		<item name="magic hat" chance="3600"/>
+	</loot>
+</monster>

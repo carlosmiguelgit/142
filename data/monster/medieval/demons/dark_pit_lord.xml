@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dark Pit Lord)" nameDescription="a Dark Pit Lord" race="fire" experience="56000" speed="410">
+	<health now ="28000" max ="28000"/>
+	<look type="549" corpse="13452"/>
+	<targetchange interval="4000" chance="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="death" interval="2000" chance ="21" target ="1" range ="3" min ="-87" max ="-729">
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="21" target ="0" radius ="4" min ="-87" max ="-729"><!-- ground -->
+			<attribute key="areaEffect" value="explosionarea"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="31" target ="1" range ="6" min ="-136" max ="-750">
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="31" target ="1" range ="6" min ="-136" max ="-750"><!-- shot -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="95" defense ="95">
+		<defense name="healing" interval="2000" chance="15" min="180" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="320" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="30"/>
+		<element deathPercent="30"/>
+		<element energyPercent="50"/>
+		<element earthPercent="40"/>
+		<element icePercent="-10"/>
+		<element holyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="1">
+		<summon name="fire elemental" interval="2000" chance="10"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Your soul will be mine!"/>
+		<voice sentence="MUHAHAHAHA!"/>
+		<voice sentence="CHAMEK ATH UTHUL ARAK!"/>
+		<voice sentence="I SMELL FEEEEAAAAAR!"/>
+		<voice sentence="Your resistance is futile!"/>
+	</voices>
+	<loot>
+		<item name="black demon shield" chance="2500"/>
+		<item id="5906" countmax="3" chance="17000"/><!-- demon dust-->
+		<item name="crystal coin" countmax="6" chance="29000"/>
+		<item name="demon shield" chance="10600"/>
+		<item name="demonic essence" chance="15200"/>
+		<item name="great mana potion" countmax="3" chance="14000"/>
+		<item name="great spirit potion" countmax="3" chance="19000"/>
+		<item name="mastermind shield" chance="16400"/>
+		<item name="red gem" chance="26400"/>
+		<item name="small amethyst" countmax="5" chance="19600"/>
+		<item name="small emerald" countmax="5" chance="10600"/>
+		<item name="small ruby" countmax="5" chance="27800"/>
+		<item name="small topaz" countmax="5" chance="25600"/>
+		<item name="ultimate health potion" countmax="3" chance="10600"/>
+		<item name="Death arcane rune" countmax="5" chance="3200"/>
+		<item name="bracelet of strengthening" chance="3200"/>
+		<item name="brain in a jar" chance="3200"/>
+	</loot>
+</monster>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Hydra)" nameDescription="a hydra" race="blood" experience="70000" speed="500">
+	<health now ="35000" max ="35000"/>
+	<look type="664" corpse="13787"/>
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="300" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-82" max ="-1444"/>
+		<attack name="earth" interval="2000" chance ="36" target ="0" radius ="3" min ="-116" max ="-748"><!-- ground -->
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="-116" max ="-748"><!-- physical -->
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="30" target ="0" length ="6" spread ="3" min ="-89" max ="-720"><!-- wave -->
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+
+		<attack name="manadrain" interval="2000" chance ="31" target ="1" range ="6" min ="-85" max ="-724"><!-- mana -->
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="31" target ="1" range ="1" min ="-85" max ="-724"><!-- physical -->
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="75" defense ="75">
+		<defense name="healing" interval="2000" chance="25" min="260" max="407">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="50" />
+		<element holyPercent="30" />
+		<element physicalPercent="-5" />
+		<element energyPercent="-10" />
+	</elements>
+	<immunities>
+		<immunity earth="1" />
+		<immunity lifedrain="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="FCHHHHH" />
+		<voice sentence="HISSSS" />
+	</voices>
+	<loot>
+		<item name="black centurion armor" chance="2200"/>
+		<item name="black centurion rod" chance="2600"/>
+		<item name="black spirit shield" chance="2400"/>
+		<item name="boots of haste" chance="18200"/>
+		<item name="crystal coin" countmax="6" chance="24200"/>
+		<item name="ham" countmax="4" chance="18400"/>
+		<item name="knight armor" chance="22200"/>
+		<item name="medusa shield" chance="19400"/>
+		<item name="ring of healing" chance="10800"/>
+		<item name="royal helmet" chance="19000"/>
+		<item name="small sapphire" chance="23000"/>
+		<item name="warrior helmet" chance="12400"/>
+		<item name="blue memory shard" chance="2900"/>
+		<item name="Warrior Mount outfit scroll" chance="2900"/>
+		<item name="vampire silk slippers" chance="2900"/>
+	</loot>
+</monster>

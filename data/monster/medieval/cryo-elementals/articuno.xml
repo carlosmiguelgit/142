@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Articuno)" nameDescription="a Articuno" race="blood" experience="400000" speed="530">
+	<health now ="200000" max ="200000"/>
+	<look type="539" corpse="13422"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-1005" max ="-5013"/>
+		<attack name="ice" interval="2000" chance ="29" target ="1" radius ="3" range ="5" min ="-1026" max ="-2529"><!-- area -->
+			<attribute key="shootEffect" value="snowball"/>
+			<attribute key="areaEffect" value="icearea"/>
+		</attack>
+
+		<attack name="lifedrain" interval="2000" chance ="28" target ="1" range ="6" min ="-1029" max ="-2487"><!-- life -->
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="28" target ="1" range ="1" min ="-1029" max ="-2487"><!-- shot meele -->
+			<attribute key="shootEffect" value="snowball"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="21" target ="1" radius ="3" range ="6" min ="-1032" max ="-2528"><!-- area -->
+			<attribute key="shootEffect" value="snowball"/>
+			<attribute key="areaEffect" value="icearea"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="21" target ="1" range ="1" min ="-1032" max ="-2528"><!-- shot meele -->
+			<attribute key="shootEffect" value="snowball"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="85" defense ="85">
+		<defense name="speed" interval="2000" chance="15" speedchange="270" duration="5000">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+		<defense name="healing" interval="2000" chance="10" min="25" max="75">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="-10"/>
+		<element energyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity invisible="1"/>
+		<immunity drown="1"/>
+		<immunity fire="1"/>
+		<immunity ice="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Rrrah!"/>
+		<voice sentence="Rraaar!"/>
+		<voice sentence="Gnarrr!"/>
+		<voice sentence="Tcharrr!"/>
+	</voices>
+	<loot>
+		<item name="hammer of eternal ice" chance="2800"/>
+		<item name="chopper of eternal ice" chance="3000"/>
+		<item name="armor of eternal ice" chance="3800"/>
+		<item name="wand of eternal ice" chance="4000"/>
+		<item name="legs of eternal ice" chance="4200"/>
+		<item name="giant sword of eternal ice" chance="4200"/>
+		<item name="bow of eternal ice" chance="5000"/>
+		<item name="shield of eternal ice" chance="5000"/>
+		<item name="sword of eternal ice" chance="5400"/>
+		<item name="short bow of eternal ice" chance="5800"/>
+		<item name="helmet of eternal ice" chance="5800"/>
+		<item name="frozen flame shield" chance="4000"/>
+		<item name="crystal coin" countmax="21" chance="28600"/>
+		<item name="glacier robe" chance="10600"/>
+		<item name="relic sword" chance="12600"/>
+		<item name="skull helmet" chance="21400"/>
+		<item name="small diamond" countmax="2" chance="18400"/>
+		<item name="giant emerald" chance="2800"/>
+		<item name="shrunken head necklace" chance="2800"/>
+		<item name="souleater" chance="2800"/>
+		
+		
+	</loot>
+</monster>

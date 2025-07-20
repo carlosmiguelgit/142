@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Burning Arcane" nameDescription="a burning arcane" race="blood" speed="0" >
+	<health now="2000" max="2000" />
+	<look type="770" head="94" body="77" legs="96" feet="0" corpse="0"/>
+	<targetchange interval="4000" chance="20" />
+	<flags>		
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="0" />
+		<flag illusionable="0" />
+		<flag convinceable="1" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag staticattack="98" />
+		<flag targetdistance="0" />
+		<flag runonhealth="0" />
+	</flags>
+	
+	<script>
+       <event name="burning3"/>
+    </script>
+	
+	
+	<defenses armor ="50" defense ="50"/>
+		
+</monster>

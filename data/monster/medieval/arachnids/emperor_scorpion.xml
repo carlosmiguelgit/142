@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Emperor Scorpion)" nameDescription="a Emperor Scorpion" race="venom" experience="31200" speed="310">
+	<health now ="15600" max ="15600"/>
+	<look type="504" corpse="13327"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="6"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-105" max ="-876"/>
+		<attack name="physical" interval="2000" chance ="37" target ="1" range ="1" min ="-79" max ="-475"><!-- physical -->
+			<attribute key="shootEffect" value="envenomedarrow"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="37" target ="1" range ="1" min ="-56" max ="-422"><!-- shot meele -->
+			<attribute key="shootEffect" value="envenomedarrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="16" target ="1" range ="1" min ="-79" max ="-436"><!-- physical -->
+			<attribute key="shootEffect" value="envenomedarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="42" defense ="42"/>
+	<elements>
+		<element firePercent="-20"/>
+	</elements>
+	<loot>
+		<item name="crystal coin" countmax="3" chance="11400"/>
+		<item name="nightmare blade" chance="17600"/>
+		<item name="skullcracker armor" chance="22200"/>
+		<item name="spider fangs" chance="19600"/>
+		<item name="underworld rod" chance="20200"/>
+		<item name="Blue Marble (III)" chance="2500"/>
+		<item name="vortex bolt" countmax="80" chance="2500"/>
+		<item name="percht skull" chance="2500"/>
+	</loot>
+</monster>

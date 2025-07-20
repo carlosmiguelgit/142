@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Skeleton Archer)" nameDescription="a skeleton archer" race="undead" experience="7680" speed="360">
+	<health now ="3840" max ="3840"/>
+	<look type="731" corpse="13973"/>
+	<targetchange interval="4000" chance="15"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="450"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="4" min ="-37" max ="-199">
+			<attribute key="shootEffect" value="bolt"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="30" target ="1" range ="6" min ="-66" max ="-195">
+			<attribute key="shootEffect" value="bolt"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70"/>
+	<elements>
+		<element icePercent="50"/>
+		<element energyPercent="10"/>
+		<element holyPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Forgive Meee!"/>
+		<voice sentence="Mouuuurn meeee!"/>
+		<voice sentence="Help meee!"/>
+	</voices>
+	<loot>
+		<item id="6300" chance="12200"/><!-- death ring-->
+		<item name="black pearl" countmax="3" chance="20800"/>
+		<item name="crystal coin" countmax="3" chance="23200"/>
+		<item name="demonic essence" chance="11000"/>
+		<item name="great health potion" countmax="2" chance="19800"/>
+		<item name="great mana potion" countmax="2" chance="15200"/>
+		<item name="haunted blade" chance="13400"/>
+		<item name="red gem" chance="14600"/>
+		<item name="ruby necklace" chance="23600"/>
+		<item name="skeleton decoration" chance="10200"/>
+		<item name="skull helmet" chance="15200"/>
+		<item name="skull staff" chance="16000"/>
+		<item name="stone skin amulet" chance="14200"/>
+		<item name="titan axe" chance="16000"/>
+		<item name="tower shield" chance="20200"/>
+		<item name="unholy bone" chance="12200"/>
+		<item name="white pearl" countmax="3" chance="10200"/>
+		<item name="Ultimate UH rune" countmax="5" chance="3400"/>
+		<item name="backpack for Destroy field" chance="3400"/>
+		<item name="glooth whip" chance="2200"/>
+	</loot>
+</monster>

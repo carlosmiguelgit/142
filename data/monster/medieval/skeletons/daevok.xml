@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Daevok)" nameDescription="a daevok" race="undead" experience="320000" speed="550">
+	<health now ="160000" max ="160000"/>
+	<look type="730" corpse="13970"/>
+	<targetchange interval="4000" chance="15"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="450"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-1035" max ="-5030"/>
+		<attack name="death" interval="2000" chance ="31" target ="1" range ="4" min ="-995" max ="-2549"><!-- shot -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="31" target ="1" range ="1" min ="-995" max ="-2549"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="19" target ="0" length ="6" spread ="3" min ="-980" max ="-2532"><!-- wave -->
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="19" target ="1" range ="1" min ="-980" max ="-2532"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70"/>
+	<elements>
+		<element icePercent="50"/>
+		<element energyPercent="10"/>
+		<element holyPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Forgive Meee!"/>
+		<voice sentence="Mouuuurn meeee!"/>
+		<voice sentence="Help meee!"/>
+	</voices>
+	<loot>
+		<item name="winged helmet of Ra" chance="2200"/>
+		<item name="axe of Ra" chance="2800"/>
+		<item name="legs of Ra" chance="3000"/>
+		<item name="double axe of Ra" chance="5200"/>
+		<item name="armor of Ra" chance="5600"/>
+		<item name="sword of Ra" chance="6000"/>
+		<item name="wand of Ra" chance="6000"/>
+		<item name="black pearl" countmax="3" chance="17400"/>
+		<item name="crystal coin" countmax="23" chance="13200"/>
+		<item name="demonic essence" chance="17000"/>
+		<item name="haunted blade" chance="14400"/>
+		<item name="red gem" chance="23200"/>
+		<item name="ruby necklace" chance="16000"/>
+		<item name="skull helmet" chance="19800"/>
+		<item name="skull staff" chance="23000"/>
+		<item name="stone skin amulet" chance="19000"/>
+		<item name="titan axe" chance="18400"/>
+		<item name="tower shield" chance="19800"/>
+		<item name="unholy bone" chance="13200"/>
+		<item name="white pearl" countmax="3" chance="27400"/>
+		<item name="white gem" chance="3900"/>
+		<item name="diamond arrow" countmax="80" chance="3900"/>
+		<item name="hazardous robe" chance="3900"/>
+	</loot>
+</monster>

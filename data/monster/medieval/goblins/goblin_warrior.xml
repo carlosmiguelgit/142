@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Goblin Warrior)" nameDescription="a goblin warrior" race="blood" experience="3740" speed="360">
+	<health now ="1870" max ="1870"/>
+	<look type="616" corpse="13647"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="10"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-37" max ="-266"/>
+		<attack name="physical" interval="2000" chance ="20" target ="1" range ="1" min ="-48" max ="-171"><!-- shot meele -->
+			<attribute key="shootEffect" value="throwingstar"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="31" target ="1" range ="1" min ="-87" max ="-101"><!-- physical -->
+			<attribute key="shootEffect" value="throwingstar"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Go go, Gobo attack!!"/>
+		<voice sentence="Me the greenest and the meanest!"/>
+		<voice sentence="Me have power to crush you!"/>
+		<voice sentence="Goblinkiller! Catch him !!"/>
+	</voices>
+	<loot>
+		<item id="2667" chance="15400"/><!-- fish-->
+		<item name="platinum coin" countmax="55" chance="68800"/>
+		<item name="ultimate mana potion" countmax="5" chance="2700"/>
+		<item name="crystal backpack" chance="2700"/>
+		<item name="Gnomevil's hat" chance="2700"/>
+	</loot>
+</monster>

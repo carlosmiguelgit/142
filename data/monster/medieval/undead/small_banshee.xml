@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Small Banshee)" nameDescription="a small banshee" race="undead" experience="12000" speed="330">
+	<health now ="6000" max ="6000"/>
+	<look type="756" corpse="14046"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="500"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-92" max ="-590"/>
+		<attack name="physical" interval="2000" chance ="17" target ="1" range ="1" min ="-58" max ="-295"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="35" target ="1" range ="1" min ="-112" max ="-291"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65">
+		<defense name="healing" interval="2000" chance="15" min="120" max="190">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Dance for me your dance of death!"/>
+		<voice sentence="Let the music play!"/>
+		<voice sentence="I will mourn your death!"/>
+		<voice sentence="Are you ready to rock?"/>
+		<voice sentence="Feel my gentle kiss of death."/>
+		<voice sentence="That's what I call easy listening!"/>
+		<voice sentence="IIIIEEEeeeeeehhhHHHH!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2124" chance="21600"/><!-- crystal ring-->
+		<item id="2175" chance="20600"/><!-- spellbook-->
+		<item name="black pearl" chance="30000"/>
+		<item name="blue robe" chance="12000"/>
+		<item name="crystal coin" countmax="2" chance="28000"/>
+		<item name="hair of a banshee" chance="15600"/>
+		<item name="red robe" chance="15800"/>
+		<item name="ring of healing" chance="15400"/>
+		<item name="stone skin amulet" chance="12600"/>
+		<item name="strong mana potion" chance="12000"/>
+		<item name="terra mantle" chance="21800"/>
+		<item name="wedding ring" chance="16200"/>
+		<item name="white pearl" chance="10000"/>
+		<item name="diamond" chance="3400"/>
+		<item name="flask with snake poison" chance="2800"/>
+		<item name="training sword" chance="2800"/>
+	</loot>
+</monster>

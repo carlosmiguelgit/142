@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Ghost)" nameDescription="a ghost" race="undead" experience="3060" speed="320">
+	<health now ="1530" max ="1530"/>
+	<look type="602" corpse="13606"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-55" max ="-234"/>
+		<attack name="physical" interval="2000" chance ="15" target ="1" range ="1" min ="-60" max ="-168"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="15" target ="1" range ="1" min ="-22" max ="-155"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<immunities>
+		<immunity physical="1"/>
+		<immunity drown="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Huh!"/>
+		<voice sentence="Shhhhhh"/>
+		<voice sentence="Buuuuuh"/>
+	</voices>
+	<loot>
+		<item name="ancient shield" chance="3300"/>
+		<item name="combat knife" chance="13800"/>
+		<item name="ghostly tissue" chance="18000"/>
+		<item name="morning star" chance="18400"/>
+		<item name="platinum coin" countmax="55" chance="50400"/>
+		<item name="stealth ring" chance="23800"/>
+		<item name="white piece of cloth" chance="18000"/>
+		<item name="ultimate spirit potion" countmax="5" chance="2900"/>
+		<item name="festive backpack" chance="2900"/>
+		<item name="glooth whip" chance="2900"/>
+	</loot>
+</monster>

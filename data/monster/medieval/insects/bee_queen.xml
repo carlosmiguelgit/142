@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Bee Queen)" nameDescription="a bee queen" race="venom" experience="5760" speed="330">
+	<health now ="2880" max ="2880"/>
+	<look type="638" corpse="13710"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-57" max ="-336"/>
+		<attack name="earth" interval="2000" chance ="20" target ="1" range ="1" min ="-68" max ="-206"><!-- shot meele -->
+			<attribute key="shootEffect" value="poisonarrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="31" target ="1" range ="1" min ="-107" max ="-136"><!-- physical -->
+			<attribute key="shootEffect" value="poisonarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element firePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Bssssss"/>
+	</voices>
+	<loot>
+		<item name="honeycomb" countmax="3" chance="17800"/>
+		<item name="Ultimate Explotion rune" countmax="5" chance="3500"/>
+		<item name="ensouled essence" chance="3500"/>
+		<item name="wand of darkness" chance="3500"/>
+	</loot>
+</monster>

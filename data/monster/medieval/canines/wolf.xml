@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Wolf)" nameDescription="a wolf" race="blood" experience="1800" speed="320">
+	<health now ="900" max ="900"/>
+	<look type="523" corpse="13380"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="8"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-20" max ="-183"/>
+		<attack name="physical" interval="2000" chance ="29" target ="1" range ="1" min ="-41" max ="-114"><!-- shot meele -->
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="17" target ="1" range ="1" min ="-63" max ="-83"><!-- physical -->
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55"/>
+	<elements>
+		<element earthPercent="5"/>
+		<element holyPercent="5"/>
+		<element icePercent="-5"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Yoooohhuuuu!"/>
+		<voice sentence="Grrrrrrr"/>
+	</voices>
+	<loot>
+		<item name="meat" countmax="2" chance="10200"/>
+		<item name="platinum coin" countmax="26" chance="57200"/>
+		<item name="wolf paw" chance="11200"/>
+
+
+
+	</loot>
+</monster>

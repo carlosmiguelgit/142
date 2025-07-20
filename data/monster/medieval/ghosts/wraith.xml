@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Wraith)" nameDescription="a wraith" race="undead" experience="91000" speed="490">
+	<health now ="45500" max ="45500"/>
+	<look type="605" corpse="13615"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-99" max ="-1450"/>
+		<attack name="death" interval="2000" chance ="34" target ="1" range ="6" min ="-68" max ="-704"><!-- shot -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-68" max ="-704"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="33" target ="0" length ="6" spread ="3" min ="-127" max ="-749"><!-- wave -->
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="33" target ="1" range ="1" min ="-127" max ="-749"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="75" defense ="75">
+		<!-- <defense name="healing" interval="2000" chance="25" min="100" max="250"> -->
+			<!-- <attribute key="areaEffect" value="blueshimmer" /> -->
+		<!-- </defense> -->
+		<defense name="healing" interval="2000" chance="20" min="100" max="700">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="290" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="90"/>
+		<element icePercent="1"/>
+		<element firePercent="-8"/>
+		<element energyPercent="-8"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity drunk="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Revenge ... is so ... sweet."/>
+		<voice sentence="Life...force! Feed me your... lifeforce"/>
+		<voice sentence="Mor... tals!"/>
+		<voice sentence="Buuuuuh"/>
+	</voices>
+	<loot>
+		<item name="black spirit shield" chance="1500"/>
+		<item name="black spirit armor" chance="2200"/>
+		<item name="black spirit axe" chance="2800"/>
+		<item id="6300" chance="19600"/><!-- death ring-->
+		<item name="crystal coin" countmax="5" chance="29200"/>
+		<item name="demonic essence" chance="11600"/>
+		<item name="relic sword" chance="23200"/>
+		<item name="shiny stone" chance="14200"/>
+		<item name="stealth ring" chance="17200"/>
+		<item name="wand of cosmic energy" chance="15800"/>
+		<item name="white piece of cloth" chance="13400"/>
+		<item name="Versicoloured Marble" chance="2900"/>
+		<item name="Blood Warior outfit scroll" chance="3700"/>
+		<item name="Gnomevil's hat" chance="3700"/>
+	</loot>
+</monster>

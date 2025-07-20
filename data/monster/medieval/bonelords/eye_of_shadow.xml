@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="(Eye of Shadow)" nameDescription="an Eye of Shadow" race="venom" experience="3060" speed="320">
+	<health now ="1530" max ="1530"/>
+	<look type="515" corpse="13359"/>
+		<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="100"/>
+		<flag hidehealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="earth" interval="2000" chance ="20" target ="1" range ="6" min ="-44" max ="-170">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="20" target ="0" radius ="3" min ="-44" max ="-170"><!-- ground -->
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+
+		<attack name="manadrain" interval="2000" chance ="25" target ="1" range ="5" min ="-85" max ="-166"><!-- mana -->
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="41" defense ="41"/>
+	<elements>
+		<element icePercent="30"/>
+		<element deathPercent="30"/>
+		<element energyPercent="20"/>
+		<element firePercent="-10"/>
+	</elements>
+</monster>

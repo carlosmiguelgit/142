@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Alpha Wolf)" nameDescription="a Alpha Wolf" race="blood" experience="28800" speed="370">
+	<health now ="14400" max ="14400"/>
+	<look type="529" corpse="13398"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-101" max ="-895"/>
+		<attack name="death" interval="2000" chance ="23" target ="1" range ="1" min ="-81" max ="-431"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="22" target ="1" range ="1" min ="-120" max ="-441"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="28" target ="1" range ="1" min ="-86" max ="-464"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Gnarllll!"/>
+		<voice sentence="Grrrrrr!"/>
+	</voices>
+	<loot>
+		<item name="crystal coin" countmax="4" chance="24800"/>
+		<item name="giant sword" chance="16200"/>
+		<item name="knight armor" chance="11600"/>
+		<item name="knight legs" chance="19600"/>
+		<item name="meat" countmax="3" chance="11800"/>
+		<item name="shaggy tail" chance="14200"/>
+		<item name="Ultimate UH rune" countmax="5" chance="2100"/>
+		<item name="amulet of theurgy" chance="2100"/>
+		<item name="royal star" chance="2100"/>
+	</loot>
+</monster>

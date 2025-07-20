@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="(Sauron)" nameDescription="Sauron" race="blood" experience="400000" speed="510">
+	<health now ="100000" max ="100000"/>
+	<look type="757" corpse="6068" />
+	<targetchange interval="2000" chance="5"/>
+	<flags>		
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		
+	</attacks>
+	<defenses armor ="60" defense ="50">
+		<defense name="speed" interval="2000" chance="8" speedchange="790" duration="10000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="healing" interval="2000" chance="25" min="600" max="1090">
+			<attribute key="areaEffect" value="fire"/>
+		</defense>
+	</defenses>  	
+	<voices interval="2000" chance="5">
+		<voice sentence="HATE! HATE! KILL! KILL!" yell="1"/>
+		<voice sentence="GRRAAARRRHH!" yell="1"/>
+		<voice sentence="GRRRR!" yell="1"/>
+	</voices>
+	<loot>		
+		<item name="Sauron energy key" chance="90000"/>
+		<item name="infinity stone" chance="90000"/>
+	</loot>
+	
+	
+	
+</monster>

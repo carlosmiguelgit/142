@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Broodmother)" nameDescription="a Broodmother" race="venom" experience="19200" speed="340">
+	<health now ="9600" max ="9600"/>
+	<look type="506" corpse="13333" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="70" />
+		<flag runonhealth="0" />
+		<flag canwalkonfire="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-105" max ="-876"/>
+		<attack name="fire" interval="2000" chance ="37" target ="0" length ="6" spread ="3" min ="-79" max ="-475"><!-- wave -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="37" target ="1" range ="1" min ="-79" max ="-475"><!-- shot meele -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="28" target ="1" radius ="3" range ="3" min ="-121" max ="-484"><!-- area -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="28" target ="1" range ="1" min ="-121" max ="-484"><!-- shot meele -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70">
+		<defense name="speed" interval="2000" chance="15" speedchange="390" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="20" />
+		<element icePercent="20" />
+		<element firePercent="-10" />
+	</elements>
+	<immunities>
+		<immunity outfit="1" />
+		<immunity drunk="1" />
+		<immunity invisible="1" />
+		<immunity earth="1" />
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="(Poison Spider)" interval="2000" chance="10" max="2"/>
+	</summons>
+	<loot>
+		<item name="dragon warrior helmet" chance="2400"/>
+		<item name="dragon warrior armor" chance="2700"/>
+		<item name="dragon warrior legs" chance="2900"/>
+		<item id="2169" chance="20800"/><!-- time ring-->
+		<item name="crystal coin" countmax="3" chance="26000"/>
+		<item name="poison arrow" countmax="12" chance="9200"/>
+		<item name="spider silk" chance="12800"/>
+		<item name="strong health potion" chance="10000"/>
+		<item name="Golden Marble" chance="3700"/>
+		<item name="wolf backpack" chance="3700"/>
+		<item name="guardian axe" chance="3700"/>
+		
+		
+	</loot>
+</monster>

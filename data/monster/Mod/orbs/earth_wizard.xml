@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Earth Wizard" nameDescription="a earth wizard" race="blood" speed="0" >
+	<health now="1000" max="1000" />
+	<look type="763" head="63" body="120" legs="118" feet="116" corpse="0"/>
+	<targetchange interval="4000" chance="20" />
+	<flags>		
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="0" />
+		<flag illusionable="0" />
+		<flag convinceable="1" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag staticattack="98" />
+		<flag targetdistance="0" />
+		<flag runonhealth="0" />
+	</flags>
+	
+	<script>
+       <event name="earth2"/>
+    </script>
+	
+	
+	<defenses armor ="35" defense ="35"/>
+		
+</monster>

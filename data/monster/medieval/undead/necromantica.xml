@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Necromantica)" nameDescription="a necromantica" race="undead" experience="80000" speed="500">
+	<health now ="40000" max ="40000"/>
+	<look type="531" corpse="13404"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="500"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-122" max ="-1720"/>
+		<attack name="energy" interval="2000" chance ="17" target ="0" radius ="3" min ="-88" max ="-860"><!-- ground -->
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+
+		<attack name="lifedrain" interval="2000" chance ="20" target ="1" range ="4" min ="-95" max ="-901"><!-- life -->
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="20" target ="1" range ="1" min ="-95" max ="-901"><!-- physical -->
+			<attribute key="shootEffect" value="crystallinearrow"/>
+		</attack>
+
+		<attack name="energy" interval="2000" chance ="31" target ="0" length ="6" spread ="3" min ="-129" max ="-876"><!-- wave -->
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="31" target ="1" range ="1" min ="-129" max ="-876"><!-- physical -->
+			<attribute key="shootEffect" value="crystallinearrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65">
+		<defense name="healing" interval="2000" chance="15" min="120" max="190">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Dance for me your dance of death!"/>
+		<voice sentence="Let the music play!"/>
+		<voice sentence="I will mourn your death!"/>
+		<voice sentence="Are you ready to rock?"/>
+		<voice sentence="Feel my gentle kiss of death."/>
+		<voice sentence="That's what I call easy listening!"/>
+		<voice sentence="IIIIEEEeeeeeehhhHHHH!" yell="1"/>
+	</voices>
+	<loot>
+		<item name="black wizard bow" chance="2800"/>
+		<item name="black pearl" chance="13800"/>
+		<item name="blue robe" chance="15000"/>
+		<item name="crystal coin" countmax="11" chance="29000"/>
+		<item name="ring of healing" chance="19000"/>
+		<item name="stone skin amulet" chance="19000"/>
+		<item name="strong mana potion" chance="19800"/>
+		<item name="terra mantle" chance="12000"/>
+		<item name="white pearl" chance="24000"/>
+		<item name="giant emerald" chance="3400"/>
+		<item name="diamond arrow" countmax="80" chance="3400"/>
+		<item name="ornate mace" chance="3400"/>
+				
+	</loot>
+</monster>

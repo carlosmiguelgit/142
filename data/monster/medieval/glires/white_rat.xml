@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(White rat)" nameDescription="a white rat" race="blood" experience="1400" speed="330">
+	<health now ="700" max ="700"/>
+	<look type="612" corpse="13636"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="70"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="0"/>
+		<flag runonhealth="15"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<defenses armor ="45" defense ="45"/>
+	<loot>
+		<item id="2684" chance="14600"/><!-- carrot-->
+		<item name="meat" countmax="2" chance="17400"/>
+		<item name="platinum coin" countmax="5" chance="72000"/>
+		<item name="silky fur" chance="19200"/>
+
+
+
+	</loot>
+</monster>

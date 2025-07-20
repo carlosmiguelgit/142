@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Troll)" nameDescription="a troll" race="blood" experience="1600" speed="320">
+	<health now ="800" max ="800"/>
+	<look type="742" corpse="14005"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-27" max ="-162"/>
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="--7" max ="-121"><!-- physical -->
+			<attribute key="shootEffect" value="royalspear"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="16" target ="1" range ="1" min ="-63" max ="-79"><!-- shot meele -->
+			<attribute key="shootEffect" value="royalspear"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element energyPercent="25"/>
+		<element holyPercent="10"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Grrr"/>
+		<voice sentence="Groar"/>
+		<voice sentence="Gruntz!"/>
+		<voice sentence="Hmmm, bugs"/>
+		<voice sentence="Hmmm, dogs"/>
+	</voices>
+	<loot>
+		<item name="meat" chance="15000"/>
+		<item name="platinum coin" countmax="14" chance="57800"/>
+		<item name="spear" chance="23400"/>
+
+
+
+		
+	</loot>
+</monster>

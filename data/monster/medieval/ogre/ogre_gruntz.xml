@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Ogre Gruntz)" nameDescription="a ogre gruntz" race="blood" experience="77000" speed="420">
+	<health now ="38500" max ="38500"/>
+	<look type="667" corpse="13796"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-111" max ="-1437"/>
+		<attack name="physical" interval="2000" chance ="20" target ="1" range ="1" min ="-98" max ="-759"><!-- physical -->
+			<attribute key="shootEffect" value="drillbolt"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="19" target ="1" range ="1" min ="-98" max ="-725"><!-- shot meele -->
+			<attribute key="shootEffect" value="drillbolt"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="32" target ="1" range ="1" min ="-128" max ="-732"><!-- physical -->
+			<attribute key="shootEffect" value="drillbolt"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="60" defense ="60"/>
+	<elements>
+		<element energyPercent="25"/>
+		<element holyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Il lorstok human!"/>
+		<voice sentence="Toks utat."/>
+		<voice sentence="Human, uh whil dyh!"/>
+		<voice sentence="Youh ah trak!"/>
+		<voice sentence="Let da mashing begin!"/>
+	</voices>
+	<loot>		
+		<item name="ogre shield" chance="2300"/>
+		<item id="7398" chance="4200"/><!-- cyclops trophy-->
+		<item name="club ring" chance="18000"/>
+		<item name="crystal coin" countmax="7" chance="26200"/>
+		<item name="health potion" chance="10200"/>
+		<item name="meat" chance="19600"/>
+		<item name="blue memory shard" chance="3800"/>
+		<item name="Warrior Mount outfit scroll" chance="3800"/>
+		<item name="vampire silk slippers" chance="3800"/>
+	</loot>
+</monster>

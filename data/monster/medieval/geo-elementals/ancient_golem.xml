@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Ancient Golem)" nameDescription="a ancient golem" race="undead" experience="128000" speed="520">
+	<health now ="64000" max ="64000"/>
+	<look type="600" corpse="13600"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-125" max ="-2004"/>
+		<attack name="earth" interval="2000" chance ="15" target ="0" radius ="3" min ="-130" max ="-1053"><!-- ground -->
+			<attribute key="areaEffect" value="carniphila"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="15" target ="1" range ="1" min ="-130" max ="-1053"><!-- physical -->
+			<attribute key="shootEffect" value="eartharrow"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="16" target ="1" range ="4" min ="-81" max ="-1007"><!-- shot -->
+			<attribute key="shootEffect" value="eartharrow"/>
+		</attack>
+
+		<attack name="speed" interval="2000" chance ="36" target ="1" range ="6" speedchange ="-1015" duration ="60000"><!-- speed -->
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="-107" max ="-1015"><!-- physical -->
+			<attribute key="shootEffect" value="eartharrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="80" defense ="80">
+		<defense name="speed" interval="2000" chance="15" speedchange="300" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="healing" interval="2000" chance="15" min="200" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="50"/>
+		<element holyPercent="50"/>
+		<element firePercent="15"/>
+		<element energyPercent="5"/>
+		<element physicalPercent="25"/>
+		<element icePercent="30"/>
+		<element deathPercent="25"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<voices interval="2500" chance="10">
+		<voice sentence="Azerus barada nikto!"/>
+		<voice sentence="Klonk klonk klonk"/>
+		<voice sentence="Engaging Enemy!"/>
+		<voice sentence="Threat level processed."/>
+		<voice sentence="Charging weapon systems!"/>
+		<voice sentence="Auto repair in progress."/>
+		<voice sentence="The battle is joined!"/>
+		<voice sentence="Termination initialized!"/>
+		<voice sentence="Rrrtttarrrttarrrtta"/>
+		<voice sentence="Eliminated"/>
+	</voices>
+	<loot>		
+		<item name="ancient sword" chance="1500"/>
+		<item name="ancient armor" chance="1800"/>
+		<item name="maori tribe mask" chance="2200"/>
+		<item name="maori tribe shield" chance="2500"/>
+		<item name="ancient club" chance="2700"/>
+		<item name="ancient boot" chance="2800"/>
+		<item name="ancient legs" chance="2800"/>
+		<item name="ancient helmet" chance="3000"/>
+		<item name="ancient shield" chance="3100"/>
+		<item id="2645" chance="19400"/><!-- steel boots-->
+		<item id="5880" chance="18600"/><!-- iron ore-->
+		<item id="7422" chance="15600"/><!-- jade hammer-->
+		<item id="7439" chance="13600"/><!-- berserk potion-->
+		<item id="7893" chance="17400"/><!-- lightning boots-->
+		<item id="8309" countmax="5" chance="18200"/><!-- nail-->
+		<item name="giant sapphire" chance="2100"/>
+		<item name="the cobra amulet" chance="2100"/>
+		<item name="plain mayhem bow" chance="2100"/>
+	</loot>
+</monster>

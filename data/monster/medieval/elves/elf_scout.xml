@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Elf Scout)" nameDescription="a elf scout" race="blood" experience="3400" speed="380">
+	<health now ="1700" max ="1700"/>
+	<look type="584" corpse="13556"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="5" min ="-32" max ="-128">
+			<attribute key="shootEffect" value="throwingknife"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="30" target ="1" range ="3" min ="-80" max ="-168">
+			<attribute key="shootEffect" value="throwingknife"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element holyPercent="20"/>
+		<element deathPercent="-1"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Tha'shi Ab'Dendriel!"/>
+		<voice sentence="Feel the sting of my arrows!"/>
+		<voice sentence="Thy blood will quench the soil's thirst!"/>
+		<voice sentence="Evicor guide my arrow!"/>
+		<voice sentence="Your existence will end here!"/>
+	</voices>
+	<loot>
+		<item id="5921" chance="12600"/><!-- heaven blossom-->
+		<item name="arrow" countmax="12" chance="9600"/>
+		<item name="bow" chance="13400"/>
+		<item name="elven scouting glass" chance="16600"/>
+		<item name="elvish bow" chance="15800"/>
+		<item name="elvish talisman" chance="14600"/>
+		<item name="grapes" chance="10800"/>
+		<item name="platinum coin" countmax="51" chance="37000"/>
+		<item name="poison arrow" countmax="4" chance="11600"/>
+		<item name="ultimate spirit potion" countmax="5" chance="3900"/>
+		<item name="bag you desire" chance="3900"/>
+		<item name="training club" chance="3900"/>
+		
+	</loot>
+</monster>

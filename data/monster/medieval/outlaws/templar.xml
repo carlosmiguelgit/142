@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Templar)" nameDescription="a templar" race="blood" experience="120000" speed="470">
+	<health now ="60000" max ="60000"/>
+	<look type="702" corpse="13897"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-103" max ="-1749"/>
+		<attack name="holy" interval="2000" chance ="25" target ="1" range ="1" min ="-96" max ="-901"><!-- shot meele -->
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-93" max ="-891"><!-- physical -->
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+
+		<attack name="holy" interval="2000" chance ="25" target ="1" range ="1" min ="-130" max ="-900"><!-- shot meele -->
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="15" target ="1" range ="1" min ="-119" max ="-888"><!-- physical -->
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="80" defense ="80">
+		<defense name="healing" interval="2000" chance="20" min="200" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="40"/>
+		<element icePercent="10"/>
+		<element firePercent="30"/>
+		<element holyPercent="50"/>
+		<element earthPercent="50"/>
+		<element physicalPercent="30"/>
+		<element deathPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Let's have a fight!"/>
+		<voice sentence="Welcome to my battleground!"/>
+		<voice sentence="Have you seen princess Lumelia?"/>
+		<voice sentence="I will sing a tune at your grave."/>
+	</voices>
+	<loot>
+		<item name="crown armor" chance="14400"/>
+		<item name="crown helmet" chance="13000"/>
+		<item name="crown legs" chance="12800"/>
+		<item name="crown shield" chance="18600"/>
+		<item name="crystal coin" countmax="11" chance="26600"/>
+		<item name="elite templar armor" chance="4800"/>
+		<item name="elite templar axe" chance="5600"/>
+		<item name="elite templar boots" chance="2600"/>
+		<item name="elite templar hammer" chance="3400"/>
+		<item name="elite templar helmet" chance="2400"/>
+		<item name="elite templar legs" chance="4000"/>
+		<item name="elite templar shield" chance="5000"/>
+		<item name="elite templar sword" chance="2600"/>
+		<item name="fire sword" chance="16000"/>
+		<item name="grapes" chance="11800"/>
+		<item name="meat" countmax="3" chance="17400"/>
+		<item name="red piece of cloth" chance="17600"/>
+		<item name="white gem" chance="2700"/>
+		<item name="diamond arrow" countmax="80" chance="2700"/>
+		<item name="calopteryx cape" chance="2700"/>
+	</loot>
+</monster>

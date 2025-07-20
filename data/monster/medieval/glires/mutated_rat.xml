@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Mutated Rat)" nameDescription="a mutated rat" race="blood" experience="15600" speed="390">
+	<health now ="7800" max ="7800"/>
+	<look type="611" corpse="13633"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-93" max ="-588"/>
+		<attack name="earth" interval="2000" chance ="39" target ="1" range ="1" min ="-63" max ="-312"><!-- shot meele -->
+			<attribute key="shootEffect" value="envenomedarrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="-119" max ="-284"><!-- physical -->
+			<attribute key="shootEffect" value="envenomedarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55">
+		<defense name="healing" interval="2000" chance="5" min="80" max="95">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="-10"/>
+		<element holyPercent="10"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity earth="1"/>
+		<immunity paralyze="1"/>
+		<immunity lifedrain="1"/>
+		<immunity drunk="1"/>
+		<immunity drown="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Grrrrrrrrrrrrrr!"/>
+		<voice sentence="Fcccccchhhhhh"/>
+	</voices>
+	<loot>
+		<item name="crystal coin" countmax="4" chance="14400"/>
+		<item name="green mushroom" chance="10000"/>
+		<item name="health potion" chance="17200"/>
+		<item name="mutated rat tail" chance="10400"/>
+		<item name="spellbook of enlightenment" chance="13800"/>
+		<item name="stealth ring" chance="24000"/>
+		<item name="stone herb" chance="14000"/>
+		<item name="tower shield" chance="21600"/>
+		<item name="Ultimate death magic missile rune" countmax="5" chance="2500"/>
+		<item name="sample of monster blood" chance="2500"/>
+		<item name="cowtana" chance="2500"/>
+	</loot>
+</monster>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Boar)" nameDescription="a boar" race="blood" experience="1620" speed="380">
+	<health now ="810" max ="810"/>
+	<look type="690" corpse="13862"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="500"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-20" max ="-205"/>
+		<attack name="physical" interval="2000" chance ="25" target ="1" range ="1" min ="-48" max ="-82"><!-- physical -->
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="38" target ="1" range ="1" min ="-31" max ="-87"><!-- shot meele -->
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65">
+		<defense name="healing" interval="2000" chance="15" min="120" max="190">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Dance for me your dance of death!"/>
+		<voice sentence="Let the music play!"/>
+		<voice sentence="I will mourn your death!"/>
+		<voice sentence="Are you ready to rock?"/>
+		<voice sentence="Feel my gentle kiss of death."/>
+		<voice sentence="That's what I call easy listening!"/>
+		<voice sentence="IIIIEEEeeeeeehhhHHHH!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2124" chance="10600"/><!-- crystal ring-->
+		<item id="2175" chance="17800"/><!-- spellbook-->
+		<item name="black pearl" chance="22400"/>
+		<item name="blue robe" chance="15400"/>
+		<item name="hair of a banshee" chance="11200"/>
+		<item name="platinum coin" countmax="26" chance="34000"/>
+		<item name="red robe" chance="20800"/>
+		<item name="ring of healing" chance="11200"/>
+		<item name="stone skin amulet" chance="22600"/>
+		<item name="strong mana potion" chance="18800"/>
+		<item name="terra mantle" chance="17200"/>
+		<item name="wedding ring" chance="20000"/>
+		<item name="white pearl" chance="24000"/>
+
+
+
+	</loot>
+</monster>

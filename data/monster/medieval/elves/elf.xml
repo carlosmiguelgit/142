@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Elf)" nameDescription="a elf" race="blood" experience="1980" speed="390">
+	<health now ="990" max ="990"/>
+	<look type="582" corpse="13549"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-32" max ="-170"/>
+		<attack name="physical" interval="2000" chance ="15" target ="1" range ="1" min ="-71" max ="-89"><!-- shot meele -->
+			<attribute key="shootEffect" value="royalspear"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="19" target ="1" range ="1" min ="-20" max ="-90"><!-- physical -->
+			<attribute key="shootEffect" value="royalspear"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element holyPercent="20"/>
+		<element deathPercent="-1"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Ulathil beia Thratha!"/>
+		<voice sentence="Bahaha aka!"/>
+		<voice sentence="You are not welcome here."/>
+		<voice sentence="Flee as long as you can."/>
+		<voice sentence="Death to the Defilers!"/>
+	</voices>
+	<loot>
+		<item id="5921" chance="18400"/><!-- heaven blossom-->
+		<item name="arrow" countmax="3" chance="9600"/>
+		<item name="elvish talisman" chance="16400"/>
+		<item name="longsword" chance="11200"/>
+		<item name="platinum coin" countmax="26" chance="53600"/>
+		<item name="plum" countmax="2" chance="12600"/>
+
+
+
+		
+	</loot>
+</monster>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Albino Dragon)" nameDescription="an Albino Dragon" race="blood" experience="10800" speed="300">
+	<health now ="5400" max ="5400"/>
+	<look type="568" corpse="13507"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-81" max ="-601"/>
+		<attack name="fire" interval="2000" chance ="29" target ="0" radius ="4" min ="-113" max ="-338"><!-- ground -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="29" target ="1" range ="1" min ="-113" max ="-338"><!-- shot meele -->
+			<attribute key="shootEffect" value="infernalbolt"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="80" defense ="80">
+		<defense name="healing" interval="2000" chance="15" min="200" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="5"/>
+		<element icePercent="50"/>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity drown="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="FEEEED MY ETERNAL HUNGER!" yell="1"/>
+		<voice sentence="I SENSE LIFE" yell="1"/>
+	</voices>
+	<loot>
+		<item id="6300" chance="20600"/><!-- death ring-->
+		<item name="assassin star" countmax="5" chance="11200"/>
+		<item name="black pearl" countmax="2" chance="28000"/>
+		<item name="crystal coin" countmax="4" chance="26600"/>
+		<item name="demonic essence" chance="15800"/>
+		<item name="divine plate" chance="16400"/>
+		<item name="dragon slayer" chance="13400"/>
+		<item name="dragonbone staff" chance="14000"/>
+		<item name="gold ingot" chance="27800"/>
+		<item name="golden armor" chance="14800"/>
+		<item name="golden mug" chance="20600"/>
+		<item name="great health potion" chance="14400"/>
+		<item name="great mana potion" chance="11000"/>
+		<item name="hardened bone" chance="12600"/>
+		<item name="knight armor" chance="14200"/>
+		<item name="power bolt" countmax="15" chance="9600"/>
+		<item name="royal helmet" chance="20200"/>
+		<item name="skullcracker armor" chance="20600"/>
+		<item name="small sapphire" countmax="2" chance="27400"/>
+		<item name="spellweaver's robe" chance="23200"/>
+		<item name="unholy bone" chance="10000"/>
+		<item name="war axe" chance="14200"/>
+		<item name="ultimate mana potion" countmax="5" chance="3000"/>
+		<item name="backpack for keys" chance="3000"/>
+		<item name="glooth whip" chance="3000"/>
+	</loot>
+</monster>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Larva)" nameDescription="a larva" race="venom" experience="1760" speed="400">
+	<health now ="880" max ="880"/>
+	<look type="621" corpse="13661"/>
+	<targetchange interval="5000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-25" max ="-179"/>
+		<attack name="physical" interval="2000" chance ="20" target ="1" range ="1" min ="-1" max ="-95"><!-- physical -->
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="27" target ="1" range ="1" min ="-54" max ="-91"><!-- shot meele -->
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element energyPercent="10"/>
+		<element firePercent="-10"/>
+		<element icePercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<loot>
+		<item name="meat" chance="18000"/>
+		<item name="platinum coin" countmax="11" chance="45400"/>
+
+
+
+	</loot>
+</monster>

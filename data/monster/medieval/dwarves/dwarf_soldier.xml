@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dwarf Soldier)" nameDescription="a dwarf soldier" race="blood" experience="7680" speed="380">
+	<health now ="3840" max ="3840"/>
+	<look type="575" corpse="13532"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-53" max ="-312"/>
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-91" max ="-201"><!-- shot meele -->
+			<attribute key="shootEffect" value="bolt"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="24" target ="1" range ="1" min ="-57" max ="-163"><!-- physical -->
+			<attribute key="shootEffect" value="bolt"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55"/>
+	<elements>
+		<element earthPercent="10"/>
+		<element firePercent="-5"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hail Durin!"/>
+	</voices>
+	<loot>
+		<item name="royal dwarf shield" chance="2000"/>
+		<item name="axe ring" chance="19400"/>
+		<item name="crystal coin" countmax="3" chance="19600"/>
+		<item name="iron ore" chance="10600"/>
+		<item name="white mushroom" countmax="3" chance="18600"/>
+		<item name="Blue Marble" chance="3500"/>
+		<item name="vortex bolt" countmax="80" chance="3500"/>
+		<item name="fur armor" chance="3500"/>
+	</loot>
+</monster>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Green Djinn)" nameDescription="a green djinn" race="blood" experience="31200" speed="340">
+	<health now ="15600" max ="15600"/>
+	<look type="554" corpse="13467"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-91" max ="-891"/>
+		<attack name="earth" interval="2000" chance ="29" target ="0" radius ="4" min ="-123" max ="-483"><!-- ground -->
+			<attribute key="areaEffect" value="smallplants"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="29" target ="1" range ="1" min ="-123" max ="-483"><!-- shot meele -->
+			<attribute key="shootEffect" value="eartharrow"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="26" target ="1" radius ="3" range ="4" min ="-111" max ="-491"><!-- area -->
+			<attribute key="shootEffect" value="eartharrow"/>
+			<attribute key="areaEffect" value="smallplants"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="26" target ="1" range ="1" min ="-111" max ="-491"><!-- shot meele -->
+			<attribute key="shootEffect" value="eartharrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55"/>
+	<elements>
+		<element firePercent="80"/>
+		<element energyPercent="50"/>
+		<element physicalPercent="20"/>
+		<element deathPercent="20"/>
+		<element icePercent="-10"/>
+		<element holyPercent="-13"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="I grant you a deathwish!"/>
+		<voice sentence="Muahahahahaha"/>
+		<voice sentence="I wish you a merry trip to hell!"/>
+		<voice sentence="Good wishes are for fairytales"/>
+	</voices>
+	<loot>			
+		<item id="2696" chance="15200"/><!-- cheese-->
+		<item name="blue robe" chance="19000"/>
+		<item name="crystal coin" countmax="5" chance="27000"/>
+		<item name="golden armor" chance="11200"/>
+		<item name="green piece of cloth" chance="16600"/>
+		<item name="skull staff" chance="11400"/>
+		<item name="small emerald" countmax="4" chance="15600"/>
+		<item name="Death arcane rune" countmax="5" chance="2200"/>
+		<item name="jade amulet" chance="2200"/>
+		<item name="warrior's shield" chance="2200"/>
+	
+	</loot>
+</monster>

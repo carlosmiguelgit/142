@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Harpy)" nameDescription="a harpy" race="blood" experience="52000" speed="330">
+	<health now ="26000" max ="26000"/>
+	<look type="594" corpse="13582"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="5" min ="-77" max ="-588">
+			<attribute key="shootEffect" value="throwingknife"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="30" target ="1" range ="3" min ="-125" max ="-628">
+			<attribute key="shootEffect" value="throwingknife"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="17" target ="1" range ="6" min ="-73" max ="-622">
+			<attribute key="shootEffect" value="throwingknife"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element energyPercent="30"/>
+		<element earthPercent="20"/>
+		<element deathPercent="5"/>
+		<element physicalPercent="-5"/>
+		<element icePercent="-20"/>
+		<element holyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hot, eh?"/>
+		<voice sentence="Hell, oh, hell!"/>
+	</voices>
+	<loot>		
+		<item name="royal double blade axe" chance="1700"/>
+		<item name="royal club" chance="2700"/>
+		<item name="crystal coin" countmax="4" chance="29400"/>
+		<item name="necrotic rod" chance="23000"/>
+		<item name="small amethyst" chance="13600"/>
+		<item name="Death arcane rune" countmax="5" chance="3300"/>
+		<item name="amulet of theurgy" chance="3300"/>
+		<item name="rift shield" chance="3300"/>
+	</loot>
+	
+</monster>

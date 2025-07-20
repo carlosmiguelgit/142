@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Old Watcher)" nameDescription="a Old Watcher" race="undead" experience="144000" speed="400">
+	<health now ="72000" max ="72000"/>
+	<look type="700" corpse="13892"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="1"/>
+		<flag canwalkonfire="1"/>
+		<flag canwalkonpoison="1"/>
+	</flags>
+	<attacks>
+		<attack name="death" interval="2000" chance ="20" target ="1" range ="6" min ="-114" max ="-1055">
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="20" target ="0" radius ="3" min ="-114" max ="-1055"><!-- ground -->
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+
+		<attack name="manadrain" interval="2000" chance ="25" target ="1" range ="5" min ="-155" max ="-1051"><!-- mana -->
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="26" target ="1" range ="4" min ="-125" max ="-1047">
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="26" target ="0" length ="6" spread ="3" min ="-125" max ="-1047"><!-- wave -->
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="52" defense ="52">
+		<defense name="healing" interval="2000" chance="15" min="150" max="200">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="260" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="20"/>
+		<element physicalPercent="15"/>
+		<element energyPercent="10"/>
+		<element holyPercent="-20"/>
+		<element firePercent="-15"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="(Vampire)" interval="2000" chance="10"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="You have disturbed my thoughts!"/>
+		<voice sentence="Let me turn you into something more useful!"/>
+		<voice sentence="Let me taste your brain!"/>
+		<voice sentence="You will be punished!"/>
+	</voices>
+	<loot>
+		<item name="corrupted watcher shield" chance="1900"/>
+		<item name="corrupted watcher sword" chance="2500"/>
+		<item name="corrupted watcher helmet" chance="2000"/>
+		<item name="bonelord eye" chance="16600"/>
+		<item name="crystal coin" countmax="11" chance="23400"/>
+		<item name="haunted blade" chance="22000"/>
+		<item name="piece of dead brain" chance="12600"/>
+		<item name="giant sapphire" chance="3100"/>
+		<item name="the cobra amulet" chance="3100"/>
+		<item name="lion longbow" chance="3100"/>
+	</loot>
+</monster>

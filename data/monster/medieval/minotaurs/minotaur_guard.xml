@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Minotaur Guard)" nameDescription="a minotaur guard" race="blood" experience="12000" speed="300">
+	<health now ="6000" max ="6000"/>
+	<look type="643" corpse="13725"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-90" max ="-607"/>
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="1" min ="-66" max ="-348"><!-- physical -->
+			<attribute key="shootEffect" value="whirlwindaxe"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="21" target ="1" range ="1" min ="-102" max ="-303"><!-- shot meele -->
+			<attribute key="shootEffect" value="whirlwindaxe"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="60" defense ="60"/>
+	<elements>
+		<element firePercent="20"/>
+		<element holyPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Kirrl Karrrl!"/>
+		<voice sentence="Kaplar"/>
+	</voices>
+	<loot>
+		<item name="minotaur axe" chance="2600"/>
+		<item name="minotaur helmet" chance="3000"/>
+		<item id="7401" chance="5400"/><!-- minotaur trophy-->
+		<item name="crystal coin" countmax="2" chance="24400"/>
+		<item name="Golden Marble" chance="2000"/>
+		<item name="war backpack" chance="2000"/>
+		<item name="lederhosen" chance="2000"/>
+	</loot>
+</monster>

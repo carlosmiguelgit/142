@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="(King Rotworm)" nameDescription="a King Rotworm" race="blood" experience="26400" speed="330">
+	<health now ="13200" max ="13200"/>
+	<look type="492" corpse="13294"/>
+	<targetchange interval="60000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="50"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-71" max ="-900"/>
+		<attack name="earth" interval="2000" chance ="18" target ="1" range ="1" min ="-120" max ="-459"><!-- shot meele -->
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="35" target ="1" range ="1" min ="-68" max ="-460"><!-- physical -->
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="32" target ="1" range ="1" min ="-122" max ="-474"><!-- shot meele -->
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65">
+	</defenses>
+	<elements>
+		<element holyPercent="-5"/>
+		<element firePercent="-5"/>
+		<element icePercent="-5"/>
+		<element earthPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="(Stone Rotworm)" interval="2000" chance="10"/>
+	</summons>
+	<loot>
+		<item name="crystal coin" countmax="3" chance="17000"/>
+		<item name="giant sword" chance="21200"/>
+		<item name="ham" chance="12800"/>
+		<item name="mastermind shield" chance="21000"/>
+		<item name="meat" chance="13000"/>
+		<item name="worm" countmax="3" chance="18600"/>
+		<item name="Ultimate Magic Wall rune" countmax="5" chance="2100"/>
+		<item name="filled elven vial" chance="2100"/>
+		<item name="crude umbral slayer" chance="2100"/>
+	</loot>
+</monster>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Slave Guard)" nameDescription="a slave guard" race="blood" experience="28800" speed="350">
+	<health now ="14400" max ="14400"/>
+	<look type="709" corpse="13912"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-83" max ="-909"/>
+		<attack name="physical" interval="2000" chance ="25" target ="1" range ="1" min ="-76" max ="-481"><!-- shot meele -->
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-73" max ="-471"><!-- physical -->
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="25" target ="1" range ="1" min ="-110" max ="-480"><!-- shot meele -->
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="80" defense ="80">
+		<defense name="healing" interval="2000" chance="20" min="200" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="40"/>
+		<element icePercent="10"/>
+		<element firePercent="30"/>
+		<element holyPercent="50"/>
+		<element earthPercent="50"/>
+		<element physicalPercent="30"/>
+		<element deathPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Let's have a fight!"/>
+		<voice sentence="Welcome to my battleground!"/>
+		<voice sentence="Have you seen princess Lumelia?"/>
+		<voice sentence="I will sing a tune at your grave."/>
+	</voices>
+	<loot>
+		<item name="crown armor" chance="18400"/>
+		<item name="crown helmet" chance="19800"/>
+		<item name="crown legs" chance="18000"/>
+		<item name="crown shield" chance="20200"/>
+		<item name="crystal coin" countmax="5" chance="18000"/>
+		<item name="elite templar axe" chance="2400"/>
+		<item name="fire sword" chance="15800"/>
+		<item name="grapes" chance="10600"/>
+		<item name="meat" countmax="3" chance="19200"/>
+		<item name="red piece of cloth" chance="12200"/>
+		<item name="supreme health potion" countmax="5" chance="3300"/>
+		<item name="onyx pendant" chance="3300"/>
+		<item name="triple bolt crossbow" chance="3300"/>
+	</loot>
+</monster>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Fire Devil)" nameDescription="a fire devil" race="fire" experience="5760" speed="320">
+	<health now ="2880" max ="2880"/>
+	<look type="716" corpse="13931"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="fire" interval="2000" chance ="33" target ="1" range ="4" min ="-44" max ="-196">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="26" target ="1" range ="5" min ="-89" max ="-194">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="75" defense ="75"/>
+	<elements>
+		<element energyPercent="25"/>
+		<element physicalPercent="50"/>
+		<element deathPercent="20"/>
+		<element icePercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>			
+		<item name="crystal coin" countmax="2" chance="28000"/>
+		<item name="fire axe" chance="23800"/>
+		<item name="fire sword" chance="23400"/>
+		<item name="magma coat" chance="15200"/>
+		<item name="magma legs" chance="21400"/>
+		<item name="small diamond" chance="29000"/>
+		<item name="wand of inferno" chance="19000"/>
+		<item name="Onyx Marble" chance="2600"/>
+		<item name="cake backpack" chance="2600"/>
+		<item name="metal spats" chance="2600"/>
+	</loot>
+</monster>

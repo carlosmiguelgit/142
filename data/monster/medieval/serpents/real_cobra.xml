@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Real Cobra)" namedescription="a cobra" race="venom" experience="4420" speed="390">
+	<health now ="2210" max ="2210"/>
+	<look type="722" corpse="13946"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-65" max ="-260"/>
+		<attack name="earth" interval="2000" chance ="31" target ="1" range ="1" min ="-25" max ="-164"><!-- shot meele -->
+			<attribute key="shootEffect" value="tarsalarrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="25" target ="1" range ="1" min ="-18" max ="-98"><!-- physical -->
+			<attribute key="shootEffect" value="tarsalarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="45" defense ="45"/>
+	<elements>
+		<element firePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity drunk="1"/>
+		<immunity earth="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Zzzzzz"/>
+		<voice sentence="Fsssss"/>
+	</voices>
+	<loot>
+		<item name="cobra tongue" chance="12200"/>
+		<item name="platinum coin" countmax="51" chance="30600"/>
+		<item name="supreme health potion" countmax="5" chance="3700"/>
+		<item name="sample of monster blood" chance="3700"/>
+		<item name="shimmer wand" chance="3700"/>
+	</loot>
+</monster>

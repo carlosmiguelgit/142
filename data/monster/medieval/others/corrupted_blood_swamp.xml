@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Corrupted Blood Swamp)" nameDescription="a corrupted blood swamp" race="venom" experience="176000" speed="480">
+	<health now ="88000" max ="88000"/>
+	<look type="696" corpse="13880"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="500"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-105" max ="-2035"/>
+		<attack name="fire" interval="2000" chance ="25" target ="0" length ="6" spread ="3" min ="-133" max ="-997"><!-- wave -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="25" target ="1" range ="1" min ="-133" max ="-997"><!-- shot meele -->
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="23" target ="1" radius ="3" range ="4" min ="-156" max ="-990"><!-- area -->
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="23" target ="1" range ="1" min ="-156" max ="-990"><!-- shot meele -->
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65">
+		<defense name="healing" interval="2000" chance="15" min="120" max="190">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Dance for me your dance of death!"/>
+		<voice sentence="Let the music play!"/>
+		<voice sentence="I will mourn your death!"/>
+		<voice sentence="Are you ready to rock?"/>
+		<voice sentence="Feel my gentle kiss of death."/>
+		<voice sentence="That's what I call easy listening!"/>
+		<voice sentence="IIIIEEEeeeeeehhhHHHH!" yell="1"/>
+	</voices>
+	<loot>		
+		<item name="ancestral rubi axe" chance="2000"/>
+		<item name="ancestral rubi sword" chance="2000"/>
+		<item name="ancestral rubi chopper" chance="2500"/>
+		<item name="ancestral rubi helmet" chance="2600"/>
+		<item name="ancestral rubi shield" chance="2600"/>
+		<item name="ancestral rubi armor" chance="2800"/>
+		<item name="ancestral rubi wand" chance="2200"/>
+		<item name="black pearl" chance="18400"/>
+		<item name="blue robe" chance="21400"/>
+		<item name="crystal coin" countmax="12" chance="10600"/>
+		<item name="red robe" chance="11800"/>
+		<item name="ring of healing" chance="21600"/>
+		<item name="stone skin amulet" chance="12600"/>
+		<item name="strong mana potion" chance="13400"/>
+		<item name="terra mantle" chance="13200"/>
+		<item name="white pearl" chance="12400"/>
+		<item name="giant amethyst" chance="3600"/>
+		<item name="prismatic ring" chance="3600"/>
+		<item name="umbral masterblade" chance="3600"/>
+	</loot>
+</monster>

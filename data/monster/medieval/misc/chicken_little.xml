@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Chicken Little)" namedescription="a chicken" race="blood" experience="0" speed="330">
+	<health now ="240" max ="240"/>
+	<look type="663" corpse="13784"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="0"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<defenses armor ="45" defense ="45"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Gokgoooook"/>
+		<voice sentence="Cluck Cluck"/>
+	</voices>
+	<loot>
+		<item id="2695" chance="10400"/><!-- egg-->
+		<item name="chicken feather" countmax="3" chance="18800"/>
+		<item name="meat" countmax="2" chance="16200"/>
+		<item name="worm" countmax="3" chance="17200"/>
+
+
+
+	</loot>
+</monster>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Screamer)" nameDescription="a Screamer" race="fire" experience="19200" speed="350">
+	<health now ="9600" max ="9600"/>
+	<look type="542" corpse="13431"/>
+	<targetchange interval="4000" chance="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-77" max ="-903"/>
+		<attack name="death" interval="2000" chance ="23" target ="1" radius ="4" range ="5" min ="-108" max ="-450"><!-- area -->
+			<attribute key="shootEffect" value="death"/>
+			<attribute key="areaEffect" value="bats"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="23" target ="1" range ="1" min ="-108" max ="-450"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="26" target ="1" radius ="4" range ="3" min ="-128" max ="-452"><!-- area -->
+			<attribute key="shootEffect" value="death"/>
+			<attribute key="areaEffect" value="bats"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="26" target ="1" range ="1" min ="-128" max ="-452"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="95" defense ="95">
+		<defense name="healing" interval="2000" chance="15" min="180" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="320" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="30"/>
+		<element deathPercent="30"/>
+		<element energyPercent="50"/>
+		<element earthPercent="40"/>
+		<element icePercent="-10"/>
+		<element holyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>	
+	<voices interval="5000" chance="10">
+		<voice sentence="Your soul will be mine!"/>
+		<voice sentence="MUHAHAHAHA!"/>
+		<voice sentence="CHAMEK ATH UTHUL ARAK!"/>
+		<voice sentence="I SMELL FEEEEAAAAAR!"/>
+		<voice sentence="Your resistance is futile!"/>
+	</voices>
+	<loot>
+		<item id="5906" countmax="3" chance="15200"/><!-- demon dust-->
+		<item id="7393" chance="12800"/><!-- demon trophy-->
+		<item name="crystal coin" countmax="4" chance="18400"/>
+		<item name="demon shield" chance="12400"/>
+		<item name="demonrage sword" chance="12000"/>
+		<item name="fire mushroom" countmax="6" chance="19400"/>
+		<item name="great mana potion" countmax="3" chance="20000"/>
+		<item name="great spirit potion" countmax="3" chance="19800"/>
+		<item name="magic plate armor" chance="10800"/>
+		<item name="mastermind shield" chance="17200"/>
+		<item name="ultimate health potion" countmax="3" chance="13400"/>
+		<item name="Golden Marble" chance="2800"/>
+		<item name="wolf backpack" chance="2800"/>
+		<item name="guardian axe" chance="2800"/>
+		
+	</loot>
+</monster>

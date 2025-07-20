@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Winged Vermin)" namedescription="a brimstone bug" race="venom" experience="63000" speed="420">
+	<health now ="31500" max ="31500"/>
+	<look type="631" corpse="13689"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-95" max ="-1469"/>
+		<attack name="earth" interval="2000" chance ="20" target ="0" length ="6" spread ="3" min ="-71" max ="-740"><!-- wave -->
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+
+		<attack name="manadrain" interval="2000" chance ="20" target ="1" range ="5" min ="-105" max ="-733"><!-- mana -->
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="20" target ="1" range ="1" min ="-105" max ="-733"><!-- physical -->
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65"/>
+	<elements>
+		<element firePercent="-10"/>
+		<element icePercent="-10"/>
+		<element holyPercent="-10"/>
+		<element energyPercent="-10"/>
+		<element physicalPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity death="1"/>
+		<immunity earth="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Chrrr!"/>
+	</voices>
+	<loot>
+		<item name="black centurion legs" chance="2300"/>
+		<item name="black centurion shield" chance="2800"/>
+		<item name="crystal coin" countmax="5" chance="23000"/>
+		<item name="platinum amulet" chance="16000"/>
+		<item name="small emerald" countmax="4" chance="22200"/>
+		<item name="stealth ring" chance="16800"/>
+		<item name="green memory shard" chance="3800"/>
+		<item name="Summoner Mount outfit scroll" chance="3800"/>
+		<item name="crest of the deep seas" chance="3800"/>
+	</loot>
+</monster>

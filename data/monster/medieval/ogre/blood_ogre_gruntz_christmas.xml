@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Blood Ogre Gruntz Christmas)" nameDescription="a blood ogre gruntz christmas" race="blood" experience="63000" speed="470">
+	<health now ="31500" max ="31500"/>
+	<look type="672" corpse="13808"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-117" max ="-1461"/>
+		<attack name="death" interval="2000" chance ="25" target ="1" range ="1" min ="-139" max ="-743"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="17" target ="1" range ="1" min ="-109" max ="-762"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="26" target ="1" range ="1" min ="-81" max ="-724"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="60" defense ="60"/>
+	<elements>
+		<element energyPercent="25"/>
+		<element holyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Il lorstok human!"/>
+		<voice sentence="Toks utat."/>
+		<voice sentence="Human, uh whil dyh!"/>
+		<voice sentence="Youh ah trak!"/>
+		<voice sentence="Let da mashing begin!"/>
+	</voices>
+	<loot>		
+		<item name="ogre axe" chance="2800"/>
+		<item id="7398" chance="14000"/><!-- cyclops trophy-->
+		<item id="13067" chance="100000"/><!-- surprise bag-->
+		<item name="club ring" chance="14000"/>
+		<item name="crystal coin" countmax="5" chance="21800"/>
+		<item name="health potion" chance="16800"/>
+		<item name="meat" chance="18400"/>
+		<item name="Ultimate UH rune" countmax="5" chance="2400"/>
+		<item name="Warrior Mount outfit scroll" chance="3800"/>
+		<item name="vampire silk slippers" chance="3800"/>
+	</loot>
+</monster>

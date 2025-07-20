@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Crystal Bug)" nameDescription="a crystal bug" race="venom" experience="6400" speed="360">
+	<health now ="3200" max ="3200"/>
+	<look type="628" corpse="13682"/>
+	<targetchange interval="4000" chance="15" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag staticattack="80" />
+		<flag lightlevel="0" />
+		<flag lightcolor="0" />
+		<flag targetdistance="1" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="1" />
+		<flag canwalkonpoison="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-51" max ="-312"/>
+		<attack name="ice" interval="2000" chance ="39" target ="0" length ="6" spread ="3" min ="-107" max ="-142"><!-- wave -->
+			<attribute key="areaEffect" value="icearea"/>
+		</attack>
+
+		<attack name="manadrain" interval="2000" chance ="33" target ="1" range ="5" min ="-42" max ="-185"><!-- mana -->
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="33" target ="1" range ="1" min ="-42" max ="-185"><!-- physical -->
+			<attribute key="shootEffect" value="snowball"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="83" defense ="40">
+		<defense name="speed" interval="2000" chance="15" speedchange="250" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="20" />
+		<element energyPercent="-20" />
+	</elements>
+	<immunities>
+		<immunity fire="1" />
+		<immunity ice="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Screeech!" />
+	</voices>
+	<loot>
+		<item id="2124" chance="10000"/><!-- crystal ring-->
+		<item id="2169" chance="22000"/><!-- time ring-->
+		<item name="crystal coin" countmax="2" chance="28200"/>
+		<item name="crystal necklace" chance="18200"/>
+		<item name="crystal sword" chance="18400"/>
+		<item name="glacier mask" chance="21200"/>
+		<item name="jewelled backpack" chance="9400"/>
+		<item name="knight armor" chance="17200"/>
+		<item name="knight legs" chance="16000"/>
+		<item name="platinum amulet" chance="10400"/>
+		<item name="sapphire hammer" chance="23000"/>
+		<item name="shard" chance="19600"/>
+		<item name="sniper arrow" countmax="6" chance="10800"/>
+		<item name="spider silk" chance="18800"/>
+		<item name="steel helmet" chance="17400"/>
+		<item name="strong mana potion" chance="14000"/>
+		<item name="Ultimate UH rune" countmax="5" chance="2300"/>
+		<item name="book backpack" chance="2300"/>
+		<item name="training bow" chance="2300"/>
+	</loot>
+</monster>

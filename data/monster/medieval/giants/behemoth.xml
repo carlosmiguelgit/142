@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Behemoth)" nameDescription="a behemoth" race="blood" experience="91000" speed="550">
+	<health now ="45500" max ="45500"/>
+	<look type="644" corpse="13728"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-99" max ="-1450"/>
+		<attack name="earth" interval="2000" chance ="34" target ="1" range ="1" min ="-68" max ="-704"><!-- shot meele -->
+			<attribute key="shootEffect" value="smallearth"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="16" target ="1" range ="1" min ="-61" max ="-717"><!-- physical -->
+			<attribute key="shootEffect" value="smallearth"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="33" target ="1" range ="1" min ="-127" max ="-749"><!-- shot meele -->
+			<attribute key="shootEffect" value="smallearth"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="85" defense ="85">
+		<defense name="speed" interval="2000" chance="15" speedchange="300" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="80"/>
+		<element holyPercent="30"/>
+		<element firePercent="30"/>
+		<element energyPercent="10"/>
+		<element physicalPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="You're so little!"/>
+		<voice sentence="Human flesh -  delicious!"/>
+		<voice sentence="Crush the intruders!"/>
+	</voices>
+	<loot>		
+		<item name="black wizard armor" chance="1800"/>
+		<item name="black wizard sword" chance="2500"/>
+		<item name="black wizard shield" chance="2600"/>
+		<item name="black wizard helmet" chance="2700"/>
+		<item name="black wizard bow" chance="2200"/>
+		<item name="battle stone" chance="13000"/>
+		<item name="behemoth claw" chance="10400"/>
+		<item name="crystal coin" countmax="6" chance="15800"/>
+		<item name="giant sword" chance="23200"/>
+		<item name="great health potion" chance="15400"/>
+		<item name="perfect behemoth fang" chance="14600"/>
+		<item name="small amethyst" countmax="5" chance="17000"/>
+		<item name="titan axe" chance="20200"/>
+		<item name="violet memory shard" chance="3700"/>
+		<item name="Blood Warior outfit scroll" chance="3700"/>
+		<item name="Gnomevil's hat" chance="3700"/>
+	</loot>
+</monster>

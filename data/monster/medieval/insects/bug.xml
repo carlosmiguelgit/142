@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Bug)" namedescription="a bug" race="venom" experience="1280" speed="370">
+	<health now ="640" max ="640"/>
+	<look type="619" corpse="13655"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-11" max ="-152"/>
+		<attack name="physical" interval="2000" chance ="39" target ="1" range ="1" min ="-67" max ="-62"><!-- physical -->
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="32" target ="1" range ="1" min ="-56" max ="-99"><!-- shot meele -->
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="45" defense ="45"/>
+	<elements>
+		<element firePercent="-10"/>
+	</elements>
+	<loot>
+		<item name="cherry" countmax="3" chance="10000"/>
+		<item name="platinum coin" countmax="11" chance="61000"/>
+
+
+
+	</loot>
+</monster>

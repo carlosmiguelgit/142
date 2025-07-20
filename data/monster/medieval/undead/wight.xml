@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Wight)" nameDescription="a wight" race="undead" experience="21600" speed="370">
+	<health now ="10800" max ="10800"/>
+	<look type="752" corpse="14034"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="500"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-95" max ="-896"/>
+		<attack name="death" interval="2000" chance ="36" target ="1" range ="1" min ="-106" max ="-456"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="37" target ="1" range ="1" min ="-110" max ="-479"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="39" target ="1" range ="1" min ="-69" max ="-485"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65">
+		<defense name="healing" interval="2000" chance="15" min="120" max="190">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Dance for me your dance of death!"/>
+		<voice sentence="Let the music play!"/>
+		<voice sentence="I will mourn your death!"/>
+		<voice sentence="Are you ready to rock?"/>
+		<voice sentence="Feel my gentle kiss of death."/>
+		<voice sentence="That's what I call easy listening!"/>
+		<voice sentence="IIIIEEEeeeeeehhhHHHH!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2124" chance="21200"/><!-- crystal ring-->
+		<item id="2175" chance="19400"/><!-- spellbook-->
+		<item name="black pearl" chance="19800"/>
+		<item name="blue robe" chance="12800"/>
+		<item name="crystal coin" countmax="4" chance="27000"/>
+		<item name="hair of a banshee" chance="11400"/>
+		<item name="red robe" chance="13800"/>
+		<item name="ring of healing" chance="15200"/>
+		<item name="stone skin amulet" chance="21200"/>
+		<item name="strong mana potion" chance="14400"/>
+		<item name="terra mantle" chance="22200"/>
+		<item name="wedding ring" chance="19400"/>
+		<item name="white pearl" chance="28400"/>
+		<item name="Ultimate death magic missile rune" countmax="5" chance="2800"/>
+		<item name="sample of monster blood" chance="2800"/>
+		<item name="runic ice shield" chance="3600"/>
+	</loot>
+</monster>

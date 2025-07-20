@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dark Goblin)" nameDescription="a dark goblin" race="blood" experience="4080" speed="390">
+	<health now ="2040" max ="2040"/>
+	<look type="615" corpse="13644"/>
+	<targetchange interval="10000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-63" max ="-238"/>
+		<attack name="death" interval="2000" chance ="39" target ="1" range ="6" min ="-33" max ="-137"><!-- shot -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="lifedrain" interval="2000" chance ="28" target ="1" range ="4" min ="-52" max ="-163"><!-- life -->
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="28" target ="1" range ="1" min ="-52" max ="-163"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55">
+		<defense name="invisible" interval="2000" chance="10" duration="2000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="100" duration="3000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element holyPercent="1"/>
+		<element deathPercent="-1"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Goblin Powahhh!"/>
+		<voice sentence="Me kill you!"/>
+		<voice sentence="Me green menace!"/>
+		<voice sentence="Gobabunga!"/>
+		<voice sentence="Gooobliiiins!"/>
+	</voices>
+	<loot>
+		<item id="2667" chance="10800"/><!-- fish-->
+		<item name="platinum coin" countmax="67" chance="69400"/>
+		<item name="small stone" countmax="3" chance="15000"/>
+		<item name="supreme health potion" countmax="5" chance="3300"/>
+		<item name="essence of wishful thinking" chance="3300"/>
+		<item name="training sword" chance="3300"/>
+	</loot>
+</monster>

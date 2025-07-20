@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Corrupted Spiderling)" nameDescription="a Corrupted Spiderling" race="venom" experience="2340" speed="340">
+	<health now ="1170" max ="1170"/>
+	<look type="507" corpse="13336"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-50" max ="-176"/>
+		<attack name="physical" interval="2000" chance ="37" target ="1" range ="1" min ="-24" max ="-125"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="37" target ="1" range ="1" min ="-1" max ="-72"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50">
+		<defense name="speed" interval="2000" chance="15" speedchange="220" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="10"/>
+		<element firePercent="-15"/>
+		<element icePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+	</immunities>
+	<loot>
+		<item id="2169" chance="18200"/><!-- time ring-->
+		<item name="platinum coin" countmax="23" chance="50600"/>
+		<item name="spider fangs" chance="13000"/>
+		<item name="steel helmet" chance="22000"/>
+		<item name="tarantula egg" chance="11600"/>
+
+
+
+	</loot>
+</monster>

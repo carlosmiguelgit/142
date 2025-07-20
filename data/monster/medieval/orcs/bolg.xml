@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Bolg)" nameDescription="a bolg" race="blood" experience="192000" speed="470">
+	<health now ="96000" max ="96000"/>
+	<look type="682" corpse="13838"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-131" max ="-2007"/>
+		<attack name="physical" interval="2000" chance ="20" target ="1" range ="1" min ="-118" max ="-1044"><!-- physical -->
+			<attribute key="shootEffect" value="drillbolt"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="19" target ="1" range ="1" min ="-118" max ="-1010"><!-- shot meele -->
+			<attribute key="shootEffect" value="drillbolt"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="32" target ="1" range ="1" min ="-148" max ="-1017"><!-- physical -->
+			<attribute key="shootEffect" value="drillbolt"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="24" target ="1" range ="1" min ="-149" max ="-983"><!-- shot meele -->
+			<attribute key="shootEffect" value="drillbolt"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="75" defense ="75">
+		<defense name="invisible" interval="2000" chance="5" duration="3000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="80"/>
+		<element energyPercent="20"/>
+		<element holyPercent="10"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Ranat Ulderek!"/>
+		<voice sentence="Orc buta bana!"/>
+		<voice sentence="Ikem rambo zambo!"/>
+		<voice sentence="Fetchi Maruk Buta"/>
+	</voices>
+	<loot>
+		<item name="dark warrior helmet" chance="1500"/>
+		<item name="dark warrior twin axe" chance="2700"/>
+		<item name="dark warrior armor" chance="2700"/>
+		<item name="dark warrior axe" chance="2900"/>
+		<item name="dark warrior hammer" chance="2600"/>
+		<item name="dark warrior bow" chance="2200"/>
+		<item name="magic warrior sword" chance="2800"/>
+		<item id="7395" chance="15200"/><!-- orc trophy-->
+		<item name="crusader helmet" chance="14800"/>
+		<item name="crystal coin" countmax="10" chance="30000"/>
+		<item name="dragon hammer" chance="16400"/>
+		<item name="gold ring" chance="11400"/>
+		<item name="health potion" chance="11600"/>
+		<item name="magma boots" chance="13000"/>
+		<item name="orc leather" chance="14600"/>
+		<item name="orc tooth" chance="15200"/>
+		<item name="stealth ring" chance="10800"/>
+		<item name="giant ruby" chance="2000"/>
+		<item name="prismatic necklace" chance="2000"/>
+		<item name="falcon coif" chance="2000"/>
+	</loot>
+</monster>

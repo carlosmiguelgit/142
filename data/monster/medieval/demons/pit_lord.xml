@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Pit Lord)" nameDescription="a Pit Lord" race="fire" experience="56000" speed="480">
+	<health now ="28000" max ="28000"/>
+	<look type="548" corpse="13449"/>
+	<targetchange interval="4000" chance="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="fire" interval="2000" chance ="33" target ="1" range ="4" min ="-74" max ="-761">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="33" target ="0" radius ="3" min ="-74" max ="-761"><!-- ground -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="manadrain" interval="2000" chance ="19" target ="1" range ="6" min ="-126" max ="-738"><!-- mana -->
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="95" defense ="95">
+		<defense name="healing" interval="2000" chance="15" min="180" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="320" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="30"/>
+		<element deathPercent="30"/>
+		<element energyPercent="50"/>
+		<element earthPercent="40"/>
+		<element icePercent="-10"/>
+		<element holyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="1">
+		<summon name="fire elemental" interval="2000" chance="10"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Your soul will be mine!"/>
+		<voice sentence="MUHAHAHAHA!"/>
+		<voice sentence="CHAMEK ATH UTHUL ARAK!"/>
+		<voice sentence="I SMELL FEEEEAAAAAR!"/>
+		<voice sentence="Your resistance is futile!"/>
+	</voices>
+	<loot>		
+		<item name="lost demon shield" chance="3000"/>
+		<item id="5906" countmax="3" chance="19200"/><!-- demon dust-->
+		<item name="crystal coin" countmax="7" chance="12200"/>
+		<item name="demon shield" chance="23400"/>
+		<item name="demonic essence" chance="13800"/>
+		<item name="great mana potion" countmax="3" chance="17800"/>
+		<item name="great spirit potion" countmax="3" chance="17200"/>
+		<item name="mastermind shield" chance="12400"/>
+		<item name="red gem" chance="26200"/>
+		<item name="small amethyst" countmax="5" chance="15600"/>
+		<item name="small emerald" countmax="5" chance="10800"/>
+		<item name="small ruby" countmax="5" chance="29800"/>
+		<item name="small topaz" countmax="5" chance="28200"/>
+		<item name="ultimate health potion" countmax="3" chance="10600"/>
+		<item name="Turqoise Marble" chance="2800"/>
+		<item name="prismatic bolt" countmax="80" chance="2800"/>
+		<item name="cheetah legs" chance="2800"/>
+	</loot>
+</monster>

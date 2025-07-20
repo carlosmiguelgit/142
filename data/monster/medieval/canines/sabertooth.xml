@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Sabertooth)" nameDescription="a Sabertooth" race="blood" experience="21600" speed="360">
+	<health now ="10800" max ="10800"/>
+	<look type="530" corpse="13401"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="100"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-75" max ="-883"/>
+		<attack name="energy" interval="2000" chance ="29" target ="1" radius ="3" range ="5" min ="-96" max ="-464"><!-- area -->
+			<attribute key="shootEffect" value="powerbolt"/>
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+
+		<attack name="lifedrain" interval="2000" chance ="28" target ="1" range ="6" min ="-99" max ="-422"><!-- life -->
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+
+		<attack name="energy" interval="2000" chance ="28" target ="1" range ="1" min ="-99" max ="-422"><!-- shot meele -->
+			<attribute key="shootEffect" value="powerbolt"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65">
+		<defense name="invisible" interval="2000" chance="10" duration="2000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="2000" chance="10" min="150" max="300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="20"/>
+		<element energyPercent="20"/>
+		<element icePercent="20"/>
+		<element deathPercent="-5"/>
+		<element earthPercent="80"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="GRAAARRRRRR"/>
+		<voice sentence="CHHHHHHHHHHH"/>
+	</voices>
+	<loot>
+		<item name="angelic axe" chance="18400"/>
+		<item name="crystal coin" countmax="5" chance="14600"/>
+		<item name="glorious axe" chance="21200"/>
+		<item name="guardian shield" chance="22400"/>
+		<item name="life ring" chance="22400"/>
+		<item name="meat" countmax="2" chance="13200"/>
+		<item name="strong health potion" chance="14800"/>
+		<item name="Ultimate UH rune" countmax="5" chance="2100"/>
+		<item name="amulet of theurgy" chance="2100"/>
+		<item name="royal mage armor" chance="3400"/>
+	</loot>
+</monster>

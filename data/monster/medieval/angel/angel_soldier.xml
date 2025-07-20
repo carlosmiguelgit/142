@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Angel Soldier)" nameDescription="an Angel Soldier" race="blood" experience="110000" speed="410">
+	<health now ="55000" max ="55000"/>
+	<look type="490" corpse="13288"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-91" max ="-1740"/>
+		<attack name="holy" interval="2000" chance ="18" target ="1" range ="4" min ="-140" max ="-879"><!-- shot -->
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="18" target ="1" range ="1" min ="-140" max ="-879"><!-- physical -->
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+
+		<attack name="holy" interval="2000" chance ="20" target ="0" length ="6" spread ="3" min ="-137" max ="-848"><!-- wave -->
+			<attribute key="areaEffect" value="holydamage"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="20" target ="1" range ="1" min ="-137" max ="-848"><!-- physical -->
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="80" defense ="80">
+		<defense name="healing" interval="2000" chance="20" min="200" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="40"/>
+		<element icePercent="10"/>
+		<element firePercent="30"/>
+		<element holyPercent="50"/>
+		<element earthPercent="50"/>
+		<element physicalPercent="30"/>
+		<element deathPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Let's have a fight!"/>
+		<voice sentence="Welcome to my battleground!"/>
+		<voice sentence="Have you seen princess Lumelia?"/>
+		<voice sentence="I will sing a tune at your grave."/>
+	</voices>
+	
+	<loot>
+		<item name="angel helmet" chance="1600"/>
+		<item name="angel armor" chance="1800"/>
+		<item name="angel shield" chance="2100"/>
+		<item name="angel wand" chance="2200"/>
+		<item name="angel legs" chance="2300"/>
+		<item name="angel bow" chance="3000"/>
+		<item name="angel boots" chance="3000"/>
+		<item name="angel sword" chance="2600"/>
+		<item name="arrow" countmax="13" chance="11400"/>
+		<item name="crystal coin" countmax="12" chance="16000"/>
+		<item name="grapes" chance="15000"/>
+		<item name="might ring" chance="14200"/>
+		<item name="wedding ring" chance="16600"/>
+		<item name="white piece of cloth" chance="19000"/>
+		<item name="giant amethyst" chance="2100"/>
+		<item name="diamond arrow" countmax="80" chance="2100"/>
+		<item name="mycological bow" chance="2100"/>
+	</loot>
+</monster>

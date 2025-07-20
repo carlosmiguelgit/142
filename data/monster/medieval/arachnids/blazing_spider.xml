@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Blazing Spider)" nameDescription="a Blazing Spider" race="venom" experience="9600" speed="310">
+	<health now ="4800" max ="4800"/>
+	<look type="505" corpse="13330"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-95" max ="-586"/>
+		<attack name="physical" interval="2000" chance ="37" target ="1" range ="1" min ="-69" max ="-330"><!-- physical -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="37" target ="1" range ="1" min ="-46" max ="-277"><!-- shot meele -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50">
+		<defense name="speed" interval="2000" chance="15" speedchange="220" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="10"/>
+		<element firePercent="55"/>
+		<element icePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+	</immunities>
+	<loot>
+		<item id="2169" chance="18600"/><!-- time ring-->
+		<item name="crystal coin" countmax="4" chance="18000"/>
+		<item name="spider fangs" chance="14600"/>
+		<item name="tarantula egg" chance="17800"/>
+		<item name="wand of draconia" chance="12600"/>
+		<item name="blue memory shard" chance="2300"/>
+		<item name="gleaming starlight vial" chance="2300"/>
+		<item name="wereboar loincloth" chance="3700"/>
+	</loot>
+</monster>

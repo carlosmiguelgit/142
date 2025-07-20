@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Frost Mage" nameDescription="a frost mage" race="blood" speed="0" >
+	<health now="500" max="500" />
+	<look type="766" head="87" body="67" legs="0" feet="114" corpse="0"/>
+	<targetchange interval="4000" chance="20" />
+	<flags>		
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="0" />
+		<flag illusionable="0" />
+		<flag convinceable="1" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag staticattack="98" />
+		<flag targetdistance="0" />
+		<flag runonhealth="0" />
+	</flags>
+	
+	<script>
+        <event name="frost1"/>
+    </script>
+	
+	
+	<defenses armor ="5" defense ="5"/>
+		
+</monster>

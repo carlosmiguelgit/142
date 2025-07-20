@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Shakirian Prayer)" nameDescription="a shakirian prayer" race="undead" experience="144000" speed="450">
+	<health now ="72000" max ="72000"/>
+	<look type="738" corpse="13994"/>
+	<targetchange interval="4000" chance="15"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="450"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="death" interval="2000" chance ="36" target ="1" range ="4" min ="-87" max ="-1049">
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="36" target ="1" radius ="4" range ="4" min ="-87" max ="-1049"><!-- area -->
+			<attribute key="shootEffect" value="death"/>
+			<attribute key="areaEffect" value="bats"/>
+		</attack>
+
+		<attack name="manadrain" interval="2000" chance ="26" target ="1" range ="4" min ="-149" max ="-1055"><!-- mana -->
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="18" target ="1" range ="4" min ="-98" max ="-1000">
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="18" target ="1" range ="4" min ="-98" max ="-1000"><!-- shot -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="manadrain" interval="2000" chance ="39" target ="1" range ="6" min ="-100" max ="-1018"><!-- mana -->
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70"/>
+	<elements>
+		<element icePercent="50"/>
+		<element energyPercent="10"/>
+		<element holyPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Forgive Meee!"/>
+		<voice sentence="Mouuuurn meeee!"/>
+		<voice sentence="Help meee!"/>
+	</voices>
+	<loot>
+		<item name="black wizard shield" chance="1800"/>
+		<item name="black wizard armor" chance="2200"/>
+		<item name="black wizard wand" chance="2000"/>
+		<item name="black pearl" countmax="3" chance="26800"/>
+		<item name="crystal coin" countmax="15" chance="25400"/>
+		<item name="demonic essence" chance="13400"/>
+		<item name="haunted blade" chance="11400"/>
+		<item name="red gem" chance="20200"/>
+		<item name="ruby necklace" chance="13000"/>
+		<item name="skull helmet" chance="13800"/>
+		<item name="skull staff" chance="16600"/>
+		<item name="titan axe" chance="13800"/>
+		<item name="tower shield" chance="18000"/>
+		<item name="unholy bone" chance="10800"/>
+		<item name="white pearl" countmax="3" chance="24400"/>
+		<item name="white gem" chance="3000"/>
+		<item name="necklace of the deep" chance="3000"/>
+		<item name="embrace of nature" chance="3000"/>
+		
+	</loot>
+</monster>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Tortoise)" nameDescription="a tortoise" race="blood" experience="2160" speed="380">
+	<health now ="1080" max ="1080"/>
+	<look type="665" corpse="13790"/>
+	<targetchange interval="5000" chance="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="0" />
+		<flag staticattack="90" />
+		<flag targetdistance="1" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-17" max ="-184"/>
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="-51" max ="-118"><!-- physical -->
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="24" target ="1" range ="1" min ="-15" max ="-105"><!-- shot meele -->
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70"/>
+	<elements>
+		<element physicalPercent="35" />
+		<element icePercent="20" />
+		<element earthPercent="20" />
+		<element firePercent="-10" />
+	</elements>
+	<loot>
+		<item id="2667" chance="14200"/><!-- fish-->
+		<item name="platinum coin" countmax="24" chance="54200"/>
+		<item name="tortoise egg" countmax="2" chance="11600"/>
+		<item name="tortoise shield" chance="22200"/>
+		<item name="turtle shell" chance="12600"/>
+
+
+
+	</loot>
+</monster>

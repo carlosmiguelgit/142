@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Skull Reaper)" nameDescription="a skull reaper" race="undead" experience="77000" speed="410">
+	<health now ="38500" max ="38500"/>
+	<look type="604" corpse="13612"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-99" max ="-1450"/>
+		<attack name="energy" interval="2000" chance ="34" target ="1" range ="6" min ="-68" max ="-704"><!-- shot -->
+			<attribute key="shootEffect" value="energyball"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-68" max ="-704"><!-- physical -->
+			<attribute key="shootEffect" value="energyball"/>
+		</attack>
+
+		<attack name="energy" interval="2000" chance ="33" target ="0" length ="6" spread ="3" min ="-127" max ="-749"><!-- wave -->
+			<attribute key="areaEffect" value="energyarea"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="33" target ="1" range ="1" min ="-127" max ="-749"><!-- physical -->
+			<attribute key="shootEffect" value="energyball"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70">
+		<defense name="invisible" interval="2000" chance="5" duration="3000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="2000" chance="15" min="120" max="125">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element holyPercent="-10"/>
+		<element icePercent="50"/>
+		<element firePercent="-10"/>
+		<element energyPercent="-10"/>
+		<element physicalPercent="70"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity death="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Life is such a fickle thing!"/>
+		<voice sentence="I will devour your soul."/>
+		<voice sentence="Souuuls!"/>
+		<voice sentence="I will feed on you."/>
+		<voice sentence="Aaaahh"/>
+	</voices>
+	<loot>
+		<item name="black wizard hammer" chance="1700"/>
+		<item name="black wizard helmet" chance="1700"/>
+		<item name="black wizard axe" chance="2000"/>
+		<item id="6300" chance="10200"/><!-- death ring-->
+		<item name="crystal coin" countmax="5" chance="17000"/>
+		<item name="ectoplasmic sushi" chance="11800"/>
+		<item name="necrotic rod" chance="10600"/>
+		<item name="spirit container" chance="14200"/>
+		<item name="wand of cosmic energy" chance="11000"/>
+		<item name="Versicoloured Marble" chance="2900"/>
+		<item name="blue quiver" chance="2900"/>
+		<item name="grasshopper legs" chance="2900"/>
+	</loot>
+</monster>

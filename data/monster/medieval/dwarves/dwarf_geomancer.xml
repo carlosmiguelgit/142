@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dwarf Geomancer)" nameDescription="a dwarf geomancer" race="blood" experience="13200" speed="310">
+	<health now ="6600" max ="6600"/>
+	<look type="577" corpse="13535"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="110"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="earth" interval="2000" chance ="34" target ="1" range ="6" min ="-47" max ="-295">
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="34" target ="0" length ="6" spread ="3" min ="-47" max ="-295"><!-- wave -->
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55">
+		<defense name="healing" interval="2000" chance="40" min="75" max="125">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="20"/>
+		<element firePercent="60"/>
+		<element energyPercent="10"/>
+		<element holyPercent="10"/>
+		<element icePercent="-5"/>
+		<element deathPercent="-1"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hail Durin!"/>
+		<voice sentence="Earth is the strongest element."/>
+		<voice sentence="Dust to dust."/>
+	</voices>
+	<loot>
+		<item name="royal dwarf armor" chance="2800"/>
+		<item name="crystal coin" countmax="2" chance="29200"/>
+		<item name="dwarven ring" chance="10000"/>
+		<item name="iron ore" chance="19000"/>
+		<item name="pear" chance="22400"/>
+		<item name="small sapphire" chance="26400"/>
+		<item name="terra boots" chance="14800"/>
+		<item name="white mushroom" countmax="2" chance="17800"/>
+		<item name="Ultimate UH rune" countmax="5" chance="2200"/>
+		<item name="backpack for Destroy field" chance="2200"/>
+		<item name="spark sphere" chance="2200"/>
+	</loot>
+</monster>

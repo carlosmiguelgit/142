@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="(Grinch Christmas)" nameDescription="Grinch Christmas" race="blood" experience="400000" speed="520">
+	<health now ="200000" max ="200000"/>
+	<look type="522" corpse="13377" />
+	<targetchange interval="2000" chance="5"/>
+	<flags>		
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-1031" max ="-5025"/>
+		<attack name="earth" interval="2000" chance ="23" target ="1" radius ="3" range ="5" min ="-1011" max ="-2496"><!-- area -->
+			<attribute key="shootEffect" value="drillbolt"/>
+			<attribute key="areaEffect" value="carniphila"/>
+		</attack>
+
+		<attack name="lifedrain" interval="2000" chance ="16" target ="1" range ="6" min ="-996" max ="-2504"><!-- life -->
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="16" target ="1" range ="1" min ="-996" max ="-2504"><!-- shot meele -->
+			<attribute key="shootEffect" value="drillbolt"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="16" target ="0" length ="6" spread ="3" min ="-1029" max ="-2522"><!-- wave -->
+			<attribute key="areaEffect" value="carniphila"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="16" target ="1" range ="1" min ="-1029" max ="-2522"><!-- shot meele -->
+			<attribute key="shootEffect" value="drillbolt"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="85" defense ="105">
+		<defense name="speed" interval="2000" chance="8" speedchange="790" duration="10000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="healing" interval="2000" chance="25" min="600" max="1090">
+			<attribute key="areaEffect" value="fire"/>
+		</defense>
+	</defenses>
+  	<elements>
+    		<element earthPercent="30" />
+    		<element icePercent="10" />
+    		<element deathPercent="-10" />
+    		<element energyPercent="-7" />
+    		<element holyPercent="-3" />
+  	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="HATE! HATE! KILL! KILL!" yell="1"/>
+		<voice sentence="GRRAAARRRHH!" yell="1"/>
+		<voice sentence="GRRRR!" yell="1"/>
+	</voices>
+	<loot>
+		<item name="ancestral emerald axe" chance="5000"/>
+		<item id="2452" chance="14200"/><!-- heavy mace-->
+		<item id="2466" chance="21800"/><!-- golden armor-->
+		<item id="2522" chance="19400"/><!-- great shield-->
+		<item id="7403" chance="23400"/><!-- berserker-->
+		<item id="13067" chance="100000"/><!-- surprise bag-->
+		<item name="giant amethyst" chance="3300"/>
+		<item name="prismatic ring" chance="3300"/>
+		<item name="summerblade" chance="3300"/>
+	</loot>
+</monster>

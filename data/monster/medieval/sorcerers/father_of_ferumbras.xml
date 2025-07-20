@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Father of Ferumbras)" nameDescription="a father of ferumbras" race="undead" experience="520000" speed="520">
+	<health now ="260000" max ="260000"/>
+	<look type="740" corpse="13999"/>
+	<targetchange interval="4000" chance="15"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="450"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="fire" interval="2000" chance ="36" target ="1" range ="4" min ="-987" max ="-2549">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="36" target ="1" radius ="4" range ="4" min ="-987" max ="-2549"><!-- area -->
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="manadrain" interval="2000" chance ="26" target ="1" range ="4" min ="-1049" max ="-2555"><!-- mana -->
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="18" target ="1" range ="4" min ="-998" max ="-2500">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="18" target ="1" range ="4" min ="-998" max ="-2500"><!-- shot -->
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+
+		<attack name="manadrain" interval="2000" chance ="39" target ="1" range ="6" min ="-1000" max ="-2518"><!-- mana -->
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70"/>
+	<elements>
+		<element icePercent="50"/>
+		<element energyPercent="10"/>
+		<element holyPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Forgive Meee!"/>
+		<voice sentence="Mouuuurn meeee!"/>
+		<voice sentence="Help meee!"/>
+	</voices>
+	<loot>
+		<item name="corrupted demon srmor" chance="2000"/>
+		<item name="corrupted demon hammer" chance="2200"/>
+		<item name="corrupted demon legs" chance="3400"/>
+		<item name="corrupted demon shield" chance="3800"/>
+		<item name="corrupted demon helmet" chance="4000"/>
+		<item name="corrupted demon flaming bow" chance="4400"/>
+		<item name="corrupted demon great axe" chance="4800"/>
+		<item name="corrupted demon bloody bow" chance="5000"/>
+		<item name="black pearl" countmax="3" chance="20600"/>
+		<item name="crystal coin" countmax="20" chance="28400"/>
+		<item name="demonic essence" chance="11600"/>
+		<item name="haunted blade" chance="14400"/>
+		<item name="red gem" chance="24400"/>
+		<item name="ruby necklace" chance="23800"/>
+		<item name="skull helmet" chance="13600"/>
+		<item name="skull staff" chance="22400"/>
+		<item name="titan axe" chance="24000"/>
+		<item name="tower shield" chance="11400"/>
+		<item name="unholy bone" chance="12000"/>
+		<item name="white pearl" countmax="3" chance="12200"/>
+		<item name="giant amethyst" chance="3600"/>
+		<item name="lion crest" chance="3600"/>
+		<item name="soulbastion" chance="3600"/>
+		
+
+	</loot>
+</monster>

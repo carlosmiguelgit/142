@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Orc Warlord)" nameDescription="a orc warlord" race="blood" experience="70000" speed="490">
+	<health now ="35000" max ="35000"/>
+	<look type="679" corpse="13830"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-85" max ="-1465"/>
+		<attack name="physical" interval="2000" chance ="25" target ="1" range ="1" min ="-113" max ="-712"><!-- physical -->
+			<attribute key="shootEffect" value="poisonarrow"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="38" target ="1" range ="1" min ="-96" max ="-717"><!-- shot meele -->
+			<attribute key="shootEffect" value="poisonarrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="25" target ="1" range ="1" min ="-64" max ="-731"><!-- physical -->
+			<attribute key="shootEffect" value="poisonarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="75" defense ="75">
+		<defense name="invisible" interval="2000" chance="5" duration="3000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="80"/>
+		<element energyPercent="20"/>
+		<element holyPercent="10"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Ranat Ulderek!"/>
+		<voice sentence="Orc buta bana!"/>
+		<voice sentence="Ikem rambo zambo!"/>
+		<voice sentence="Fetchi Maruk Buta"/>
+	</voices>
+	<loot>
+		<item name="mythical mace" chance="2000"/>
+		<item name="mythical shield" chance="2400"/>
+		<item name="mythical legs" chance="3000"/>
+		<item name="mythical armor" chance="2400"/>
+		<item name="mythical boots" chance="2200"/>
+		<item name="mythical crown" chance="2600"/>
+		<item id="7395" chance="5200"/><!-- orc trophy-->
+		<item name="crusader helmet" chance="22600"/>
+		<item name="crystal coin" countmax="7" chance="29600"/>
+		<item name="dragon hammer" chance="16200"/>
+		<item name="gold ring" chance="21000"/>
+		<item name="health potion" chance="13800"/>
+		<item name="magma boots" chance="20400"/>
+		<item name="orc leather" chance="16800"/>
+		<item name="orc tooth" chance="10200"/>
+		<item name="stealth ring" chance="15000"/>
+		<item name="giant emerald" chance="2200"/>
+		<item name="wolf backpack" chance="2200"/>
+		<item name="one hit wonder" chance="2200"/>
+		
+	</loot>
+</monster>

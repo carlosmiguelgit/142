@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Orc Rider)" nameDescription="a orc rider" race="blood" experience="5120" speed="350">
+	<health now ="2560" max ="2560"/>
+	<look type="680" corpse="13832"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-55" max ="-335"/>
+		<attack name="physical" interval="2000" chance ="25" target ="1" range ="1" min ="-83" max ="-147"><!-- physical -->
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="38" target ="1" range ="1" min ="-66" max ="-152"><!-- shot meele -->
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55">
+		<defense name="speed" interval="2000" chance="15" speedchange="200" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="20"/>
+		<element holyPercent="10"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Grrrrrrr"/>
+		<voice sentence="Orc arga Huummmak!"/>
+	</voices>
+	<loot>
+		<item id="2050" chance="8000"/><!-- torch-->
+		<item name="crystal coin" chance="15400"/>
+		<item name="meat" countmax="3" chance="15600"/>
+		<item name="obsidian lance" chance="19600"/>
+		<item name="orc leather" chance="16400"/>
+		<item name="orc tooth" chance="20000"/>
+		<item name="orcish axe" chance="24000"/>
+		<item name="warwolf fur" chance="12000"/>
+		<item name="wolf tooth chain" chance="14800"/>
+		<item name="Death arcane rune" countmax="5" chance="3400"/>
+		<item name="butterfly ring" chance="3400"/>
+		<item name="heavy trident" chance="3400"/>
+	</loot>
+</monster>

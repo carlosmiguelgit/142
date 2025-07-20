@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Stone Rotworm)" nameDescription="a Stone Rotworm" race="blood" experience="4080" speed="310">
+	<health now ="2040" max ="2040"/>
+	<look type="494" corpse="13300"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-65" max ="-236"/>
+		<attack name="earth" interval="2000" chance ="37" target ="0" length ="6" spread ="3" min ="-39" max ="-155"><!-- wave -->
+			<attribute key="areaEffect" value="bigplants"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="37" target ="1" range ="1" min ="-39" max ="-155"><!-- shot meele -->
+			<attribute key="shootEffect" value="envenomedarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55"/>
+	<elements>
+		<element earthPercent="20"/>
+		<element energyPercent="10"/>
+		<element firePercent="-5"/>
+		<element icePercent="-5"/>
+	</elements>
+	<loot>
+		<item name="carrion worm fang" chance="17000"/>
+		<item name="meat" countmax="2" chance="17400"/>
+		<item name="platinum coin" countmax="64" chance="47400"/>
+		<item name="worm" countmax="2" chance="14600"/>
+		<item name="ultimate mana potion" countmax="5" chance="2300"/>
+		<item name="deepling backpack" chance="2300"/>
+		<item name="glooth cape" chance="2300"/>
+	</loot>
+</monster>

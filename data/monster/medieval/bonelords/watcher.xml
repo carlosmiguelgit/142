@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Watcher)" nameDescription="a Watcher" race="venom" experience="7040" speed="380">
+	<health now ="3520" max ="3520"/>
+	<look type="514" corpse="13356"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="1"/>
+	</flags>
+	<attacks>
+		<attack name="earth" interval="2000" chance ="24" target ="1" range ="3" min ="-93" max ="-181">
+			<attribute key="shootEffect" value="tarsalarrow"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="24" target ="0" radius ="3" min ="-93" max ="-181"><!-- ground -->
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="45" defense ="45"/>
+	<elements>
+		<element icePercent="20"/>
+		<element firePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity earth="1"/>
+	</immunities>
+	<summons maxSummons="3">
+		<summon name="(Skeleton)" interval="2000" chance="20" max="6"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Eye for eye!"/>
+		<voice sentence="Here's looking at you!"/>
+		<voice sentence="Let me take a look at you."/>
+		<voice sentence="You've got the look!"/>
+		<voice sentence="I've got to look!"/>
+	</voices>
+	<loot>
+		<item name="watcher helmet" chance="2100"/>
+		<item name="bonelord eye" chance="11400"/>
+		<item name="bonelord shield" chance="14400"/>
+		<item name="crystal coin" countmax="3" chance="26600"/>
+		<item name="terra rod" chance="16400"/>
+		<item name="ultimate spirit potion" countmax="5" chance="3900"/>
+		<item name="backpack for HMM" chance="3900"/>
+		<item name="training club" chance="3900"/>
+	</loot>
+	
+	
+</monster>

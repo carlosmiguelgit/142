@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Fledgling Dragon Lord)" nameDescription="a Fledgling Dragon Lord" race="blood" experience="14400" speed="350">
+	<health now ="7200" max ="7200"/>
+	<look type="572" corpse="13519"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="20"/>
+		<flag staticattack="90"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-95" max ="-588"/>
+		<attack name="fire" interval="2000" chance ="34" target ="0" radius ="3" min ="-48" max ="-291"><!-- ground -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-48" max ="-291"><!-- physical -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50">
+		<defense name="healing" interval="2000" chance="15" min="8" max="33">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="75"/>
+		<element icePercent="-10"/>
+		<element energyPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity fire="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Fchu?"/>
+		<voice sentence="Rooawwrr"/>
+	</voices>
+	<loot>
+		<item name="crystal coin" countmax="4" chance="20000"/>
+		<item name="dragon ham" chance="12800"/>
+		<item name="dragon's tail" chance="17800"/>
+		<item name="health potion" chance="15800"/>
+		<item name="Versicoloured Marble" chance="3800"/>
+		<item name="mushroom backpack" chance="3800"/>
+		<item name="hand" chance="3800"/>
+	</loot>
+</monster>

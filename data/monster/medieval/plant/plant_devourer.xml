@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Plant Devourer)" nameDescription="a plant devourer" race="venom" experience="3060" speed="370">
+	<health now ="1530" max ="1530"/>
+	<look type="510" corpse="13345"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-57" max ="-256"/>
+		<attack name="physical" interval="2000" chance ="31" target ="1" range ="1" min ="-51" max ="-114"><!-- physical -->
+			<attribute key="shootEffect" value="greenstar"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="29" target ="1" range ="1" min ="-31" max ="-143"><!-- shot meele -->
+			<attribute key="shootEffect" value="greenstar"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55"/>
+	<elements>
+		<element energyPercent="10"/>
+		<element icePercent="35"/>
+		<element firePercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item name="carniphila seeds" chance="14600"/>
+		<item name="corncob" chance="15000"/>
+		<item name="dark mushroom" chance="14800"/>
+		<item name="platinum coin" countmax="77" chance="33200"/>
+		<item name="seeds" chance="12800"/>
+		<item name="supreme health potion" countmax="5" chance="2700"/>
+		<item name="Vial of Hatred" chance="2700"/>
+		<item name="wand of darkness" chance="2700"/>
+	</loot>
+</monster>

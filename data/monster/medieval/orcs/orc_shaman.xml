@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Orc Shaman)" nameDescription="a orc shaman" race="blood" experience="5120" speed="370">
+	<health now ="2560" max ="2560"/>
+	<look type="674" corpse="13814"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="energy" interval="2000" chance ="31" target ="1" range ="3" min ="-41" max ="-200">
+			<attribute key="shootEffect" value="powerbolt"/>
+		</attack>
+
+		<attack name="energy" interval="2000" chance ="38" target ="1" range ="4" min ="-45" max ="-208">
+			<attribute key="shootEffect" value="powerbolt"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50">
+		<defense name="healing" interval="2000" chance="60" min="27" max="43">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="50"/>
+		<element holyPercent="25"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="4">
+		<summon name="(Snake)" interval="2000" chance="20" max="4"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Huumans stinkk!"/>
+		<voice sentence="Grak brrretz gulu."/>
+	</voices>
+	<loot>
+		<item name="broken shamanic staff" chance="12800"/>
+		<item name="corncob" countmax="2" chance="14800"/>
+		<item name="crystal coin" chance="14600"/>
+		<item name="orc leather" chance="16400"/>
+		<item name="orc tooth" chance="17600"/>
+		<item name="shamanic hood" chance="11800"/>
+		<item name="spear" chance="20600"/>
+		<item name="wand of decay" chance="22000"/>
+		<item name="Death arcane rune" countmax="5" chance="3400"/>
+		<item name="butterfly ring" chance="3400"/>
+		<item name="training club" chance="2200"/>
+		
+	</loot>
+</monster>

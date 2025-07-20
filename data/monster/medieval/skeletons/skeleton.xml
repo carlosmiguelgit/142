@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Skeleton)" nameDescription="a skeleton" race="undead" experience="2160" speed="400">
+	<health now ="1080" max ="1080"/>
+	<look type="726" corpse="13958"/>
+	<targetchange interval="4000" chance="15"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="450"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-25" max ="-188"/>
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="-24" max ="-87"><!-- shot meele -->
+			<attribute key="shootEffect" value="throwingknife"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="20" target ="1" range ="1" min ="-1" max ="-140"><!-- physical -->
+			<attribute key="shootEffect" value="throwingknife"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70"/>
+	<elements>
+		<element icePercent="50"/>
+		<element energyPercent="10"/>
+		<element holyPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Forgive Meee!"/>
+		<voice sentence="Mouuuurn meeee!"/>
+		<voice sentence="Help meee!"/>
+	</voices>
+	<loot>
+		<item id="6300" chance="21000"/><!-- death ring-->
+		<item name="black pearl" countmax="3" chance="29400"/>
+		<item name="demonic essence" chance="15400"/>
+		<item name="great health potion" countmax="2" chance="13400"/>
+		<item name="great mana potion" countmax="2" chance="10400"/>
+		<item name="haunted blade" chance="23200"/>
+		<item name="platinum coin" countmax="28" chance="30600"/>
+		<item name="red gem" chance="23800"/>
+		<item name="ruby necklace" chance="22000"/>
+		<item name="skeleton decoration" chance="19000"/>
+		<item name="skull helmet" chance="18000"/>
+		<item name="skull staff" chance="16200"/>
+		<item name="stone skin amulet" chance="11800"/>
+		<item name="titan axe" chance="17800"/>
+		<item name="tower shield" chance="16600"/>
+		<item name="unholy bone" chance="20000"/>
+		<item name="white pearl" countmax="3" chance="26600"/>
+
+
+
+	</loot>
+</monster>

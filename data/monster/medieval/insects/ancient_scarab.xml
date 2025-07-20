@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Ancient Scarab)" nameDescription="a ancient scarab" race="venom" experience="77000" speed="450">
+	<health now ="38500" max ="38500"/>
+	<look type="620" corpse="13658"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-87" max ="-1466"/>
+		<attack name="earth" interval="2000" chance ="20" target ="1" range ="6" min ="-98" max ="-771"><!-- shot -->
+			<attribute key="shootEffect" value="poisonarrow"/>
+		</attack>
+
+		<attack name="lifedrain" interval="2000" chance ="15" target ="1" range ="4" min ="-136" max ="-746"><!-- life -->
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="15" target ="1" range ="1" min ="-136" max ="-746"><!-- physical -->
+			<attribute key="shootEffect" value="poisonarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70">
+		<defense name="speed" interval="2000" chance="15" speedchange="380" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="20"/>
+		<element physicalPercent="10"/>
+		<element firePercent="-20"/>
+		<element icePercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="3">
+		<summon name="(Larva)" interval="2000" chance="10" max="3"/>
+	</summons>
+	<loot>
+		<item name="black centurion armor" chance="1800"/>
+		<item name="black centurion helmet" chance="2500"/>
+		<item name="black centurion rod" chance="2600"/>
+		<item id="2162" chance="8400"/><!-- magic light wand-->
+		<item name="ancient amulet" chance="18600"/>
+		<item name="crystal coin" countmax="6" chance="27000"/>
+		<item name="daramian waraxe" chance="15600"/>
+		<item name="scarab amulet" chance="17200"/>
+		<item name="scarab coin" countmax="2" chance="20400"/>
+		<item name="small amethyst" countmax="4" chance="27800"/>
+		<item name="small emerald" countmax="3" chance="20200"/>
+		<item name="terra hood" chance="18800"/>
+		<item name="violet crystal shard" chance="2700"/>
+		<item name="Demon outfit scroll" chance="2700"/>
+		<item name="cheetah armor" chance="2700"/>
+	</loot>
+</monster>

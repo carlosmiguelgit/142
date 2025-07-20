@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Swamp Troll)" nameDescription="a swamp troll" race="venom" experience="1800" speed="310">
+	<health now ="900" max ="900"/>
+	<look type="744" corpse="14011"/>
+	<targetchange interval="5000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-32" max ="-192"/>
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="--2" max ="-136"><!-- physical -->
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="16" target ="1" range ="1" min ="-68" max ="-94"><!-- shot meele -->
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55"/>
+	<elements>
+		<element earthPercent="5"/>
+		<element firePercent="-5"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Grrrr"/>
+		<voice sentence="Groar!"/>
+		<voice sentence="Me strong! Me ate spinach!"/>
+	</voices>
+	<loot>
+		<item id="2050" chance="10800"/><!-- torch-->
+		<item id="2667" chance="18200"/><!-- fish-->
+		<item id="5901" chance="16800"/><!-- wood-->
+		<item name="platinum coin" countmax="25" chance="35000"/>
+		<item name="spear" chance="23000"/>
+		<item name="swamp grass" chance="18200"/>
+
+
+
+	</loot>
+</monster>

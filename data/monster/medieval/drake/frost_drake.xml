@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Frost Drake)" nameDescription="a frost drake" race="blood" experience="160000" speed="500">
+	<health now ="80000" max ="80000"/>
+	<look type="565" corpse="13498"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-129" max ="-2024"/>
+		<attack name="ice" interval="2000" chance ="28" target ="1" range ="6" min ="-127" max ="-1017"><!-- shot -->
+			<attribute key="shootEffect" value="ice"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="28" target ="1" range ="1" min ="-127" max ="-1017"><!-- physical -->
+			<attribute key="shootEffect" value="ice"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="34" target ="0" radius ="4" min ="-128" max ="-992"><!-- ground -->
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-128" max ="-992"><!-- physical -->
+			<attribute key="shootEffect" value="ice"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="75" defense ="75">
+		<defense name="healing" interval="2000" chance="10" min="25" max="75">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="-10"/>
+		<element physicalPercent="5"/>
+		<element firePercent="45"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hizzzzzzz!"/>
+		<voice sentence="To armzzzz!"/>
+		<voice sentence="Engage zze aggrezzor!"/>
+	</voices>
+	<loot>
+		<item name="ice armor" chance="1800"/>
+		<item name="ice shield" chance="2000"/>
+		<item name="ice bow" chance="2400"/>
+		<item name="ice sword" chance="2600"/>
+		<item name="ice boots" chance="2700"/>
+		<item name="ice helmet" chance="3000"/>
+		<item name="ice legs" chance="2000"/>
+		<item name="crystal coin" countmax="14" chance="10200"/>
+		<item name="small emerald" countmax="4" chance="18200"/>
+		<item name="tower shield" chance="11400"/>
+		<item name="Zaoan armor" chance="12800"/>
+		<item name="Zaoan legs" chance="11800"/>
+		<item name="Zaoan shoes" chance="24000"/>
+		<item name="giant emerald" chance="2000"/>
+		<item name="rainbow necklace" chance="2000"/>
+		<item name="soulbiter" chance="2000"/>
+	</loot>
+</monster>

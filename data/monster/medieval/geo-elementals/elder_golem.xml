@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Elder Golem)" nameDescription="a elder golem" race="undead" experience="19200" speed="370">
+	<health now ="9600" max ="9600"/>
+	<look type="601" corpse="13603"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-95" max ="-874"/>
+		<attack name="physical" interval="2000" chance ="15" target ="1" range ="1" min ="-100" max ="-488"><!-- physical -->
+			<attribute key="shootEffect" value="greenstar"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="15" target ="1" range ="1" min ="-62" max ="-475"><!-- shot meele -->
+			<attribute key="shootEffect" value="greenstar"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="35" target ="1" range ="1" min ="-118" max ="-417"><!-- physical -->
+			<attribute key="shootEffect" value="greenstar"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="75" defense ="75">
+		<defense name="healing" interval="2000" chance="10" min="200" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="50"/>
+		<element holyPercent="50"/>
+		<element energyPercent="-5"/>
+		<element physicalPercent="10"/>
+		<element icePercent="10"/>
+		<element deathPercent="10"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="INTRUDER ALARM!"/>
+		<voice sentence="klonk klonk klonk"/>
+		<voice sentence="Rrrtttarrrttarrrtta"/>
+		<voice sentence="Awaiting orders."/>
+		<voice sentence="Secret objective complete."/>
+	</voices>
+	<loot>
+		<item name="ancient sword" chance="2000"/>
+		<item name="bonebreaker" chance="23600"/>
+		<item name="crystal coin" countmax="4" chance="16400"/>
+		<item name="gear crystal" chance="18200"/>
+		<item name="gear wheel" chance="10600"/>
+		<item name="great spirit potion" chance="17400"/>
+		<item name="iron ore" chance="16600"/>
+		<item name="might ring" chance="21000"/>
+		<item name="nail" countmax="5" chance="12200"/>
+		<item name="small diamond" countmax="2" chance="22800"/>
+		<item name="spiked squelcher" chance="11200"/>
+		<item name="ultimate spirit potion" countmax="5" chance="2100"/>
+		<item name="mage backpack" chance="2100"/>
+		<item name="shimmer bow" chance="2100"/>
+	</loot>
+</monster>

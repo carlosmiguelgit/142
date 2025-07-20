@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Swamp Demon)" nameDescription="a swamp demon" race="venom" experience="120000" speed="480">
+	<health now ="60000" max ="60000"/>
+	<look type="689" corpse="13859"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="500"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-110" max ="-1733"/>
+		<attack name="earth" interval="2000" chance ="31" target ="0" length ="6" spread ="3" min ="-138" max ="-885"><!-- wave -->
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="31" target ="1" range ="1" min ="-138" max ="-885"><!-- shot meele -->
+			<attribute key="shootEffect" value="greenstar"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="23" target ="1" radius ="3" range ="5" min ="-129" max ="-884"><!-- area -->
+			<attribute key="shootEffect" value="greenstar"/>
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="23" target ="1" range ="1" min ="-129" max ="-884"><!-- shot meele -->
+			<attribute key="shootEffect" value="greenstar"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65">
+		<defense name="healing" interval="2000" chance="15" min="120" max="190">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Dance for me your dance of death!"/>
+		<voice sentence="Let the music play!"/>
+		<voice sentence="I will mourn your death!"/>
+		<voice sentence="Are you ready to rock?"/>
+		<voice sentence="Feel my gentle kiss of death."/>
+		<voice sentence="That's what I call easy listening!"/>
+		<voice sentence="IIIIEEEeeeeeehhhHHHH!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2124" chance="23800"/><!-- crystal ring-->
+		<item id="2175" chance="19000"/><!-- spellbook-->
+		<item name="black pearl" chance="16200"/>
+		<item name="blue robe" chance="22200"/>
+		<item name="crystal coin" countmax="12" chance="12200"/>
+		<item name="hair of a banshee" chance="17200"/>
+		<item name="red robe" chance="12400"/>
+		<item name="ring of healing" chance="18000"/>
+		<item name="stone skin amulet" chance="23800"/>
+		<item name="strong mana potion" chance="15200"/>
+		<item name="terra mantle" chance="21200"/>
+		<item name="wedding ring" chance="19000"/>
+		<item name="white pearl" chance="25400"/>
+		<item name="giant emerald" chance="3200"/>
+		<item name="diamond arrow" countmax="80" chance="3200"/>
+		<item name="werewolf helmet" chance="3200"/>
+	</loot>
+</monster>

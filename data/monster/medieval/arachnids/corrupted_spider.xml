@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Corrupted Spider)" nameDescription="a Corrupted Spider" race="venom" experience="32000" speed="300">
+	<health now ="16000" max ="16000"/>
+	<look type="503" corpse="13324" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="70" />
+		<flag runonhealth="0" />
+		<flag canwalkonfire="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-110" max ="-1156"/>
+		<attack name="death" interval="2000" chance ="37" target ="0" length ="6" spread ="3" min ="-84" max ="-615"><!-- wave -->
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="37" target ="1" range ="1" min ="-84" max ="-615"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="28" target ="1" radius ="3" range ="3" min ="-126" max ="-624"><!-- area -->
+			<attribute key="shootEffect" value="death"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="28" target ="1" range ="1" min ="-126" max ="-624"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70">
+		<defense name="speed" interval="2000" chance="15" speedchange="390" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="20" />
+		<element icePercent="20" />
+		<element firePercent="-10" />
+	</elements>
+	<immunities>
+		<immunity outfit="1" />
+		<immunity drunk="1" />
+		<immunity invisible="1" />
+		<immunity earth="1" />
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="(Poison Spider)" interval="2000" chance="10" max="2"/>
+	</summons>
+	<loot>
+		<item name="dragon warrior helmet" chance="1500"/>
+		<item name="dragon warrior chopper" chance="2200"/>
+		<item name="dragon warrior armor" chance="2300"/>
+		<item name="dragon warrior legs" chance="2400"/>
+		<item id="2169" chance="20600"/><!-- time ring-->
+		<item name="crystal coin" countmax="4" chance="14000"/>
+		<item name="poison arrow" countmax="12" chance="8000"/>
+		<item name="spider silk" chance="14000"/>
+		<item name="strong health potion" chance="10200"/>
+		<item name="Onyx Marble" chance="3700"/>
+		<item name="prismatic bolt" countmax="80" chance="3700"/>
+		<item name="royal mage legs" chance="3700"/>
+	</loot>
+</monster>

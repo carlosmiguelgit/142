@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Lich)" nameDescription="a lich" race="undead" experience="77000" speed="530">
+	<health now ="38500" max ="38500"/>
+	<look type="727" corpse="13961"/>
+	<targetchange interval="4000" chance="15"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="450"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-90" max ="-1448"/>
+		<attack name="death" interval="2000" chance ="36" target ="1" range ="4" min ="-89" max ="-717"><!-- shot -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="-89" max ="-717"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="38" target ="1" range ="4" min ="-76" max ="-736"><!-- shot -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="speed" interval="2000" chance ="31" target ="1" range ="6" speedchange ="-711" duration ="60000"><!-- speed -->
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="31" target ="1" range ="1" min ="-101" max ="-711"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70"/>
+	<elements>
+		<element icePercent="50"/>
+		<element energyPercent="10"/>
+		<element holyPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Forgive Meee!"/>
+		<voice sentence="Mouuuurn meeee!"/>
+		<voice sentence="Help meee!"/>
+	</voices>
+	<loot>
+		<item name="mythical justice staff" chance="1800"/>
+		<item name="mythical justice helmet" chance="2000"/>
+		<item name="mythical justice sword" chance="2300"/>
+		<item name="mythical justice axe" chance="2000"/>
+		<item name="mythical justice armor" chance="2400"/>
+		<item name="mythical justice shield" chance="2600"/>
+		<item name="black pearl" countmax="3" chance="12800"/>
+		<item name="crystal coin" countmax="6" chance="29800"/>
+		<item name="demonic essence" chance="17800"/>
+		<item name="haunted blade" chance="10200"/>
+		<item name="red gem" chance="20600"/>
+		<item name="ruby necklace" chance="10400"/>
+		<item name="skull helmet" chance="19600"/>
+		<item name="skull staff" chance="14400"/>
+		<item name="stone skin amulet" chance="20400"/>
+		<item name="titan axe" chance="16200"/>
+		<item name="tower shield" chance="14000"/>
+		<item name="unholy bone" chance="10200"/>
+		<item name="white pearl" countmax="3" chance="25600"/>
+		<item name="Golden Marble" chance="3300"/>
+		<item name="spectral bolt" countmax="80" chance="3300"/>
+		<item name="rift lance" chance="3300"/>
+		
+	</loot>
+</monster>

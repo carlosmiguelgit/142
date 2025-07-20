@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Gargoyle)" nameDescription="a gargoyle" race="undead" experience="6400" speed="300">
+	<health now ="3200" max ="3200"/>
+	<look type="597" corpse="13591"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="30"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-75" max ="-304"/>
+		<attack name="physical" interval="2000" chance ="15" target ="1" range ="1" min ="-80" max ="-203"><!-- physical -->
+			<attribute key="shootEffect" value="eartharrow"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="15" target ="1" range ="1" min ="-42" max ="-190"><!-- shot meele -->
+			<attribute key="shootEffect" value="eartharrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65">
+		<defense name="healing" interval="2000" chance="20" min="5" max="15">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="40"/>
+		<element deathPercent="1"/>
+		<element firePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity earth="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Harrrr harrrr!"/>
+		<voice sentence="Stone sweet stone."/>
+		<voice sentence="Feel my claws, softskin."/>
+		<voice sentence="Chhhhhrrrrk!"/>
+		<voice sentence="There is a stone in your shoe!"/>
+	</voices>
+	<loot>
+		<item name="club ring" chance="12000"/>
+		<item name="crystal coin" countmax="3" chance="16400"/>
+		<item name="dark armor" chance="12000"/>
+		<item name="morning star" chance="10600"/>
+		<item name="potato" countmax="2" chance="19800"/>
+		<item name="shiny stone" chance="15000"/>
+		<item name="steel helmet" chance="15800"/>
+		<item name="stone wing" chance="18600"/>
+		<item name="strawberry" countmax="5" chance="19600"/>
+		<item name="wolf tooth chain" chance="20200"/>
+		<item name="receipt" chance="3500"/>
+		<item name="spicy green jalapeno sauce" chance="3500"/>
+		<item name="training rod" chance="3500"/>
+	</loot>
+</monster>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Rat)" nameDescription="a rat" race="blood" experience="1400" speed="310">
+	<health now ="700" max ="700"/>
+	<look type="613" corpse="13638"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="5"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-33" max ="-108"/>
+		<attack name="physical" interval="2000" chance ="39" target ="1" range ="1" min ="-3" max ="-72"><!-- shot meele -->
+			<attribute key="shootEffect" value="whirlwindclub"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="-59" max ="-44"><!-- physical -->
+			<attribute key="shootEffect" value="whirlwindclub"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="85" defense ="85"/>
+	<elements>
+		<element earthPercent="25"/>
+		<element holyPercent="20"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Meep!"/>
+	</voices>
+	<loot>
+		<item id="2696" chance="13800"/><!-- cheese-->
+		<item name="platinum coin" countmax="5" chance="39600"/>
+
+
+
+	</loot>
+</monster>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Chimera)" nameDescription="a Chimera" race="fire" experience="192000" speed="450">
+	<health now ="96000" max ="96000"/>
+	<look type="543" corpse="13434"/>
+	<targetchange interval="4000" chance="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-113" max ="-2017"/>
+		<attack name="fire" interval="2000" chance ="29" target ="0" length ="6" spread ="3" min ="-100" max ="-999"><!-- wave -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="29" target ="1" range ="1" min ="-100" max ="-999"><!-- physical -->
+			<attribute key="shootEffect" value="burstarrow"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="18" target ="0" length ="6" spread ="3" min ="-154" max ="-1040"><!-- wave -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="18" target ="1" range ="1" min ="-154" max ="-1040"><!-- shot meele -->
+			<attribute key="shootEffect" value="burstarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="95" defense ="95">
+		<defense name="healing" interval="2000" chance="35" min="180" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="35" speedchange="320" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="30"/>
+		<element deathPercent="30"/>
+		<element energyPercent="50"/>
+		<element earthPercent="40"/>
+		<element icePercent="-10"/>
+		<element holyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>	
+	<voices interval="5000" chance="10">
+		<voice sentence="Your soul will be mine!"/>
+		<voice sentence="MUHAHAHAHA!"/>
+		<voice sentence="CHAMEK ATH UTHUL ARAK!"/>
+		<voice sentence="I SMELL FEEEEAAAAAR!"/>
+		<voice sentence="Your resistance is futile!"/>
+	</voices>
+	<loot>
+		<item name="lost demon chopper" chance="2500"/>
+		<item id="5906" countmax="3" chance="19600"/><!-- demon dust-->
+		<item id="7393" chance="12600"/><!-- demon trophy-->
+		<item name="crystal coin" countmax="13" chance="24000"/>
+		<item name="demon shield" chance="11200"/>
+		<item name="demonrage sword" chance="14000"/>
+		<item name="fire mushroom" countmax="6" chance="11800"/>
+		<item name="great mana potion" countmax="3" chance="18600"/>
+		<item name="great spirit potion" countmax="3" chance="17200"/>
+		<item name="magic plate armor" chance="15400"/>
+		<item name="mastermind shield" chance="13200"/>
+		<item name="ultimate health potion" countmax="3" chance="12600"/>
+		<item name="giant amethyst" chance="2400"/>
+		<item name="ring of souls" chance="2400"/>
+		<item name="falcon rod" chance="2400"/>
+		
+	</loot>
+</monster>

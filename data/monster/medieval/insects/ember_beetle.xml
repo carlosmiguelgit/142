@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Ember Beetle)" nameDescription="a ember beetle" race="venom" experience="5760" speed="320">
+	<health now ="2880" max ="2880"/>
+	<look type="624" corpse="13670"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="80"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-51" max ="-312"/>
+		<attack name="physical" interval="2000" chance ="39" target ="1" range ="1" min ="-107" max ="-142"><!-- physical -->
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="32" target ="1" range ="1" min ="-96" max ="-179"><!-- shot meele -->
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55">
+		<defense name="speed" interval="2000" chance="15" speedchange="200" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="10"/>
+		<element icePercent="20"/>
+		<element physicalPercent="15"/>
+		<element firePercent="-18"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<loot>
+		<item name="crystal coin" chance="14400"/>
+		<item name="daramian mace" chance="10000"/>
+		<item name="meat" countmax="2" chance="19600"/>
+		<item name="scarab coin" chance="25800"/>
+		<item name="small amethyst" chance="27800"/>
+		<item name="small emerald" chance="15800"/>
+		<item name="Ultimate UH rune" countmax="5" chance="2300"/>
+		<item name="book backpack" chance="2300"/>
+		<item name="training bow" chance="2300"/>
+	</loot>
+</monster>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Sand Spider)" nameDescription="a Sand Spider" race="venom" experience="7040" speed="390">
+	<health now ="3520" max ="3520"/>
+	<look type="502" corpse="13322"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-59" max ="-334"/>
+		<attack name="physical" interval="2000" chance ="18" target ="1" range ="1" min ="-73" max ="-144"><!-- physical -->
+			<attribute key="shootEffect" value="eartharrow"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="31" target ="1" range ="1" min ="-35" max ="-209"><!-- shot meele -->
+			<attribute key="shootEffect" value="eartharrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50">
+		<defense name="speed" interval="2000" chance="15" speedchange="220" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="10"/>
+		<element firePercent="-15"/>
+		<element icePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+	</immunities>
+	<loot>
+		<item id="2169" chance="14000"/><!-- time ring-->
+		<item name="crystal coin" countmax="3" chance="11000"/>
+		<item name="spider fangs" chance="11200"/>
+		<item name="steel helmet" chance="17400"/>
+		<item name="tarantula egg" chance="15200"/>
+		<item name="Ultimate Magic Wall rune" countmax="5" chance="2100"/>
+		<item name="small crystal bell" chance="2100"/>
+		<item name="final judgement" chance="2100"/>
+	</loot>
+</monster>

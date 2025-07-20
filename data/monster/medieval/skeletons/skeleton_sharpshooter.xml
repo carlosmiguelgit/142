@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Skeleton Sharpshooter)" nameDescription="a skeleton sharpshooter" race="undead" experience="19200" speed="370">
+	<health now ="9600" max ="9600"/>
+	<look type="729" corpse="13967"/>
+	<targetchange interval="4000" chance="15"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="450"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="ice" interval="2000" chance ="36" target ="1" range ="4" min ="-57" max ="-484">
+			<attribute key="shootEffect" value="snowball"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="30" target ="1" range ="6" min ="-86" max ="-480">
+			<attribute key="shootEffect" value="snowball"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="21" target ="1" range ="3" min ="-70" max ="-433">
+			<attribute key="shootEffect" value="snowball"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70"/>
+	<elements>
+		<element icePercent="50"/>
+		<element energyPercent="10"/>
+		<element holyPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Forgive Meee!"/>
+		<voice sentence="Mouuuurn meeee!"/>
+		<voice sentence="Help meee!"/>
+	</voices>
+	<loot>
+		<item name="black wizard bow" chance="2000"/>
+		<item name="black pearl" countmax="3" chance="17200"/>
+		<item name="crystal coin" countmax="5" chance="21600"/>
+		<item name="demonic essence" chance="18000"/>
+		<item name="haunted blade" chance="14000"/>
+		<item name="red gem" chance="27400"/>
+		<item name="ruby necklace" chance="18600"/>
+		<item name="skull helmet" chance="14000"/>
+		<item name="skull staff" chance="23400"/>
+		<item name="stone skin amulet" chance="23000"/>
+		<item name="titan axe" chance="23400"/>
+		<item name="tower shield" chance="13600"/>
+		<item name="unholy bone" chance="19400"/>
+		<item name="white pearl" countmax="3" chance="13600"/>
+		<item name="Ultimate Magic Wall rune" countmax="5" chance="3600"/>
+		<item name="diabolic skull" chance="3600"/>
+		<item name="brain in a jar" chance="3600"/>
+		
+	</loot>
+</monster>

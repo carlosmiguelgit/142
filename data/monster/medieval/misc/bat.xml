@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Bat)" namedescription="a bat" race="blood" experience="2160" speed="360">
+	<health now ="1080" max ="1080"/>
+	<look type="660" corpse="13775"/>
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="3" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-45" max ="-197"/>
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="1" min ="-21" max ="-143"><!-- physical -->
+			<attribute key="shootEffect" value="whirlwindaxe"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="21" target ="1" range ="1" min ="-57" max ="-98"><!-- shot meele -->
+			<attribute key="shootEffect" value="whirlwindaxe"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="45" defense ="45"/>
+	<elements>
+		<element earthPercent="-20" />
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Flap!Flap!" />
+	</voices>
+	<loot>
+		<item name="bat wing" chance="11200"/>
+		<item name="platinum coin" countmax="24" chance="74200"/>
+
+
+
+	</loot>
+</monster>

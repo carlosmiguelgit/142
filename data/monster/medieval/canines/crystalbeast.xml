@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Crystalbeast)" nameDescription="a Crystalbeast" race="blood" experience="28800" speed="340">
+	<health now ="14400" max ="14400"/>
+	<look type="528" corpse="13395" />
+	<targetchange interval="4000" chance="15" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag staticattack="80" />
+		<flag lightlevel="0" />
+		<flag lightcolor="0" />
+		<flag targetdistance="1" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="1" />
+		<flag canwalkonpoison="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-101" max ="-895"/>
+		<attack name="ice" interval="2000" chance ="23" target ="1" radius ="3" range ="5" min ="-81" max ="-431"><!-- area -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+
+		<attack name="lifedrain" interval="2000" chance ="16" target ="1" range ="6" min ="-66" max ="-439"><!-- life -->
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="16" target ="1" range ="1" min ="-66" max ="-439"><!-- shot meele -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="83" defense ="40">
+		<defense name="speed" interval="2000" chance="15" speedchange="250" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="20" />
+		<element energyPercent="-20" />
+	</elements>
+	<immunities>
+		<immunity fire="1" />
+		<immunity ice="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Screeech!" />
+	</voices>
+	<loot>
+		<item id="2124" chance="17200"/><!-- crystal ring-->
+		<item id="2169" chance="15600"/><!-- time ring-->
+		<item name="crystal coin" countmax="4" chance="23800"/>
+		<item name="crystal sword" chance="17000"/>
+		<item name="glacier mask" chance="18200"/>
+		<item name="jewelled backpack" chance="8200"/>
+		<item name="knight armor" chance="11200"/>
+		<item name="knight legs" chance="17200"/>
+		<item name="sapphire hammer" chance="11000"/>
+		<item name="shard" chance="19800"/>
+		<item name="strong mana potion" chance="10800"/>
+		<item name="Ultimate UH rune" countmax="5" chance="2100"/>
+		<item name="amulet of theurgy" chance="2100"/>
+		<item name="royal star" chance="2100"/>
+	</loot>
+</monster>

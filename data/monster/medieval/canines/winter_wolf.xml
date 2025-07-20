@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Winter Wolf)" nameDescription="a winter wolf" race="blood" experience="5120" speed="320">
+	<health now ="2560" max ="2560"/>
+	<look type="525" corpse="13386"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-55" max ="-313"/>
+		<attack name="ice" interval="2000" chance ="29" target ="1" range ="1" min ="-76" max ="-179"><!-- shot meele -->
+			<attribute key="shootEffect" value="snowball"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="17" target ="1" range ="1" min ="-98" max ="-148"><!-- physical -->
+			<attribute key="shootEffect" value="snowball"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="45" defense ="45"/>
+	<elements>
+		<element icePercent="20"/>
+		<element firePercent="10"/>
+		<element holyPercent="5"/>
+		<element energyPercent="-5"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Yoooohhuuuu!"/>
+	</voices>
+	<loot>
+		<item name="meat" countmax="2" chance="11400"/>
+		<item name="winter wolf fur" chance="12800"/>
+		<item name="Blue Marble (II)" chance="3400"/>
+		<item name="deepling backpack" chance="3400"/>
+		<item name="mooh'tah plate" chance="3400"/>
+	</loot>
+</monster>

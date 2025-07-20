@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Crewman)" nameDescription="a crewman" race="undead" experience="8320" speed="400">
+	<health now ="4160" max ="4160"/>
+	<look type="714" corpse="13925"/>
+	<targetchange interval="4000" chance="15"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="50"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-77" max ="-326"/>
+		<attack name="physical" interval="2000" chance ="31" target ="1" range ="1" min ="-71" max ="-149"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="29" target ="1" range ="1" min ="-51" max ="-178"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70"/>
+	<elements>
+		<element earthPercent="10"/>
+		<element holyPercent="10"/>
+		<element deathPercent="-5"/>
+		<element firePercent="-5"/>
+		<element energyPercent="-5"/>
+		<element icePercent="-5"/>
+		<element physicalPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Give up!"/>
+		<voice sentence="Hiyaa"/>
+		<voice sentence="Plundeeeeer!"/>
+	</voices>
+	<loot>
+		<item id="2050" chance="8800"/><!-- torch-->
+		<item name="compass" chance="16400"/>
+		<item name="crystal coin" chance="25200"/>
+		<item name="eye patch" chance="14200"/>
+		<item name="hook" chance="11800"/>
+		<item name="peg leg" chance="18200"/>
+		<item name="pirate backpack" chance="8800"/>
+		<item name="pirate shirt" chance="16000"/>
+		<item name="strong health potion" chance="16000"/>
+		<item name="throwing knife" countmax="5" chance="13800"/>
+		<item name="Meteoro fire rune" countmax="5" chance="3500"/>
+		<item name="pink fluid" chance="3500"/>
+		<item name="wand of dimensions" chance="3500"/>
+	</loot>
+</monster>

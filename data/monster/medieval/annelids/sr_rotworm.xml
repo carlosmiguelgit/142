@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Sr Rotworm)" nameDescription="a Sr Rotworm" race="blood" experience="3400" speed="350">
+	<health now ="1700" max ="1700"/>
+	<look type="493" corpse="13297"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-31" max ="-260"/>
+		<attack name="earth" interval="2000" chance ="18" target ="1" range ="1" min ="-80" max ="-139"><!-- shot meele -->
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="35" target ="1" range ="1" min ="-28" max ="-140"><!-- physical -->
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55"/>
+	<elements>
+		<element earthPercent="20"/>
+		<element energyPercent="10"/>
+		<element firePercent="-5"/>
+		<element icePercent="-5"/>
+	</elements>
+	<loot>
+		<item name="carrion worm fang" chance="12200"/>
+		<item name="meat" countmax="2" chance="17800"/>
+		<item name="platinum coin" countmax="54" chance="68600"/>
+		<item name="worm" countmax="2" chance="15600"/>
+		<item name="ultimate spirit potion" countmax="5" chance="2900"/>
+		<item name="mage backpack" chance="2900"/>
+		<item name="shimmer sword" chance="2900"/>
+	</loot>
+</monster>

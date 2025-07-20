@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Yeti)" nameDescription="a yeti" race="blood" experience="19200" speed="320">
+	<health now ="9600" max ="9600"/>
+	<look type="607" corpse="13621"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="80"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-103" max ="-878"/>
+		<attack name="ice" interval="2000" chance ="39" target ="1" range ="6" min ="-73" max ="-457"><!-- shot -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+		</attack>
+
+		<attack name="lifedrain" interval="2000" chance ="28" target ="1" range ="4" min ="-92" max ="-483"><!-- life -->
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="28" target ="1" range ="1" min ="-92" max ="-483"><!-- physical -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="60" defense ="60">
+		<defense name="speed" interval="2000" chance="15" speedchange="300" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity ice="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hmm Humansoup!"/>
+		<voice sentence="Stand still ya tasy snack!"/>
+		<voice sentence="Joh Thun!"/>
+		<voice sentence="Br�re Sm�de!"/>
+		<voice sentence="H�rre Sjan Flan!"/>
+		<voice sentence="Forle Bramma"/>
+	</voices>
+	<loot>
+		<item name="black wizard sword" chance="2700"/>
+		<item name="club ring" chance="13600"/>
+		<item name="crystal coin" countmax="3" chance="20400"/>
+		<item name="frost giant pelt" chance="14400"/>
+		<item name="diamond" chance="3100"/>
+		<item name="pink fluid" chance="2500"/>
+		<item name="training sword" chance="2500"/>
+	</loot>
+</monster>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dwarf Dragoneater)" nameDescription="a dwarf dragoneater" race="blood" experience="10800" speed="330">
+	<health now ="5400" max ="5400"/>
+	<look type="579" corpse="13541"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-89" max ="-604"/>
+		<attack name="physical" interval="2000" chance ="28" target ="1" range ="1" min ="-87" max ="-307"><!-- shot meele -->
+			<attribute key="shootEffect" value="whirlwindsword"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="30" target ="1" range ="1" min ="-69" max ="-311"><!-- physical -->
+			<attribute key="shootEffect" value="whirlwindsword"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70"/>
+	<elements>
+		<element earthPercent="20"/>
+		<element physicalPercent="10"/>
+		<element firePercent="-5"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hail Durin!"/>
+	</voices>
+	<loot>
+		<item name="royal dwarf axe" chance="1600"/>
+		<item name="axe ring" chance="20800"/>
+		<item name="crystal coin" countmax="3" chance="15800"/>
+		<item name="health potion" chance="18800"/>
+		<item name="iron ore" chance="13800"/>
+		<item name="small amethyst" chance="17600"/>
+		<item name="white mushroom" countmax="2" chance="20000"/>
+		<item name="Turqoise Marble" chance="2800"/>
+		<item name="cake backpack" chance="2800"/>
+		<item name="magic hat" chance="2800"/>
+	</loot>
+</monster>

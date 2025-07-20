@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Drake Lord)" nameDescription="a drake lord" race="blood" experience="160000" speed="400">
+	<health now ="80000" max ="80000"/>
+	<look type="562" corpse="13489"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-129" max ="-2024"/>
+		<attack name="fire" interval="2000" chance ="28" target ="1" range ="6" min ="-127" max ="-1017"><!-- shot -->
+			<attribute key="shootEffect" value="redstar"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="28" target ="1" range ="1" min ="-127" max ="-1017"><!-- physical -->
+			<attribute key="shootEffect" value="redstar"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="34" target ="0" radius ="4" min ="-128" max ="-992"><!-- ground -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-128" max ="-992"><!-- physical -->
+			<attribute key="shootEffect" value="redstar"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70">
+		<defense name="healing" interval="2000" chance="15" min="650" max="700">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element holyPercent="-5"/>
+		<element energyPercent="-5"/>
+		<element icePercent="5"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="Death Blob" interval="2000" chance="10" max="2"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Uhhhg!"/>
+		<voice sentence="Hmmnn!"/>
+		<voice sentence="Aaag!"/>
+		<voice sentence="Gll"/>
+	</voices>
+	<loot>		
+		<item name="drake helmet" chance="1600"/>
+		<item name="drake shield" chance="2500"/>
+		<item name="drake legs" chance="2800"/>
+		<item name="drake armor" chance="2200"/>
+		<item name="drake wand" chance="2800"/>
+		<item name="crystal coin" countmax="12" chance="14400"/>
+		<item name="draken boots" chance="20800"/>
+		<item name="shield of corruption" chance="14800"/>
+		<item name="small topaz" countmax="4" chance="29200"/>
+		<item name="snake god's wristguard" chance="14800"/>
+		<item name="Tome of Knowledge" chance="10400"/>
+		<item name="wand of voodoo" chance="17400"/>
+		<item name="Zaoan armor" chance="22600"/>
+		<item name="Zaoan helmet" chance="14400"/>
+		<item name="Zaoan legs" chance="10400"/>
+		<item name="giant emerald" chance="2000"/>
+		<item name="rainbow necklace" chance="2000"/>
+		<item name="soulbiter" chance="2000"/>
+	</loot>
+</monster>

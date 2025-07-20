@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Rotworm)" nameDescription="a rotworm" race="blood" experience="1800" speed="360">
+	<health now ="900" max ="900"/>
+	<look type="491" corpse="13291"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-16" max ="-200"/>
+		<attack name="physical" interval="2000" chance ="18" target ="1" range ="1" min ="-65" max ="-109"><!-- shot meele -->
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="35" target ="1" range ="1" min ="-13" max ="-110"><!-- physical -->
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<loot>
+		<item name="ham" chance="18400"/>
+		<item name="meat" chance="16800"/>
+		<item name="platinum coin" countmax="22" chance="53400"/>
+		<item name="worm" countmax="3" chance="16000"/>
+
+
+
+	</loot>
+</monster>

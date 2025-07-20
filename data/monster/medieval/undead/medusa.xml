@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Medusa)" nameDescription="a medusa" race="undead" experience="77000" speed="540">
+	<health now ="38500" max ="38500"/>
+	<look type="754" corpse="14040"/>
+	<targetchange interval="4000" chance="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="600"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-112" max ="-1440"/>
+		<attack name="fire" interval="2000" chance ="17" target ="0" radius ="3" min ="-78" max ="-720"><!-- ground -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="lifedrain" interval="2000" chance ="20" target ="1" range ="4" min ="-85" max ="-761"><!-- life -->
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="20" target ="1" range ="1" min ="-85" max ="-761"><!-- physical -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70">
+		<defense name="healing" interval="2000" chance="25" min="150" max="300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="20"/>
+		<element firePercent="-5"/>
+		<element energyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity lifedrain="1"/>
+		<immunity drown="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="You will make sssuch a fine ssstatue!"/>
+		<voice sentence="There isss no chhhanccce of essscape"/>
+		<voice sentence="Jussst look at me!"/>
+		<voice sentence="Are you tired or why are you moving thhat ssslow &lt;chuckle&gt;"/>
+	</voices>
+	<loot>
+		<item name="medusa head" chance="2400"/>
+		<item name="medusa wand" chance="2500"/>
+		<item name="medusa sword" chance="3000"/>
+		<item name="medusa axe" chance="2800"/>
+		<item name="medusa armor" chance="2400"/>
+		<item name="crystal coin" countmax="5" chance="17400"/>
+		<item name="knight armor" chance="15400"/>
+		<item name="medusa shield" chance="21800"/>
+		<item name="small emerald" countmax="4" chance="14800"/>
+		<item name="terra amulet" chance="11200"/>
+		<item name="terra legs" chance="17200"/>
+		<item name="terra mantle" chance="13400"/>
+		<item name="titan axe" chance="22800"/>
+		<item name="ultimate mana potion" countmax="5" chance="2600"/>
+		<item name="mage backpack" chance="2600"/>
+		<item name="frozen lightning" chance="2600"/>
+		
+	</loot>
+</monster>

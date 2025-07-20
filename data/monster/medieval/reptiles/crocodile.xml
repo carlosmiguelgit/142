@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Crocodile)" nameDescription="a crocodile" race="blood" experience="1800" speed="400">
+	<health now ="900" max ="900"/>
+	<look type="666" corpse="13793"/>
+	<targetchange interval="5000" chance="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="10" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-17" max ="-184"/>
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="-51" max ="-118"><!-- physical -->
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="24" target ="1" range ="1" min ="-15" max ="-105"><!-- shot meele -->
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55"/>
+	<elements>
+		<element earthPercent="20" />
+		<element icePercent="10" />
+		<element energyPercent="-5" />
+		<element firePercent="-10" />
+		<element physicalPercent="-5" />
+	</elements>
+	<loot>
+		<item name="crocodile boots" chance="16200"/>
+		<item name="ham" chance="19600"/>
+		<item name="piece of crocodile leather" chance="14400"/>
+		<item name="platinum coin" countmax="27" chance="36600"/>
+
+
+
+	</loot>
+</monster>

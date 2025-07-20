@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Purple Rabbit)" nameDescription="a purple rabbit" race="blood" experience="0" speed="360">
+	<health now ="240" max ="240"/>
+	<look type="659" corpse="13772"/>
+	<targetchange interval="5000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="0"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<defenses armor ="45" defense ="45"/>
+	<loot>
+		<item id="2684" countmax="2" chance="11000"/><!-- carrot-->
+		<item name="meat" countmax="2" chance="19400"/>
+
+
+
+	</loot>
+</monster>

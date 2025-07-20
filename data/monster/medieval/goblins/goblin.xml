@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Goblin)" nameDescription="a goblin" race="blood" experience="2160" speed="310">
+	<health now ="1080" max ="1080"/>
+	<look type="614" corpse="13641"/>
+	<targetchange interval="5000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-48" max ="-178"/>
+		<attack name="physical" interval="2000" chance ="39" target ="1" range ="1" min ="-18" max ="-107"><!-- shot meele -->
+			<attribute key="shootEffect" value="whirlwindclub"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="-74" max ="-79"><!-- physical -->
+			<attribute key="shootEffect" value="whirlwindclub"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element energyPercent="20"/>
+		<element holyPercent="1"/>
+		<element earthPercent="-12"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Me have him!"/>
+		<voice sentence="Zig Zag! Gobo attack!"/>
+		<voice sentence="Help! Goblinkiller!"/>
+		<voice sentence="Bugga! Bugga!"/>
+		<voice sentence="Me green, me mean!"/>
+	</voices>
+	<loot>
+		<item id="2667" chance="19400"/><!-- fish-->
+		<item name="goblin ear" chance="18200"/>
+		<item name="platinum coin" countmax="28" chance="62600"/>
+		<item name="small stone" countmax="3" chance="24000"/>
+
+
+
+	</loot>
+</monster>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Spider)" nameDescription="a spider" race="venom" experience="1820" speed="400">
+	<health now ="910" max ="910"/>
+	<look type="496" corpse="13306"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="6"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-23" max ="-121"/>
+		<attack name="physical" interval="2000" chance ="23" target ="1" range ="1" min ="-38" max ="-77"><!-- physical -->
+			<attribute key="shootEffect" value="onyxarrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="1" min ="--17" max ="-101"><!-- shot meele -->
+			<attribute key="shootEffect" value="onyxarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="42" defense ="42"/>
+	<elements>
+		<element firePercent="-20"/>
+	</elements>
+	<loot>
+		<item name="platinum coin" countmax="6" chance="68000"/>
+		<item name="spider fangs" chance="20000"/>
+
+
+
+	</loot>
+</monster>

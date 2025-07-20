@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Stone Golem)" nameDescription="a stone golem" race="undead" experience="5760" speed="350">
+	<health now ="2880" max ="2880"/>
+	<look type="596" corpse="13588"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-75" max ="-304"/>
+		<attack name="physical" interval="2000" chance ="15" target ="1" range ="1" min ="-80" max ="-203"><!-- physical -->
+			<attribute key="shootEffect" value="eartharrow"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="15" target ="1" range ="1" min ="-42" max ="-190"><!-- shot meele -->
+			<attribute key="shootEffect" value="eartharrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="60" defense ="60"/>
+	<elements>
+		<element physicalPercent="20"/>
+		<element firePercent="20"/>
+		<element energyPercent="15"/>
+		<element deathPercent="20"/>
+		<element icePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity drown="1"/>
+		<immunity earth="1"/>
+	</immunities>
+	<loot>
+		<item id="2124" chance="18000"/><!-- crystal ring-->
+		<item name="ancient stone" chance="16800"/>
+		<item name="crystal coin" countmax="2" chance="17400"/>
+		<item name="iron ore" chance="14400"/>
+		<item name="power ring" chance="12000"/>
+		<item name="red gem" chance="27800"/>
+		<item name="shiny stone" chance="18200"/>
+		<item name="small stone" countmax="4" chance="11600"/>
+		<item name="sulphurous stone" chance="16400"/>
+		<item name="receipt" chance="3500"/>
+		<item name="spicy green jalapeno sauce" chance="3500"/>
+		<item name="training rod" chance="3500"/>
+	</loot>
+</monster>

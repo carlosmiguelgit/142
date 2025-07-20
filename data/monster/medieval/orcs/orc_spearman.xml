@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Orc Spearman)" nameDescription="a orc spearman" race="blood" experience="6400" speed="330">
+	<health now ="3200" max ="3200"/>
+	<look type="677" corpse="13823"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="10"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="physical" interval="2000" chance ="31" target ="1" range ="3" min ="-41" max ="-200">
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="38" target ="1" range ="4" min ="-45" max ="-208">
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element energyPercent="20"/>
+		<element holyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Ugaar!"/>
+	</voices>
+	<loot>
+		<item name="crystal coin" countmax="3" chance="24800"/>
+		<item name="meat" chance="18000"/>
+		<item name="orc leather" chance="13800"/>
+		<item name="orc tooth" chance="10200"/>
+		<item name="spear" chance="21400"/>
+		<item name="ultimate spirit potion" countmax="5" chance="2200"/>
+		<item name="backpack for HMM" chance="2200"/>
+		<item name="training club" chance="2200"/>
+		
+	</loot>
+</monster>

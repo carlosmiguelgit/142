@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Elder Stone Golem)" nameDescription="a elder stone golem" race="undead" experience="70000" speed="480">
+	<health now ="35000" max ="35000"/>
+	<look type="599" corpse="13597"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="80"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="80"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-105" max ="-1434"/>
+		<attack name="earth" interval="2000" chance ="15" target ="0" radius ="3" min ="-110" max ="-768"><!-- ground -->
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="15" target ="1" range ="1" min ="-110" max ="-768"><!-- physical -->
+			<attribute key="shootEffect" value="greenstar"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="16" target ="1" range ="4" min ="-61" max ="-722"><!-- shot -->
+			<attribute key="shootEffect" value="greenstar"/>
+		</attack>
+
+		<attack name="speed" interval="2000" chance ="36" target ="1" range ="6" speedchange ="-730" duration ="60000"><!-- speed -->
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="-87" max ="-730"><!-- physical -->
+			<attribute key="shootEffect" value="greenstar"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65">
+		<defense name="healing" interval="2000" chance="5" min="60" max="80">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element deathPercent="50"/>
+		<element icePercent="85"/>
+		<element physicalPercent="50"/>
+		<element holyPercent="50"/>
+		<element firePercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity earth="1"/>
+		<immunity energy="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Stomp."/>
+	</voices>
+	<loot>
+		<item name="ancient shield" chance="3700"/>
+		<item id="2645" chance="10200"/><!-- steel boots-->
+		<item id="5880" chance="19600"/><!-- iron ore-->
+		<item id="7422" chance="18600"/><!-- jade hammer-->
+		<item id="7439" chance="13400"/><!-- berserk potion-->
+		<item id="7893" chance="12400"/><!-- lightning boots-->
+		<item name="crystal coin" countmax="6" chance="20000"/>
+		<item name="small stone" countmax="10" chance="10600"/>
+		<item name="receipt" chance="3500"/>
+		<item name="katex' blood" chance="3500"/>
+		<item name="sceptre of sun and sea" chance="3500"/>
+	</loot>
+</monster>

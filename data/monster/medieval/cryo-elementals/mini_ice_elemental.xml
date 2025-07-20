@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Mini Ice Elemental)" nameDescription="a Mini Ice Elemental" race="blood" experience="3740" speed="400">
+	<health now ="1870" max ="1870"/>
+	<look type="535" corpse="13410"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-69" max ="-259"/>
+		<attack name="ice" interval="2000" chance ="23" target ="0" length ="6" spread ="3" min ="-15" max ="-161"><!-- wave -->
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="23" target ="1" range ="1" min ="-15" max ="-161"><!-- physical -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65">
+		<defense name="healing" interval="2000" chance="5" min="120" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="30"/>
+		<element holyPercent="30"/>
+		<element deathPercent="50"/>
+		<element energyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity drown="1"/>
+		<immunity fire="1"/>
+		<immunity ice="1"/>
+		<immunity earth="1"/>
+		<immunity lifedrain="1"/>
+	</immunities>
+	<loot>
+		<item name="black pearl" chance="16800"/>
+		<item name="crystal sword" chance="16400"/>
+		<item name="frosty heart" chance="16400"/>
+		<item name="glacier mask" chance="17800"/>
+		<item name="ice rapier" chance="11800"/>
+		<item name="platinum coin" countmax="48" chance="72000"/>
+		<item name="shard" chance="15000"/>
+		<item name="small diamond" chance="11000"/>
+		<item name="small sapphire" chance="24600"/>
+		<item name="strong health potion" chance="16200"/>
+		<item name="ultimate spirit potion" countmax="5" chance="3000"/>
+		<item name="backpack for Paralyse rune" chance="3000"/>
+		<item name="shimmer sword" chance="3000"/>
+	</loot>
+</monster>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Orc Warrior)" nameDescription="a orc warrior" race="blood" experience="3060" speed="370">
+	<health now ="1530" max ="1530"/>
+	<look type="675" corpse="13817"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="11"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-35" max ="-265"/>
+		<attack name="physical" interval="2000" chance ="25" target ="1" range ="1" min ="-63" max ="-112"><!-- physical -->
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="38" target ="1" range ="1" min ="-46" max ="-117"><!-- shot meele -->
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55"/>
+	<elements>
+		<element energyPercent="30"/>
+		<element holyPercent="10"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Grow truk grrrr."/>
+		<voice sentence="Trak grrrr brik."/>
+		<voice sentence="Alk!"/>
+	</voices>
+	<loot>
+		<item name="meat" chance="10400"/>
+		<item name="orc leather" chance="12200"/>
+		<item name="orc tooth" chance="19400"/>
+		<item name="platinum coin" countmax="61" chance="70800"/>
+		<item name="skull belt" chance="18600"/>
+		<item name="ultimate spirit potion" countmax="5" chance="2200"/>
+		<item name="backpack for Manas fluid" chance="2200"/>
+		<item name="training bow" chance="2200"/>
+		
+	</loot>
+</monster>

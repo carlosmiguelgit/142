@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="(Snake)" nameDescription="a snake" race="venom" experience="2340" speed="400">
+	<health now ="1170" max ="1170"/>
+	<look type="720" corpse="13943"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-50" max ="-200"/>
+		<attack name="earth" interval="2000" chance ="31" target ="1" range ="1" min ="-10" max ="-134"><!-- shot meele -->
+			<attribute key="shootEffect" value="tarsalarrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="25" target ="1" range ="1" min ="-3" max ="-68"><!-- physical -->
+			<attribute key="shootEffect" value="tarsalarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="45" defense ="45"/>
+	<elements>
+		<element earthPercent="5"/>
+		<element energyPercent="20"/>
+		<element firePercent="-10"/>
+		<element icePercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Zzzzzzt"/>
+	</voices>
+</monster>

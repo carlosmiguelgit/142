@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dragon)" nameDescription="a dragon" race="blood" experience="24000" speed="320">
+	<health now ="12000" max ="12000"/>
+	<look type="558" corpse="13479"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="300"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-105" max ="-878"/>
+		<attack name="fire" interval="2000" chance ="34" target ="0" radius ="3" min ="-58" max ="-436"><!-- ground -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-58" max ="-436"><!-- physical -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="26" target ="1" range ="5" min ="-94" max ="-450"><!-- shot -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="1" min ="-94" max ="-450"><!-- physical -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70">
+		<defense name="healing" interval="2000" chance="15" min="40" max="70">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="80"/>
+		<element energyPercent="20"/>
+		<element icePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity fire="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="GROOAAARRR" yell="1"/>
+		<voice sentence="FCHHHHH" yell="1"/>
+	</voices>
+	<loot>
+		<item name="drake axe" chance="1700"/>
+		<item name="dragon warrior helmet" chance="1700"/>
+		<item name="dragon warrior legs" chance="2400"/>
+		<item name="dragon warrior armor" chance="3000"/>
+		<item name="crystal coin" countmax="3" chance="23600"/>
+		<item name="dragon shield" chance="13600"/>
+		<item name="dragonbone staff" chance="16600"/>
+		<item name="small diamond" chance="14800"/>
+		<item name="strong health potion" chance="15600"/>
+		<item name="wand of inferno" chance="15200"/>
+		<item name="Ultimate Explotion rune" countmax="5" chance="2400"/>
+		<item name="flask with snake poison" chance="2400"/>
+		<item name="wand of darkness" chance="2400"/>
+	</loot>
+</monster>

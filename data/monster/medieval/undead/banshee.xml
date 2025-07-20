@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Banshee)" nameDescription="a banshee" race="undead" experience="84000" speed="530">
+	<health now ="42000" max ="42000"/>
+	<look type="691" corpse="13865"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="500"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-97" max ="-1452"/>
+		<attack name="death" interval="2000" chance ="36" target ="0" radius ="4" min ="-63" max ="-766"><!-- ground -->
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+
+		<attack name="manadrain" interval="2000" chance ="33" target ="1" range ="4" min ="-131" max ="-698"><!-- mana -->
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="33" target ="1" range ="1" min ="-131" max ="-698"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65">
+		<defense name="healing" interval="2000" chance="15" min="120" max="190">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Dance for me your dance of death!"/>
+		<voice sentence="Let the music play!"/>
+		<voice sentence="I will mourn your death!"/>
+		<voice sentence="Are you ready to rock?"/>
+		<voice sentence="Feel my gentle kiss of death."/>
+		<voice sentence="That's what I call easy listening!"/>
+		<voice sentence="IIIIEEEeeeeeehhhHHHH!" yell="1"/>
+	</voices>
+	<loot>		
+		<item name="black wizard armor" chance="1700"/>
+		<item name="medusa wand" chance="2600"/>
+		<item name="black pearl" chance="21800"/>
+		<item name="blue robe" chance="11200"/>
+		<item name="crystal coin" countmax="6" chance="25400"/>
+		<item name="ring of healing" chance="18200"/>
+		<item name="stone skin amulet" chance="15200"/>
+		<item name="strong mana potion" chance="17800"/>
+		<item name="terra mantle" chance="15200"/>
+		<item name="white pearl" chance="20400"/>
+		<item name="Versicoloured Marble" chance="3200"/>
+		<item name="tarsal arrow" countmax="80" chance="3200"/>
+		<item name="wereboar loincloth" chance="3200"/>
+		
+	</loot>
+</monster>

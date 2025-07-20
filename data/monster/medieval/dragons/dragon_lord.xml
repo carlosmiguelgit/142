@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dragon Lord)" nameDescription="a dragon lord" race="blood" experience="70000" speed="530">
+	<health now ="35000" max ="35000"/>
+	<look type="559" corpse="13482"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="300"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-115" max ="-1438"/>
+		<attack name="fire" interval="2000" chance ="34" target ="0" radius ="3" min ="-68" max ="-716"><!-- ground -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-68" max ="-716"><!-- physical -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="26" target ="1" range ="5" min ="-104" max ="-730"><!-- shot -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="1" min ="-104" max ="-730"><!-- physical -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="75" defense ="75">
+		<defense name="healing" interval="2000" chance="15" min="57" max="93">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="80"/>
+		<element energyPercent="20"/>
+		<element icePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity fire="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="ZCHHHHHHH" yell="1"/>
+		<voice sentence="YOU WILL BURN!" yell="1"/>
+	</voices>
+	<loot>		
+		<item name="dragon warrior chopper" chance="1700"/>
+		<item name="dragon warrior axe" chance="2200"/>
+		<item name="drake armor" chance="2500"/>
+		<item name="dragon warrior hand axe" chance="2900"/>
+		<item name="crystal coin" countmax="5" chance="17800"/>
+		<item name="dragon lord trophy" chance="6600"/>
+		<item name="dragon scale mail" chance="10000"/>
+		<item name="dragon slayer" chance="13200"/>
+		<item name="fire sword" chance="21800"/>
+		<item name="red dragon leather" chance="14600"/>
+		<item name="red dragon scale" chance="12000"/>
+		<item name="royal helmet" chance="13000"/>
+		<item name="small sapphire" chance="29400"/>
+		<item name="tower shield" chance="18600"/>
+		<item name="Ultimate fire magic missile rune" countmax="5" chance="2400"/>
+		<item name="sample of monster blood" chance="2400"/>
+		<item name="the skull of a beast" chance="3800"/>
+	</loot>
+</monster>

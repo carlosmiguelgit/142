@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Cyclops Warrior)" nameDescription="a cyclops warrior" race="blood" experience="9600" speed="300">
+	<health now ="4800" max ="4800"/>
+	<look type="608" corpse="13624"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-79" max ="-600"/>
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-48" max ="-279"><!-- shot meele -->
+			<attribute key="shootEffect" value="royalspear"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="16" target ="1" range ="1" min ="-41" max ="-292"><!-- physical -->
+			<attribute key="shootEffect" value="royalspear"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65"/>
+	<elements>
+		<element energyPercent="20"/>
+		<element firePercent="10"/>
+		<element holyPercent="1"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Outis emoi g' onoma."/>
+		<voice sentence="Whack da humy!"/>
+		<voice sentence="Ai humy phary ty kaynon"/>
+	</voices>
+	<loot>
+		<item id="7398" chance="14000"/><!-- cyclops trophy-->
+		<item name="club ring" chance="12600"/>
+		<item name="crystal coin" countmax="4" chance="15000"/>
+		<item name="cyclops toe" chance="13600"/>
+		<item name="dark helmet" chance="10400"/>
+		<item name="heavy machete" chance="11200"/>
+		<item name="meat" chance="12400"/>
+		<item name="spiked squelcher" chance="14200"/>
+		<item name="strong health potion" chance="11800"/>
+		<item name="diamond" chance="3100"/>
+		<item name="ghost backpack" chance="3100"/>
+		<item name="training axe" chance="3100"/>
+	</loot>
+</monster>

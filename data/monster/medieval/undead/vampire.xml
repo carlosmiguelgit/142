@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Vampire)" nameDescription="a vampire" race="undead" experience="21600" speed="350">
+	<health now ="10800" max ="10800"/>
+	<look type="749" corpse="14026"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="30"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-95" max ="-896"/>
+		<attack name="death" interval="2000" chance ="36" target ="1" range ="1" min ="-106" max ="-456"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="37" target ="1" range ="1" min ="-110" max ="-479"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="39" target ="1" range ="1" min ="-69" max ="-485"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70">
+		<defense name="outfit" interval="4000" chance="10" monster="bat" duration="5000">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="300" duration="3000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="healing" interval="2000" chance="15" min="15" max="25"/>
+	</defenses>
+	<elements>
+		<element physicalPercent="35"/>
+		<element firePercent="-10"/>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity drown="1"/>
+		<immunity drunk="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="BLOOD!" yell="1"/>
+		<voice sentence="Let me kiss your neck"/>
+		<voice sentence="I smell warm blood!"/>
+		<voice sentence="I call you, my bats! Come!"/>
+	</voices>
+	<loot>
+		<item name="black wizard shield" chance="2400"/>
+		<item name="black pearl" chance="23600"/>
+		<item name="crystal coin" countmax="5" chance="18800"/>
+		<item name="ice rapier" chance="18800"/>
+		<item name="Vampire Dust" chance="13200"/>
+		<item name="vampire shield" chance="11400"/>
+		<item name="Ultimate death magic missile rune" countmax="5" chance="2800"/>
+		<item name="sample of monster blood" chance="2800"/>
+		<item name="shimmer rod" chance="2800"/>
+	</loot>
+</monster>

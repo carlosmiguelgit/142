@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Frost Dragon)" nameDescription="a frost dragon" race="blood" experience="77000" speed="440">
+	<health now ="38500" max ="38500"/>
+	<look type="566" corpse="13501"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="250"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-115" max ="-1438"/>
+		<attack name="ice" interval="2000" chance ="34" target ="0" radius ="3" min ="-68" max ="-716"><!-- ground -->
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-68" max ="-716"><!-- physical -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="26" target ="1" range ="5" min ="-104" max ="-730"><!-- shot -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="1" min ="-104" max ="-730"><!-- physical -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="85" defense ="85">
+		<defense name="healing" interval="2000" chance="10" min="150" max="200">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="290" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="10"/>
+		<element deathPercent="10"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity fire="1"/>
+		<immunity ice="1"/>
+		<immunity earth="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="YOU WILL FREEZE!" yell="1"/>
+		<voice sentence="ZCHHHHH!" yell="1"/>
+		<voice sentence="I am so cool."/>
+		<voice sentence="Chill out!"/>
+	</voices>
+	<loot>	
+		<item name="ice bow" chance="2400"/>
+		<item name="ice armor" chance="2700"/>
+		<item name="ice boots" chance="2900"/>
+		<item name="ice helmet" chance="2900"/>
+		<item name="ice legs" chance="2400"/>
+		<item name="ice shield" chance="2400"/>
+		<item name="ice sword" chance="2000"/>
+		<item name="crystal coin" countmax="6" chance="20200"/>
+		<item name="dragon scale mail" chance="12600"/>
+		<item name="dragon slayer" chance="11600"/>
+		<item name="royal helmet" chance="19400"/>
+		<item name="small sapphire" chance="20800"/>
+		<item name="tower shield" chance="10800"/>
+		<item name="hexagonal ruby" chance="2600"/>
+		<item name="Jester outfits scroll" chance="2600"/>
+		<item name="oriental shoes" chance="2600"/>
+	</loot>
+</monster>

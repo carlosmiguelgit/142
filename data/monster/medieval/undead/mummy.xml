@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Mummy)" nameDescription="a mummy" race="undead" experience="2720" speed="370">
+	<health now ="1360" max ="1360"/>
+	<look type="748" corpse="14023"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-62" max ="-240"/>
+		<attack name="physical" interval="2000" chance ="17" target ="1" range ="1" min ="-28" max ="-120"><!-- physical -->
+			<attribute key="shootEffect" value="drillbolt"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="35" target ="1" range ="1" min ="-82" max ="-116"><!-- shot meele -->
+			<attribute key="shootEffect" value="drillbolt"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55"/>
+	<elements>
+		<element icePercent="20"/>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity earth="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="I will ssswallow your sssoul!"/>
+		<voice sentence="Mort ulhegh dakh visss."/>
+		<voice sentence="Flesssh to dussst!"/>
+		<voice sentence="I will tassste life again!"/>
+		<voice sentence="Ahkahra exura belil mort!"/>
+		<voice sentence="Yohag Sssetham!"/>
+	</voices>
+	<loot>
+		<item id="2124" chance="19200"/><!-- crystal ring-->
+		<item id="2162" chance="10400"/><!-- magic light wand-->
+		<item name="black pearl" chance="29800"/>
+		<item name="black shield" chance="20400"/>
+		<item name="flask of embalming fluid" chance="17000"/>
+		<item name="gauze bandage" chance="10400"/>
+		<item name="mini mummy" chance="15000"/>
+		<item name="platinum coin" countmax="58" chance="46600"/>
+		<item name="strange talisman" chance="24000"/>
+		<item name="worm" countmax="3" chance="19400"/>
+		<item name="yellow piece of cloth" chance="13400"/>
+		<item name="ultimate spirit potion" countmax="5" chance="3400"/>
+		<item name="backpack for Magic Wall" chance="3400"/>
+		<item name="training bow" chance="3400"/>
+	</loot>
+</monster>

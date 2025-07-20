@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Cave Rat)" nameDescription="a cave rat" race="blood" experience="2080" speed="390">
+	<health now ="1040" max ="1040"/>
+	<look type="610" corpse="13630"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="3"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-43" max ="-148"/>
+		<attack name="physical" interval="2000" chance ="39" target ="1" range ="1" min ="-13" max ="-92"><!-- shot meele -->
+			<attribute key="shootEffect" value="whirlwindclub"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="-69" max ="-64"><!-- physical -->
+			<attribute key="shootEffect" value="whirlwindclub"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="45" defense ="45"/>
+	<elements>
+		<element firePercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Meeeeep!"/>
+		<voice sentence="Meep!"/>
+	</voices>
+	<loot>
+		<item id="2696" chance="13400"/><!-- cheese-->
+		<item name="cookie" chance="18600"/>
+		<item name="platinum coin" countmax="15" chance="58600"/>
+		<item name="worm" countmax="2" chance="14200"/>
+
+
+
+	</loot>
+</monster>

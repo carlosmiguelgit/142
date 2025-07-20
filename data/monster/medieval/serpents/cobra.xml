@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Cobra)" namedescription="a cobra" race="venom" experience="1980" speed="320">
+	<health now ="990" max ="990"/>
+	<look type="721" corpse="13946"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-17" max ="-184"/>
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="-51" max ="-118"><!-- physical -->
+			<attribute key="shootEffect" value="poisonarrow"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="24" target ="1" range ="1" min ="-15" max ="-105"><!-- shot meele -->
+			<attribute key="shootEffect" value="poisonarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="45" defense ="45"/>
+	<elements>
+		<element firePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity drunk="1"/>
+		<immunity earth="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Zzzzzz"/>
+		<voice sentence="Fsssss"/>
+	</voices>
+	<loot>
+		<item name="cobra tongue" chance="19800"/>
+		<item name="platinum coin" countmax="29" chance="73600"/>
+
+
+
+	</loot>
+</monster>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Blue Wyvern)" nameDescription="a Blue Wyvern" race="blood" experience="19200" speed="400">
+	<health now ="9600" max ="9600"/>
+	<look type="569" corpse="13510"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="80"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="1"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-105" max ="-878"/>
+		<attack name="energy" interval="2000" chance ="34" target ="0" radius ="3" min ="-58" max ="-436"><!-- ground -->
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-58" max ="-436"><!-- physical -->
+			<attribute key="shootEffect" value="diamondarrow"/>
+		</attack>
+
+		<attack name="energy" interval="2000" chance ="26" target ="1" range ="5" min ="-94" max ="-450"><!-- shot -->
+			<attribute key="shootEffect" value="diamondarrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="1" min ="-94" max ="-450"><!-- physical -->
+			<attribute key="shootEffect" value="diamondarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="75" defense ="75">
+		<defense name="healing" interval="2000" chance="15" min="100" max="150">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="effect" interval="2000" chance="10" radius="1">
+			<attribute key="areaEffect" value="yellownote"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="20"/>
+		<element earthPercent="75"/>
+		<element deathPercent="-5"/>
+		<element icePercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity energy="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity lifedrain="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="GRROARR"/>
+		<voice sentence="GRRR"/>
+	</voices>
+	<loot>
+		<item name="drake club" chance="2400"/>
+		<item name="composite hornbow" chance="23800"/>
+		<item name="crystal coin" countmax="3" chance="24400"/>
+		<item name="dragonbone staff" chance="14400"/>
+		<item name="focus cape" chance="16200"/>
+		<item name="shockwave amulet" chance="14000"/>
+		<item name="small diamond" countmax="3" chance="17800"/>
+		<item name="wand of draconia" chance="11600"/>
+		<item name="wand of starstorm" chance="10200"/>
+		<item name="ultimate mana potion" countmax="5" chance="3000"/>
+		<item name="backpack for GFB" chance="3000"/>
+		<item name="wand of darkness" chance="2400"/>
+	</loot>
+</monster>

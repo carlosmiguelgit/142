@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Ghoul)" nameDescription="a ghoul" race="undead" experience="4080" speed="390">
+	<health now ="2040" max ="2040"/>
+	<look type="747" corpse="14020"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-62" max ="-240"/>
+		<attack name="physical" interval="2000" chance ="17" target ="1" range ="1" min ="-28" max ="-120"><!-- physical -->
+			<attribute key="shootEffect" value="drillbolt"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="35" target ="1" range ="1" min ="-82" max ="-116"><!-- shot meele -->
+			<attribute key="shootEffect" value="drillbolt"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55">
+		<defense name="healing" interval="2000" chance="5" min="9" max="15">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="30"/>
+		<element earthPercent="20"/>
+		<element icePercent="10"/>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity drunk="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2050" chance="11200"/><!-- torch-->
+		<item name="brown piece of cloth" chance="15800"/>
+		<item name="ghoul snack" chance="15400"/>
+		<item name="life ring" chance="19400"/>
+		<item name="pile of grave earth" chance="15200"/>
+		<item name="platinum coin" countmax="50" chance="30200"/>
+		<item name="rotten piece of cloth" chance="16800"/>
+		<item name="viking helmet" chance="10800"/>
+		<item name="worm" countmax="2" chance="18400"/>
+		<item name="supreme health potion" countmax="5" chance="2600"/>
+		<item name="glass of goo" chance="2600"/>
+		<item name="training sword" chance="2600"/>
+		
+	</loot>
+</monster>

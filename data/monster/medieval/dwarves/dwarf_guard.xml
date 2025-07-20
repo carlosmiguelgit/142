@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dwarf Guard)" nameDescription="a dwarf guard" race="blood" experience="12000" speed="360">
+	<health now ="6000" max ="6000"/>
+	<look type="576" corpse="13529"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-63" max ="-592"/>
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-101" max ="-341"><!-- shot meele -->
+			<attribute key="shootEffect" value="bolt"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="24" target ="1" range ="1" min ="-67" max ="-303"><!-- physical -->
+			<attribute key="shootEffect" value="bolt"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70"/>
+	<elements>
+		<element earthPercent="20"/>
+		<element physicalPercent="10"/>
+		<element firePercent="-5"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hail Durin!"/>
+	</voices>
+	<loot>
+		<item name="royal dwarf mace" chance="2900"/>
+		<item name="axe ring" chance="10400"/>
+		<item name="crystal coin" countmax="3" chance="24400"/>
+		<item name="health potion" chance="13000"/>
+		<item name="iron ore" chance="12600"/>
+		<item name="small amethyst" chance="13600"/>
+		<item name="white mushroom" countmax="2" chance="19000"/>
+		<item name="Ultimate UH rune" countmax="5" chance="2200"/>
+		<item name="backpack for Destroy field" chance="2200"/>
+		<item name="spark sphere" chance="2200"/>
+	</loot>
+</monster>

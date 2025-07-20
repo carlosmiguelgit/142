@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Orc Bowman)" nameDescription="a orc bowman" race="blood" experience="5760" speed="340">
+	<health now ="2880" max ="2880"/>
+	<look type="683" corpse="13841"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="6"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="physical" interval="2000" chance ="27" target ="1" range ="6" min ="-92" max ="-145">
+			<attribute key="shootEffect" value="whirlwindaxe"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="37" target ="1" range ="4" min ="-47" max ="-195">
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65"/>
+	<elements>
+		<element energyPercent="20"/>
+		<element holyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity fire="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Ulderek futgyr human!"/>
+	</voices>
+	<loot>
+		<item id="2667" chance="20000"/><!-- fish-->
+		<item name="brown mushroom" chance="15600"/>
+		<item name="crystal coin" countmax="3" chance="21800"/>
+		<item name="health potion" chance="17200"/>
+		<item name="longsword" chance="17200"/>
+		<item name="orc leather" chance="18800"/>
+		<item name="orc tooth" chance="14600"/>
+		<item name="royal spear" chance="16200"/>
+		<item name="skull belt" chance="12000"/>
+		<item name="sword ring" chance="12200"/>
+		<item name="throwing knife" countmax="4" chance="10800"/>
+		<item name="warrior helmet" chance="18000"/>
+		<item name="Golden Marble" chance="2000"/>
+		<item name="butterfly ring" chance="3400"/>
+		<item name="heavy trident" chance="3400"/>
+	</loot>
+</monster>

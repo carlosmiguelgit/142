@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Pirate Captain)" nameDescription="a pirate captain" race="undead" experience="31200" speed="380">
+	<health now ="15600" max ="15600"/>
+	<look type="712" corpse="13919"/>
+	<targetchange interval="4000" chance="15"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="40"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-97" max ="-896"/>
+		<attack name="physical" interval="2000" chance ="31" target ="1" range ="1" min ="-91" max ="-434"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="29" target ="1" range ="1" min ="-71" max ="-463"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="1" min ="-93" max ="-489"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="75" defense ="75"/>
+	<elements>
+		<element earthPercent="20"/>
+		<element holyPercent="10"/>
+		<element deathPercent="-5"/>
+		<element icePercent="-5"/>
+		<element firePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Give up!"/>
+		<voice sentence="Hiyaa!"/>
+		<voice sentence="Plundeeeeer!"/>
+	</voices>
+	<loot>
+		<item name="dark warrior armor" chance="1900"/>
+		<item name="crystal coin" countmax="5" chance="18200"/>
+		<item name="eye patch" chance="16800"/>
+		<item name="hook" chance="11800"/>
+		<item name="peg leg" chance="18400"/>
+		<item name="pirate backpack" chance="8000"/>
+		<item name="pirate boots" chance="13600"/>
+		<item name="pirate hat" chance="17600"/>
+		<item name="Ultimate Magic Wall rune" countmax="5" chance="3500"/>
+		<item name="tarsal arrow" countmax="80" chance="2900"/>
+		<item name="visage of the end days" chance="2900"/>
+	</loot>
+</monster>

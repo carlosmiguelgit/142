@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Drake)" nameDescription="a drake" race="blood" experience="130000" speed="440">
+	<health now ="65000" max ="65000"/>
+	<look type="563" corpse="13492"/>
+	<targetchange interval="5000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-119" max ="-1734"/>
+		<attack name="fire" interval="2000" chance ="28" target ="1" range ="6" min ="-117" max ="-872"><!-- shot -->
+			<attribute key="shootEffect" value="redstar"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="28" target ="1" range ="1" min ="-117" max ="-872"><!-- physical -->
+			<attribute key="shootEffect" value="redstar"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="34" target ="0" radius ="4" min ="-118" max ="-847"><!-- ground -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-118" max ="-847"><!-- physical -->
+			<attribute key="shootEffect" value="redstar"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="85" defense ="85">
+		<defense name="healing" interval="2000" chance="15" min="510" max="600">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element holyPercent="30"/>
+		<element deathPercent="30"/>
+		<element energyPercent="40"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="For ze emperor!"/>
+		<voice sentence="You will die zhouzandz deazhz!"/>
+	</voices>
+	<loot>
+		<item name="drake axe" chance="2200"/>
+		<item name="drake club" chance="2800"/>
+		<item name="assassin dagger" chance="17000"/>
+		<item name="blade of corruption" chance="10800"/>
+		<item name="cobra crown" chance="14800"/>
+		<item name="crystal coin" countmax="10" chance="13400"/>
+		<item name="draken boots" chance="20400"/>
+		<item name="draken sulphur" chance="13200"/>
+		<item name="draken wristbands" chance="12400"/>
+		<item name="elite draken mail" chance="23600"/>
+		<item name="small diamond" countmax="4" chance="28600"/>
+		<item name="snake god's wristguard" chance="21400"/>
+		<item name="Tome of Knowledge" chance="13400"/>
+		<item name="twiceslicer" chance="17000"/>
+		<item name="Zaoan armor" chance="12000"/>
+		<item name="Zaoan helmet" chance="22800"/>
+		<item name="Zaoan legs" chance="12200"/>
+		<item name="Zaoan sword" chance="11200"/>
+		<item name="giant emerald" chance="2000"/>
+		<item name="diamond arrow" countmax="80" chance="2000"/>
+		<item name="deepling axe" chance="2000"/>
+	</loot>
+</monster>

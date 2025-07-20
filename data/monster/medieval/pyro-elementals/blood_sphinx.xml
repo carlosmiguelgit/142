@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Blood Sphinx)" nameDescription="a blood sphinx" race="fire" experience="128000" speed="460">
+	<health now ="64000" max ="64000"/>
+	<look type="717" corpse="13934"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-127" max ="-2026"/>
+		<attack name="fire" interval="2000" chance ="31" target ="0" radius ="3" min ="-121" max ="-999"><!-- ground -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="31" target ="1" range ="1" min ="-121" max ="-999"><!-- physical -->
+			<attribute key="shootEffect" value="redstar"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="30" target ="0" length ="6" spread ="3" min ="-126" max ="-1046"><!-- wave -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="30" target ="1" range ="1" min ="-126" max ="-1046"><!-- physical -->
+			<attribute key="shootEffect" value="redstar"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="75" defense ="75"/>
+	<elements>
+		<element energyPercent="25"/>
+		<element physicalPercent="50"/>
+		<element deathPercent="20"/>
+		<element icePercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>		
+		<item id="14344" chance="1500"/><!-- pharaonic wand-->
+		<item name="pharaonic axe" chance="1700"/>
+		<item id="14322" chance="2100"/><!-- pharaonic staff-->
+		<item id="14345" chance="2800"/><!-- pharaonic wand-->
+		<item name="pharaonic boots" chance="3000"/>
+		<item id="14324" chance="2400"/><!-- pharaonic staff-->
+		<item name="crystal coin" countmax="11" chance="18800"/>
+		<item name="fire axe" chance="12200"/>
+		<item name="fire sword" chance="13400"/>
+		<item name="magma coat" chance="12600"/>
+		<item name="magma legs" chance="22200"/>
+		<item name="small diamond" chance="25400"/>
+		<item name="wand of inferno" chance="16200"/>
+		<item name="giant ruby" chance="2100"/>
+		<item name="gill necklace" chance="2100"/>
+		<item name="shroud of despair" chance="2100"/>
+		
+		
+	</loot>
+</monster>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Giant Spider)" nameDescription="a giant spider" race="venom" experience="36000" speed="390">
+	<health now ="18000" max ="18000"/>
+	<look type="497" corpse="13309" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="70" />
+		<flag runonhealth="0" />
+		<flag canwalkonfire="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-84" max ="-1184"/>
+		<attack name="earth" interval="2000" chance ="18" target ="0" length ="6" spread ="3" min ="-98" max ="-569"><!-- wave -->
+			<attribute key="areaEffect" value="yellowbubble"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="18" target ="1" range ="1" min ="-98" max ="-569"><!-- physical -->
+			<attribute key="shootEffect" value="poisonarrow"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="28" target ="0" length ="6" spread ="3" min ="-109" max ="-584"><!-- wave -->
+			<attribute key="areaEffect" value="yellowbubble"/>
+		</attack>
+
+		<attack name="manadrain" interval="2000" chance ="31" target ="1" range ="3" min ="-84" max ="-561"><!-- mana -->
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="31" target ="1" range ="1" min ="-84" max ="-561"><!-- shot meele -->
+			<attribute key="shootEffect" value="poisonarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70">
+		<defense name="speed" interval="2000" chance="15" speedchange="390" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="20" />
+		<element icePercent="20" />
+		<element firePercent="-10" />
+	</elements>
+	<immunities>
+		<immunity outfit="1" />
+		<immunity drunk="1" />
+		<immunity invisible="1" />
+		<immunity earth="1" />
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="(Poison Spider)" interval="2000" chance="10" max="2"/>
+	</summons>
+	<loot>
+		<item name="dragon warrior armor" chance="2200"/>
+		<item name="dragon warrior helmet" chance="2700"/>
+		<item name="dragon warrior legs" chance="3000"/>
+		<item id="2169" chance="19400"/><!-- time ring-->
+		<item name="crystal coin" countmax="4" chance="29400"/>
+		<item name="poison arrow" countmax="12" chance="10400"/>
+		<item name="spider silk" chance="15400"/>
+		<item name="strong health potion" chance="17200"/>
+		<item name="violet memory shard" chance="2500"/>
+		<item name="dragon blood" chance="2500"/>
+		<item name="visage of the end days" chance="2500"/>
+	</loot>
+</monster>

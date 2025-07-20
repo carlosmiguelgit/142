@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dark Chaos Fiend)" nameDescription="a Dark Chaos Fiend" race="fire" experience="5120" speed="330">
+	<health now ="2560" max ="2560"/>
+	<look type="552" corpse="13461"/>
+	<targetchange interval="4000" chance="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-63" max ="-317"/>
+		<attack name="death" interval="2000" chance ="29" target ="0" length ="6" spread ="3" min ="-50" max ="-149"><!-- wave -->
+			<attribute key="areaEffect" value="explosionarea"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="29" target ="1" range ="1" min ="-50" max ="-149"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="95" defense ="95">
+		<defense name="healing" interval="2000" chance="15" min="180" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="320" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="30"/>
+		<element deathPercent="30"/>
+		<element energyPercent="50"/>
+		<element earthPercent="40"/>
+		<element icePercent="-10"/>
+		<element holyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="1">
+		<summon name="(fire elemental)" interval="2000" chance="10"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Your soul will be mine!"/>
+		<voice sentence="MUHAHAHAHA!"/>
+		<voice sentence="CHAMEK ATH UTHUL ARAK!"/>
+		<voice sentence="I SMELL FEEEEAAAAAR!"/>
+		<voice sentence="Your resistance is futile!"/>
+	</voices>
+	<loot>
+		<item id="5906" countmax="3" chance="10000"/><!-- demon dust-->
+		<item id="7393" chance="13200"/><!-- demon trophy-->
+		<item name="crystal coin" countmax="2" chance="24600"/>
+		<item name="demon shield" chance="21800"/>
+		<item name="demonrage sword" chance="11400"/>
+		<item name="fire mushroom" countmax="6" chance="10800"/>
+		<item name="great mana potion" countmax="3" chance="10800"/>
+		<item name="great spirit potion" countmax="3" chance="15000"/>
+		<item name="magic plate armor" chance="19200"/>
+		<item name="mastermind shield" chance="22000"/>
+		<item name="ultimate health potion" countmax="3" chance="19200"/>
+		<item name="Meteoro fire rune" countmax="5" chance="3200"/>
+		<item name="phial of fresh water" chance="3200"/>
+		<item name="wand of dimensions" chance="3200"/>
+		
+	</loot>
+</monster>

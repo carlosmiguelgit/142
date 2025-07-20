@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Valkyrie Cavalry)" nameDescription="a valkyrie cavalry" race="blood" experience="13200" speed="370">
+	<health now ="6600" max ="6600"/>
+	<look type="701" corpse="13895"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-87" max ="-606"/>
+		<attack name="physical" interval="2000" chance ="31" target ="1" range ="1" min ="-81" max ="-289"><!-- physical -->
+			<attribute key="shootEffect" value="whirlwindsword"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="29" target ="1" range ="1" min ="-61" max ="-318"><!-- shot meele -->
+			<attribute key="shootEffect" value="whirlwindsword"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="80" defense ="80">
+		<defense name="healing" interval="2000" chance="20" min="200" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="40"/>
+		<element icePercent="10"/>
+		<element firePercent="30"/>
+		<element holyPercent="50"/>
+		<element earthPercent="50"/>
+		<element physicalPercent="30"/>
+		<element deathPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Let's have a fight!"/>
+		<voice sentence="Welcome to my battleground!"/>
+		<voice sentence="Have you seen princess Lumelia?"/>
+		<voice sentence="I will sing a tune at your grave."/>
+	</voices>
+	<loot>
+		<item name="arrow" countmax="13" chance="11800"/>
+		<item name="bow" chance="20400"/>
+		<item name="crown armor" chance="21400"/>
+		<item name="crown helmet" chance="14400"/>
+		<item name="crown legs" chance="18800"/>
+		<item name="crown shield" chance="16600"/>
+		<item name="crystal coin" countmax="3" chance="15000"/>
+		<item name="fire sword" chance="17000"/>
+		<item name="grapes" chance="17000"/>
+		<item name="great health potion" chance="18600"/>
+		<item name="green tunic" chance="17000"/>
+		<item name="meat" countmax="3" chance="13400"/>
+		<item name="might ring" chance="22800"/>
+		<item name="red piece of cloth" chance="19400"/>
+		<item name="scroll of heroic deeds" chance="15800"/>
+		<item name="sniper arrow" countmax="4" chance="9200"/>
+		<item name="two handed sword" chance="23600"/>
+		<item name="war hammer" chance="18800"/>
+		<item name="wedding ring" chance="19000"/>
+		<item name="blue memory shard" chance="2700"/>
+		<item name="dragon blood" chance="2700"/>
+		<item name="glooth cape" chance="2700"/>
+	</loot>
+</monster>

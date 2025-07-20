@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Huntsman Spider)" nameDescription="a Huntsman Spider" race="venom" experience="36000" speed="360">
+	<health now ="18000" max ="18000"/>
+	<look type="508" corpse="13339" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="70" />
+		<flag runonhealth="0" />
+		<flag canwalkonfire="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-84" max ="-1184"/>
+		<attack name="earth" interval="2000" chance ="18" target ="0" length ="6" spread ="3" min ="-98" max ="-569"><!-- wave -->
+			<attribute key="areaEffect" value="yellowbubble"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="18" target ="1" range ="1" min ="-98" max ="-569"><!-- physical -->
+			<attribute key="shootEffect" value="poisonarrow"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="28" target ="0" length ="6" spread ="3" min ="-109" max ="-584"><!-- wave -->
+			<attribute key="areaEffect" value="yellowbubble"/>
+		</attack>
+
+		<attack name="manadrain" interval="2000" chance ="31" target ="1" range ="3" min ="-84" max ="-561"><!-- mana -->
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="31" target ="1" range ="1" min ="-84" max ="-561"><!-- shot meele -->
+			<attribute key="shootEffect" value="poisonarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70">
+		<defense name="speed" interval="2000" chance="15" speedchange="390" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="20" />
+		<element icePercent="20" />
+		<element firePercent="70" />
+	</elements>
+	<immunities>
+		<immunity outfit="1" />
+		<immunity drunk="1" />
+		<immunity invisible="1" />
+		<immunity earth="1" />
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="(Poison Spider)" interval="2000" chance="10" max="2"/>
+	</summons>
+	<loot>
+		<item name="dragon warrior hand axe" chance="1500"/>
+		<item name="dragon warrior axe" chance="2200"/>
+		<item id="2169" chance="23200"/><!-- time ring-->
+		<item name="crystal coin" countmax="6" chance="26400"/>
+		<item name="dragon scale mail" chance="12200"/>
+		<item name="fire sword" chance="13800"/>
+		<item name="knight armor" chance="21200"/>
+		<item name="knight legs" chance="23000"/>
+		<item name="platinum amulet" chance="14800"/>
+		<item name="poison arrow" countmax="12" chance="8400"/>
+		<item name="royal helmet" chance="13800"/>
+		<item name="spider silk" chance="17600"/>
+		<item name="steel helmet" chance="20200"/>
+		<item name="strong health potion" chance="19000"/>
+		<item name="tower shield" chance="18400"/>
+		<item name="two handed sword" chance="22200"/>
+		<item name="luminescent crystal" chance="3900"/>
+		<item name="festive backpack" chance="3900"/>
+		<item name="deepling squelcher" chance="3900"/>
+	</loot>
+</monster>

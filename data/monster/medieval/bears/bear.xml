@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Bear)" namedescription="a bear" race="blood" experience="2340" speed="350">
+	<health now ="1170" max ="1170"/>
+	<look type="511" corpse="13347"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-38" max ="-191"/>
+		<attack name="physical" interval="2000" chance ="23" target ="1" range ="1" min ="-53" max ="-112"><!-- physical -->
+			<attribute key="shootEffect" value="onyxarrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="1" min ="--2" max ="-136"><!-- shot meele -->
+			<attribute key="shootEffect" value="onyxarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element holyPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Grrrr"/>
+		<voice sentence="Groar"/>
+	</voices>
+	<loot>
+		<item name="bear paw" chance="14000"/>
+		<item name="ham" countmax="3" chance="11400"/>
+		<item name="honeycomb" chance="17200"/>
+		<item name="meat" countmax="4" chance="13400"/>
+		<item name="platinum coin" countmax="22" chance="53600"/>
+
+
+
+	</loot>
+</monster>

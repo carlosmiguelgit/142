@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Minotaur)" nameDescription="a minotaur" race="blood" experience="1980" speed="360">
+	<health now ="990" max ="990"/>
+	<look type="640" corpse="13716"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-45" max ="-197"/>
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="1" min ="-21" max ="-143"><!-- physical -->
+			<attribute key="shootEffect" value="whirlwindaxe"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="21" target ="1" range ="1" min ="-57" max ="-98"><!-- shot meele -->
+			<attribute key="shootEffect" value="whirlwindaxe"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55"/>
+	<elements>
+		<element firePercent="20"/>
+		<element holyPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-5"/>
+		<element energyPercent="-15"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Kaplar!"/>
+		<voice sentence="Hurr"/>
+	</voices>
+	<loot>
+		<item name="meat" chance="15200"/>
+		<item name="minotaur horn" countmax="2" chance="13800"/>
+		<item name="minotaur leather" chance="17000"/>
+		<item name="platinum coin" countmax="24" chance="52600"/>
+
+
+
+	</loot>
+</monster>

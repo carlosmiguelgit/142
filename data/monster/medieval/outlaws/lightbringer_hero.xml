@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Lightbringer Hero)" nameDescription="a lightbringer hero" race="blood" experience="100000" speed="540">
+	<health now ="50000" max ="50000"/>
+	<look type="704" corpse="13901"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-103" max ="-1749"/>
+		<attack name="holy" interval="2000" chance ="25" target ="1" range ="1" min ="-96" max ="-901"><!-- shot meele -->
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-93" max ="-891"><!-- physical -->
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+
+		<attack name="holy" interval="2000" chance ="25" target ="1" range ="1" min ="-130" max ="-900"><!-- shot meele -->
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="15" target ="1" range ="1" min ="-119" max ="-888"><!-- physical -->
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="80" defense ="80">
+		<defense name="healing" interval="2000" chance="20" min="200" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="40"/>
+		<element icePercent="10"/>
+		<element firePercent="30"/>
+		<element holyPercent="50"/>
+		<element earthPercent="50"/>
+		<element physicalPercent="30"/>
+		<element deathPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Let's have a fight!"/>
+		<voice sentence="Welcome to my battleground!"/>
+		<voice sentence="Have you seen princess Lumelia?"/>
+		<voice sentence="I will sing a tune at your grave."/>
+	</voices>
+	<loot>
+		<item name="black centurion wand" chance="1700"/>
+		<item name="black centurion twin axe" chance="2000"/>
+		<item name="black centurion legs" chance="2000"/>
+		<item name="black centurion rod" chance="2100"/>
+		<item name="black centurion helmet" chance="2600"/>
+		<item name="black centurion armor" chance="2200"/>
+		<item name="black centurion shield" chance="2800"/>
+		<item name="crown armor" chance="14600"/>
+		<item name="crown helmet" chance="12800"/>
+		<item name="crown legs" chance="24000"/>
+		<item name="crown shield" chance="11000"/>
+		<item name="crystal coin" countmax="8" chance="15000"/>
+		<item name="fire sword" chance="20000"/>
+		<item name="grapes" chance="10400"/>
+		<item name="meat" countmax="3" chance="16400"/>
+		<item name="red piece of cloth" chance="19800"/>
+		<item name="giant amethyst" chance="2500"/>
+		<item name="diamond arrow" countmax="80" chance="2500"/>
+		<item name="mycological bow" chance="2500"/>
+	</loot>
+</monster>

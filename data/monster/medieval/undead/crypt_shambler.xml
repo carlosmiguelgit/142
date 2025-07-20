@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Crypt Shambler)" nameDescription="a crypt shambler" race="undead" experience="7680" speed="320">
+	<health now ="3840" max ="3840"/>
+	<look type="751" corpse="14031"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-67" max ="-322"/>
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="-33" max ="-201"><!-- physical -->
+			<attribute key="shootEffect" value="smallearth"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="16" target ="1" range ="1" min ="-103" max ="-159"><!-- shot meele -->
+			<attribute key="shootEffect" value="smallearth"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="65" defense ="65"/>
+	<elements>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity drown="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Aaaaahhhh!"/>
+		<voice sentence="Hoooohhh!"/>
+		<voice sentence="Uhhhhhhh!"/>
+		<voice sentence="Chhhhhhh!"/>
+	</voices>
+	<loot>
+		<item name="crystal coin" countmax="2" chance="11200"/>
+		<item name="half-digested piece of meat" chance="19800"/>
+		<item name="small diamond" chance="23000"/>
+		<item name="throwing star" countmax="3" chance="14600"/>
+		<item name="worm" countmax="10" chance="16000"/>
+		<item name="Orange Marble" chance="3200"/>
+		<item name="blossom bag" chance="3200"/>
+		<item name="mino lance" chance="3200"/>
+	</loot>
+</monster>

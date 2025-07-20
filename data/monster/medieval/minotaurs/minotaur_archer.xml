@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Minotaur Archer)" nameDescription="a minotaur archer" race="blood" experience="3740" speed="400">
+	<health now ="1870" max ="1870"/>
+	<look type="642" corpse="13722"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="6"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="10"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="physical" interval="2000" chance ="23" target ="1" range ="6" min ="-70" max ="-150">
+			<attribute key="shootEffect" value="whirlwindaxe"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="35" target ="1" range ="6" min ="-11" max ="-111">
+			<attribute key="shootEffect" value="whirlwindaxe"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element firePercent="20"/>
+		<element holyPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-1"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Ruan Wihmpy!"/>
+		<voice sentence="Kaplar!"/>
+	</voices>
+	<loot>
+		<item name="bolt" countmax="20" chance="10000"/>
+		<item name="crossbow" chance="22000"/>
+		<item name="meat" chance="15000"/>
+		<item name="minotaur horn" countmax="2" chance="16400"/>
+		<item name="minotaur leather" chance="14400"/>
+		<item name="piece of archer armor" chance="14200"/>
+		<item name="piercing bolt" countmax="4" chance="11600"/>
+		<item name="platinum coin" countmax="76" chance="26800"/>
+		<item name="ultimate mana potion" countmax="5" chance="2600"/>
+		<item name="buggy backpack" chance="2600"/>
+		<item name="glooth cape" chance="2600"/>
+		
+	</loot>
+</monster>

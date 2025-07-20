@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Polar Bear)" nameDescription="a polar bear" race="blood" experience="2160" speed="400">
+	<health now ="1080" max ="1080"/>
+	<look type="512" corpse="13350"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="5"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-38" max ="-191"/>
+		<attack name="physical" interval="2000" chance ="23" target ="1" range ="1" min ="-53" max ="-112"><!-- physical -->
+			<attribute key="shootEffect" value="ice"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="26" target ="1" range ="1" min ="--2" max ="-136"><!-- shot meele -->
+			<attribute key="shootEffect" value="ice"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element icePercent="20"/>
+		<element firePercent="1"/>
+		<element deathPercent="-10"/>
+		<element energyPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="GROARRR!" yell="1"/>
+	</voices>
+	<loot>
+		<item name="ham" countmax="2" chance="17800"/>
+		<item name="meat" countmax="4" chance="16600"/>
+		<item name="platinum coin" countmax="23" chance="36600"/>
+		<item name="polar bear paw" chance="17400"/>
+
+
+
+	</loot>
+</monster>

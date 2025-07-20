@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Crystal Worker)" nameDescription="a crystal worker" race="venom" experience="3400" speed="370">
+	<health now ="1700" max ="1700"/>
+	<look type="629" corpse="13685"/>
+	<targetchange interval="4000" chance="15" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag staticattack="80" />
+		<flag lightlevel="0" />
+		<flag lightcolor="0" />
+		<flag targetdistance="1" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="1" />
+		<flag canwalkonpoison="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-31" max ="-242"/>
+		<attack name="physical" interval="2000" chance ="39" target ="1" range ="1" min ="-87" max ="-107"><!-- physical -->
+			<attribute key="shootEffect" value="snowball"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="32" target ="1" range ="1" min ="-76" max ="-144"><!-- shot meele -->
+			<attribute key="shootEffect" value="snowball"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="83" defense ="40">
+		<defense name="speed" interval="2000" chance="15" speedchange="250" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="20" />
+		<element energyPercent="-20" />
+	</elements>
+	<immunities>
+		<immunity fire="1" />
+		<immunity ice="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Screeech!" />
+	</voices>
+	<loot>
+		<item id="2124" chance="20600"/><!-- crystal ring-->
+		<item id="2169" chance="17600"/><!-- time ring-->
+		<item name="crystal necklace" chance="22800"/>
+		<item name="crystal sword" chance="23400"/>
+		<item name="glacier mask" chance="10600"/>
+		<item name="jewelled backpack" chance="8800"/>
+		<item name="knight armor" chance="19600"/>
+		<item name="knight legs" chance="21200"/>
+		<item name="platinum amulet" chance="22400"/>
+		<item name="platinum coin" countmax="47" chance="57600"/>
+		<item name="sapphire hammer" chance="21200"/>
+		<item name="shard" chance="16800"/>
+		<item name="sniper arrow" countmax="6" chance="9000"/>
+		<item name="spider silk" chance="15600"/>
+		<item name="steel helmet" chance="16800"/>
+		<item name="strong mana potion" chance="17600"/>
+		<item name="ultimate spirit potion" countmax="5" chance="2300"/>
+		<item name="book backpack" chance="2300"/>
+		<item name="shimmer sword" chance="2300"/>
+	</loot>
+</monster>

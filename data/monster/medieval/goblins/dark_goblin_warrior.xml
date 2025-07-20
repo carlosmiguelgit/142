@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dark Goblin Warrior)" nameDescription="a dark goblin warrior" race="blood" experience="7680" speed="350">
+	<health now ="3840" max ="3840"/>
+	<look type="617" corpse="13650"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="10"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-83" max ="-308"/>
+		<attack name="death" interval="2000" chance ="39" target ="1" range ="6" min ="-53" max ="-172"><!-- shot -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="lifedrain" interval="2000" chance ="28" target ="1" range ="4" min ="-72" max ="-198"><!-- life -->
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="28" target ="1" range ="1" min ="-72" max ="-198"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55">
+		<defense name="healing" interval="2000" chance="15" min="10" max="16">
+			<attribute key="areaEffect" value="energy"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="20"/>
+		<element holyPercent="1"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Shiny, shiny!"/>
+		<voice sentence="Gimme gimme!"/>
+		<voice sentence="You mean!"/>
+		<voice sentence="All mine!"/>
+		<voice sentence="Uhh!"/>
+	</voices>
+	<loot>
+		<item id="2667" chance="15800"/><!-- fish-->
+		<item name="crystal coin" countmax="3" chance="22200"/>
+		<item name="small stone" countmax="2" chance="18000"/>
+		<item name="Ultimate Paralyse rune" countmax="5" chance="3300"/>
+		<item name="glass of goo" chance="3300"/>
+		<item name="shimmer sword" chance="3300"/>
+	</loot>
+</monster>

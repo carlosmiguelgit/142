@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Blue Djinn)" nameDescription="a blue djinn" race="blood" experience="31200" speed="320">
+	<health now ="15600" max ="15600"/>
+	<look type="555" corpse="13470"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-91" max ="-891"/>
+		<attack name="energy" interval="2000" chance ="29" target ="0" radius ="4" min ="-123" max ="-483"><!-- ground -->
+			<attribute key="areaEffect" value="bigclouds"/>
+		</attack>
+
+		<attack name="energy" interval="2000" chance ="29" target ="1" range ="1" min ="-123" max ="-483"><!-- shot meele -->
+			<attribute key="shootEffect" value="energyball"/>
+		</attack>
+
+		<attack name="energy" interval="2000" chance ="26" target ="1" radius ="3" range ="4" min ="-111" max ="-491"><!-- area -->
+			<attribute key="shootEffect" value="energyball"/>
+			<attribute key="areaEffect" value="bigclouds"/>
+		</attack>
+
+		<attack name="energy" interval="2000" chance ="26" target ="1" range ="1" min ="-111" max ="-491"><!-- shot meele -->
+			<attribute key="shootEffect" value="energyball"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55"/>
+	<elements>
+		<element firePercent="80"/>
+		<element energyPercent="50"/>
+		<element holyPercent="1"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-12"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Simsalabim"/>
+		<voice sentence="Feel the power of my magic, tiny mortal!"/>
+		<voice sentence="Be careful what you wish for."/>
+		<voice sentence="Wishes can come true"/>
+	</voices>
+	<loot>
+		<item id="2684" chance="16800"/><!-- carrot-->
+		<item name="blue piece of cloth" chance="16000"/>
+		<item name="blue robe" chance="23400"/>
+		<item name="crystal coin" countmax="4" chance="28200"/>
+		<item name="golden armor" chance="22200"/>
+		<item name="skull staff" chance="22200"/>
+		<item name="small sapphire" countmax="4" chance="18800"/>
+		<item name="Golden Marble" chance="2800"/>
+		<item name="jade amulet" chance="2200"/>
+		<item name="warrior's shield" chance="2200"/>
+	</loot>
+</monster>

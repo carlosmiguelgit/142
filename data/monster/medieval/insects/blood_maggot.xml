@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Blood Maggot)" nameDescription="a blood maggot" race="venom" experience="3060" speed="320">
+	<health now ="1530" max ="1530"/>
+	<look type="626" corpse="13676"/>
+	<targetchange interval="5000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-37" max ="-266"/>
+		<attack name="fire" interval="2000" chance ="20" target ="1" range ="6" min ="-48" max ="-171"><!-- shot -->
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+
+		<attack name="lifedrain" interval="2000" chance ="15" target ="1" range ="4" min ="-86" max ="-146"><!-- life -->
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="15" target ="1" range ="1" min ="-86" max ="-146"><!-- physical -->
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element energyPercent="10"/>
+		<element firePercent="-10"/>
+		<element icePercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<loot>
+		<item name="meat" chance="17800"/>
+		<item name="platinum coin" countmax="66" chance="68600"/>
+		<item name="supreme health potion" countmax="5" chance="3500"/>
+		<item name="ensouled essence" chance="3500"/>
+		<item name="deepling staff" chance="2900"/>
+	</loot>
+</monster>

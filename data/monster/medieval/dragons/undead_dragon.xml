@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Undead Dragon)" nameDescription="an undead dragon" race="undead" experience="208000" speed="400">
+	<health now ="104000" max ="104000"/>
+	<look type="560" corpse="13485"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-129" max ="-2024"/>
+		<attack name="death" interval="2000" chance ="28" target ="1" range ="6" min ="-127" max ="-1017"><!-- shot -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="28" target ="1" range ="1" min ="-127" max ="-1017"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="34" target ="0" radius ="4" min ="-128" max ="-992"><!-- ground -->
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-128" max ="-992"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="80" defense ="80">
+		<defense name="healing" interval="2000" chance="15" min="200" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="5"/>
+		<element icePercent="50"/>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity drown="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="FEEEED MY ETERNAL HUNGER!" yell="1"/>
+		<voice sentence="I SENSE LIFE" yell="1"/>
+	</voices>
+	<loot>		
+		<item name="centurion mace" chance="1500"/>
+		<item name="centurion armor" chance="2300"/>
+		<item name="centurion helmet" chance="2500"/>
+		<item name="centurion shield" chance="2600"/>
+		<item name="centurion axe" chance="2900"/>
+		<item name="centurion sword" chance="2900"/>
+		<item name="centurion hammer" chance="2200"/>
+		<item name="crystal coin" countmax="12" chance="12200"/>
+		<item name="dragon slayer" chance="14600"/>
+		<item name="dragonbone staff" chance="16800"/>
+		<item name="golden armor" chance="21200"/>
+		<item name="knight armor" chance="13800"/>
+		<item name="royal helmet" chance="20400"/>
+		<item name="skullcracker armor" chance="14400"/>
+		<item name="small sapphire" countmax="2" chance="27000"/>
+		<item name="spellweaver's robe" chance="12600"/>
+		<item name="white gem" chance="2600"/>
+		<item name="crystalline arrow" countmax="80" chance="2600"/>
+		<item name="earthsoul tabard" chance="2600"/>
+	</loot>
+</monster>

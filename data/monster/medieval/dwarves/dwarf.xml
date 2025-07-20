@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dwarf)" nameDescription="a dwarf" race="blood" experience="1620" speed="350">
+	<health now ="810" max ="810"/>
+	<look type="574" corpse="13525"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-44" max ="-194"/>
+		<attack name="physical" interval="2000" chance ="28" target ="1" range ="1" min ="-42" max ="-102"><!-- shot meele -->
+			<attribute key="shootEffect" value="whirlwindsword"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="30" target ="1" range ="1" min ="-24" max ="-106"><!-- physical -->
+			<attribute key="shootEffect" value="whirlwindsword"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element earthPercent="10"/>
+		<element firePercent="-5"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hail Durin!"/>
+	</voices>
+	<loot>
+		<item name="dwarven ring" chance="15200"/>
+		<item name="iron ore" chance="19800"/>
+		<item name="platinum coin" countmax="20" chance="33800"/>
+		<item name="white mushroom" chance="19400"/>
+
+
+
+	</loot>
+</monster>

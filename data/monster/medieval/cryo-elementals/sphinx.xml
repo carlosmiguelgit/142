@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Sphinx)" nameDescription="an Sphinx" race="blood" experience="208000" speed="520">
+	<health now ="104000" max ="104000"/>
+	<look type="536" corpse="13413" />
+	<targetchange interval="20000" chance="15" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag staticattack="85" />
+		<flag lightlevel="0" />
+		<flag lightcolor="0" />
+		<flag targetdistance="1" />
+		<flag runonhealth="1" />
+		<flag canwalkonenergy="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-139" max ="-2029"/>
+		<attack name="ice" interval="2000" chance ="23" target ="0" length ="6" spread ="3" min ="-85" max ="-1046"><!-- wave -->
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="23" target ="1" range ="1" min ="-85" max ="-1046"><!-- physical -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="18" target ="0" length ="6" spread ="3" min ="-91" max ="-1000"><!-- wave -->
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="18" target ="1" range ="1" min ="-91" max ="-1000"><!-- shot meele -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70">
+		<defense name="healing" interval="2000" chance="15" min="90" max="150">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="50" />
+		<element energyPercent="-25" />
+	</elements>
+	<immunities>
+		<immunity fire="1" />
+		<immunity ice="1" />
+		<immunity earth="1" />
+		<immunity drown="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<loot>
+		<item id="14343" chance="1600"/><!-- pharaonic wand-->
+		<item name="pharaonic turban" chance="2400"/>
+		<item id="14342" chance="2600"/><!-- pharaonic wand-->
+		<item name="pharaonic armor" chance="2800"/>
+		<item id="14321" chance="2200"/><!-- pharaonic staff-->
+		<item id="14323" chance="2200"/><!-- pharaonic staff-->
+		<item name="black pearl" chance="29400"/>
+		<item name="crystal coin" countmax="13" chance="21000"/>
+		<item name="crystal sword" chance="22600"/>
+		<item name="frosty heart" chance="14000"/>
+		<item name="glacier mask" chance="21200"/>
+		<item name="ice rapier" chance="12600"/>
+		<item name="shard" chance="15000"/>
+		<item name="small diamond" chance="20000"/>
+		<item name="small sapphire" chance="20400"/>
+		<item name="strong health potion" chance="15600"/>
+		<item name="giant sapphire" chance="3000"/>
+		<item name="the cobra amulet" chance="3000"/>
+		<item name="plain mayhem crossbow" chance="3000"/>
+	</loot>
+</monster>

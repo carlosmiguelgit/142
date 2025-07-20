@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Revenant)" nameDescription="a revenant" race="undead" experience="12000" speed="350">
+	<health now ="6000" max ="6000"/>
+	<look type="725" corpse="13955"/>
+	<targetchange interval="4000" chance="15"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="450"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-70" max ="-598"/>
+		<attack name="fire" interval="2000" chance ="36" target ="1" range ="1" min ="-69" max ="-292"><!-- shot meele -->
+			<attribute key="shootEffect" value="burstarrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="20" target ="1" range ="1" min ="-46" max ="-345"><!-- physical -->
+			<attribute key="shootEffect" value="burstarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="70" defense ="70"/>
+	<elements>
+		<element icePercent="50"/>
+		<element energyPercent="10"/>
+		<element holyPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Forgive Meee!"/>
+		<voice sentence="Mouuuurn meeee!"/>
+		<voice sentence="Help meee!"/>
+	</voices>
+	<loot>
+		<item id="6300" chance="12200"/><!-- death ring-->
+		<item name="black pearl" countmax="3" chance="20800"/>
+		<item name="crystal coin" countmax="3" chance="26000"/>
+		<item name="demonic essence" chance="14600"/>
+		<item name="great health potion" countmax="2" chance="16200"/>
+		<item name="great mana potion" countmax="2" chance="18400"/>
+		<item name="haunted blade" chance="17600"/>
+		<item name="red gem" chance="23800"/>
+		<item name="ruby necklace" chance="21400"/>
+		<item name="skeleton decoration" chance="19200"/>
+		<item name="skull helmet" chance="23400"/>
+		<item name="skull staff" chance="10000"/>
+		<item name="stone skin amulet" chance="12000"/>
+		<item name="titan axe" chance="10600"/>
+		<item name="tower shield" chance="19600"/>
+		<item name="unholy bone" chance="16400"/>
+		<item name="white pearl" countmax="3" chance="16400"/>
+		<item name="ultimate spirit potion" countmax="5" chance="3400"/>
+		<item name="backpack for SD" chance="3400"/>
+		<item name="meat hammer" chance="3400"/>
+	</loot>
+</monster>

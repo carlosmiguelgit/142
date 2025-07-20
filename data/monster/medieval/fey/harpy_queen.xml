@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Harpy Queen)" nameDescription="a harpy queen" race="blood" experience="84000" speed="490">
+	<health now ="42000" max ="42000"/>
+	<look type="595" corpse="13585"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="fire" interval="2000" chance ="26" target ="1" range ="5" min ="-82" max ="-728">
+			<attribute key="shootEffect" value="burstarrow"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="26" target ="0" length ="6" spread ="3" min ="-82" max ="-728"><!-- wave -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="manadrain" interval="2000" chance ="36" target ="1" range ="3" min ="-93" max ="-709"><!-- mana -->
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element energyPercent="30"/>
+		<element earthPercent="20"/>
+		<element deathPercent="5"/>
+		<element physicalPercent="-5"/>
+		<element icePercent="-20"/>
+		<element holyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hot, eh?"/>
+		<voice sentence="Hell, oh, hell!"/>
+	</voices>
+	<loot>		
+		<item name="winged royal helmet" chance="1900"/>
+		<item name="royal shield" chance="1900"/>
+		<item name="royal sword" chance="2400"/>
+		<item name="crystal coin" countmax="7" chance="21000"/>
+		<item name="necrotic rod" chance="19400"/>
+		<item name="small amethyst" chance="26000"/>
+		<item name="Ultimate UH rune" countmax="5" chance="3300"/>
+		<item name="amulet of theurgy" chance="3300"/>
+		<item name="haunted mirror piece" chance="3300"/>
+	</loot>
+</monster>

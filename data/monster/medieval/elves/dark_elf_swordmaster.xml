@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dark Elf Swordmaster)" nameDescription="a dark elf swordmaster" race="blood" experience="21600" speed="320">
+	<health now ="10800" max ="10800"/>
+	<look type="587" corpse="13564"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-87" max ="-870"/>
+		<attack name="death" interval="2000" chance ="15" target ="1" range ="6" min ="-126" max ="-439"><!-- shot -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="15" target ="1" range ="1" min ="-126" max ="-439"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="31" target ="0" radius ="3" min ="-60" max ="-427"><!-- ground -->
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+
+		<attack name="manadrain" interval="2000" chance ="19" target ="1" range ="6" min ="-62" max ="-430"><!-- mana -->
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="19" target ="1" range ="1" min ="-62" max ="-430"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element holyPercent="20"/>
+		<element deathPercent="-1"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Tha'shi Ab'Dendriel!"/>
+		<voice sentence="Feel the sting of my arrows!"/>
+		<voice sentence="Thy blood will quench the soil's thirst!"/>
+		<voice sentence="Evicor guide my arrow!"/>
+		<voice sentence="Your existence will end here!"/>
+	</voices>
+	<loot>
+		<item id="5921" chance="13400"/><!-- heaven blossom-->
+		<item name="arrow" countmax="12" chance="10000"/>
+		<item name="bow" chance="10000"/>
+		<item name="crystal coin" countmax="3" chance="15800"/>
+		<item name="elven scouting glass" chance="12800"/>
+		<item name="elvish bow" chance="14400"/>
+		<item name="elvish talisman" chance="15400"/>
+		<item name="grapes" chance="18800"/>
+		<item name="poison arrow" countmax="4" chance="9200"/>
+		<item name="Blue Marble (III)" chance="3700"/>
+		<item name="envenomed arrow" countmax="80" chance="3700"/>
+		<item name="crude umbral mace" chance="3100"/>
+		
+	</loot>
+</monster>

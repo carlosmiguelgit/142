@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Efreet)" nameDescription="an efreet" race="blood" experience="52000" speed="330">
+	<health now ="26000" max ="26000"/>
+	<look type="556" corpse="13473"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-96" max ="-1171"/>
+		<attack name="earth" interval="2000" chance ="29" target ="0" radius ="4" min ="-128" max ="-623"><!-- ground -->
+			<attribute key="areaEffect" value="smallplants"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="29" target ="1" range ="1" min ="-128" max ="-623"><!-- shot meele -->
+			<attribute key="shootEffect" value="eartharrow"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="26" target ="1" radius ="3" range ="4" min ="-116" max ="-631"><!-- area -->
+			<attribute key="shootEffect" value="eartharrow"/>
+			<attribute key="areaEffect" value="smallplants"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="26" target ="1" range ="1" min ="-116" max ="-631"><!-- shot meele -->
+			<attribute key="shootEffect" value="eartharrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="60" defense ="60">
+		<defense name="healing" interval="2000" chance="15" min="50" max="80">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="90"/>
+		<element energyPercent="60"/>
+		<element earthPercent="10"/>
+		<element deathPercent="20"/>
+		<element icePercent="-5"/>
+		<element holyPercent="-8"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="(green djinn)" interval="2000" chance="10" max="2"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="I grant you a deathwish!"/>
+		<voice sentence="Good wishes are for fairytales"/>
+	</voices>
+	<loot>
+		<item name="blue robe" chance="16800"/>
+		<item name="crystal coin" countmax="5" chance="28000"/>
+		<item name="golden armor" chance="23200"/>
+		<item name="green gem" chance="20800"/>
+		<item name="green piece of cloth" chance="17200"/>
+		<item name="pear" countmax="5" chance="28200"/>
+		<item name="skull staff" chance="13800"/>
+		<item name="small emerald" chance="22200"/>
+		<item name="wand of inferno" chance="23800"/>
+		<item name="Ultimate UH rune" countmax="5" chance="2200"/>
+		<item name="gearwheel chain" chance="2200"/>
+		<item name="warrior's shield" chance="2200"/>
+	</loot>
+</monster>

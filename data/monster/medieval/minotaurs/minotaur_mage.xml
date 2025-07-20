@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Minotaur Mage)" nameDescription="a minotaur mage" race="blood" experience="12000" speed="340">
+	<health now ="6000" max ="6000"/>
+	<look type="641" corpse="13719"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="6"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="energy" interval="2000" chance ="23" target ="1" range ="6" min ="-100" max ="-325">
+			<attribute key="shootEffect" value="prismaticbolt"/>
+		</attack>
+
+		<attack name="energy" interval="2000" chance ="35" target ="1" range ="6" min ="-41" max ="-286">
+			<attribute key="shootEffect" value="prismaticbolt"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55"/>
+	<elements>
+		<element energyPercent="20"/>
+		<element earthPercent="20"/>
+		<element holyPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Learrn tha secrret uf deathhh!"/>
+		<voice sentence="Kaplar!"/>
+	</voices>
+	<loot>
+		<item id="2050" chance="9800"/><!-- torch-->
+		<item id="2684" countmax="8" chance="13800"/><!-- carrot-->
+		<item name="crystal coin" countmax="4" chance="15000"/>
+		<item name="mana potion" chance="10400"/>
+		<item name="minotaur horn" countmax="2" chance="19400"/>
+		<item name="minotaur leather" chance="14200"/>
+		<item name="purple robe" countmax="2" chance="13600"/>
+		<item name="taurus mace" chance="22600"/>
+		<item name="wand of cosmic energy" chance="12600"/>
+		<item name="Golden Marble" chance="2000"/>
+		<item name="war backpack" chance="2000"/>
+		<item name="lederhosen" chance="2000"/>
+	</loot>
+</monster>

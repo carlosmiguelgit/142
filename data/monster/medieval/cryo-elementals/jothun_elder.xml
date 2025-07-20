@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Jothun Elder)" nameDescription="a Jothun Elder" race="blood" experience="44000" speed="370">
+	<health now ="22000" max ="22000"/>
+	<look type="538" corpse="13419"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-114" max ="-1179"/>
+		<attack name="ice" interval="2000" chance ="23" target ="0" length ="6" spread ="3" min ="-60" max ="-621"><!-- wave -->
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="23" target ="1" range ="1" min ="-60" max ="-621"><!-- physical -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="18" target ="0" length ="6" spread ="3" min ="-66" max ="-575"><!-- wave -->
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="18" target ="1" range ="1" min ="-66" max ="-575"><!-- shot meele -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="90" defense ="90"/>
+	<elements>
+		<element earthPercent="-10"/>
+		<element energyPercent="-25"/>
+		<element physicalPercent="10"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity invisible="1"/>
+		<immunity drown="1"/>
+		<immunity fire="1"/>
+		<immunity ice="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Clank! Clank!"/>
+		<voice sentence="Clap!"/>
+		<voice sentence="Crrrk! Crrrk!"/>
+	</voices>
+	<loot>
+		<item name="ice armor" chance="1500"/>
+		<item name="ice axe" chance="3000"/>
+		<item name="ice legs" chance="2400"/>
+		<item name="crown armor" chance="21000"/>
+		<item name="crystal coin" countmax="5" chance="16800"/>
+		<item name="fish fin" chance="11600"/>
+		<item name="glacier robe" chance="20200"/>
+		<item name="great health potion" chance="14000"/>
+		<item name="shrimp" countmax="5" chance="16600"/>
+		<item name="small ruby" countmax="2" chance="16200"/>
+		<item name="warrior helmet" chance="12800"/>
+		<item name="Blue Marble" chance="3600"/>
+		<item name="Love Elixir" chance="3600"/>
+		<item name="the skull of a beast" chance="3600"/>
+	</loot>
+</monster>

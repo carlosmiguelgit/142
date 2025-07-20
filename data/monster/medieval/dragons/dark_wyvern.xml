@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dark Wyvern)" nameDescription="a Dark Wyvern" race="undead" experience="19200" speed="330">
+	<health now ="9600" max ="9600"/>
+	<look type="570" corpse="13513"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="80"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="1"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-105" max ="-878"/>
+		<attack name="death" interval="2000" chance ="34" target ="0" radius ="3" min ="-58" max ="-436"><!-- ground -->
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-58" max ="-436"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="26" target ="1" range ="5" min ="-94" max ="-450"><!-- shot -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="1" min ="-94" max ="-450"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="75" defense ="75">
+		<defense name="healing" interval="2000" chance="15" min="100" max="150">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="effect" interval="2000" chance="10" radius="1">
+			<attribute key="areaEffect" value="yellownote"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="20"/>
+		<element earthPercent="75"/>
+		<element deathPercent="-5"/>
+		<element icePercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity energy="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity lifedrain="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="GRROARR"/>
+		<voice sentence="GRRR"/>
+	</voices>
+	<loot>
+		<item name="black wizard rod" chance="2800"/>
+		<item name="composite hornbow" chance="13800"/>
+		<item name="crystal coin" countmax="4" chance="18400"/>
+		<item name="dragon ham" countmax="3" chance="12000"/>
+		<item name="dragonbone staff" chance="16400"/>
+		<item name="focus cape" chance="10200"/>
+		<item name="lightning pendant" chance="19400"/>
+		<item name="shockwave amulet" chance="14600"/>
+		<item name="small diamond" countmax="3" chance="21600"/>
+		<item name="strong health potion" chance="18800"/>
+		<item name="strong mana potion" chance="16000"/>
+		<item name="wand of draconia" chance="20200"/>
+		<item name="wand of starstorm" chance="11800"/>
+		<item name="Ultimate Explotion rune" countmax="5" chance="2400"/>
+		<item name="flask with snake poison" chance="2400"/>
+		<item name="wand of darkness" chance="2400"/>
+	</loot>
+</monster>

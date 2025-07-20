@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Jothun)" nameDescription="a Jothun" race="blood" experience="28800" speed="330">
+	<health now ="14400" max ="14400"/>
+	<look type="537" corpse="13416"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag staticattack="80"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="40"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-109" max ="-899"/>
+		<attack name="ice" interval="2000" chance ="23" target ="0" length ="6" spread ="3" min ="-55" max ="-481"><!-- wave -->
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="23" target ="1" range ="1" min ="-55" max ="-481"><!-- physical -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="18" target ="0" length ="6" spread ="3" min ="-61" max ="-435"><!-- wave -->
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+
+		<attack name="ice" interval="2000" chance ="18" target ="1" range ="1" min ="-61" max ="-435"><!-- shot meele -->
+			<attribute key="shootEffect" value="shiverarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="55" defense ="55">
+		<defense name="speed" interval="2000" chance="25" speedchange="400" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="-10"/>
+		<element energyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity drown="1"/>
+		<immunity fire="1"/>
+		<immunity ice="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Zuerk Pachak!"/>
+		<voice sentence="Shrrrr"/>
+	</voices>
+	<loot>
+		<item name="ice shield" chance="1700"/>
+		<item name="ice armor" chance="2000"/>
+		<item name="ice mace" chance="2900"/>
+		<item name="ice boots" chance="2000"/>
+		<item name="ice legs" chance="2000"/>
+		<item name="blue robe" chance="14000"/>
+		<item name="crystal coin" countmax="3" chance="17800"/>
+		<item name="fish fin" countmax="2" chance="17000"/>
+		<item name="shrimp" countmax="5" chance="12200"/>
+		<item name="small sapphire" chance="19400"/>
+		<item name="stealth ring" chance="21400"/>
+		<item name="Onyx Marble" chance="3600"/>
+		<item name="buggy backpack" chance="3600"/>
+		<item name="magic hat" chance="3600"/>
+		
+	</loot>
+</monster>

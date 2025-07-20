@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Undead Behemoth)" nameDescription="a undead behemoth" race="blood" experience="80000" speed="440">
+	<health now ="40000" max ="40000"/>
+	<look type="753" corpse="14037"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-109" max ="-1730"/>
+		<attack name="death" interval="2000" chance ="34" target ="1" range ="6" min ="-78" max ="-844"><!-- shot -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-78" max ="-844"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="33" target ="0" length ="6" spread ="3" min ="-137" max ="-889"><!-- wave -->
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="33" target ="1" range ="1" min ="-137" max ="-889"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="85" defense ="85">
+		<defense name="speed" interval="2000" chance="15" speedchange="300" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="80"/>
+		<element holyPercent="30"/>
+		<element firePercent="30"/>
+		<element energyPercent="10"/>
+		<element physicalPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="You're so little!"/>
+		<voice sentence="Human flesh -  delicious!"/>
+		<voice sentence="Crush the intruders!"/>
+	</voices>
+	<loot>
+		<item name="black wizard rod" chance="1800"/>
+		<item name="black wizard hammer" chance="2200"/>
+		<item name="black wizard armor" chance="3000"/>
+		<item name="black wizard shield" chance="2400"/>
+		<item name="black wizard sword" chance="2200"/>
+		<item name="battle stone" chance="17400"/>
+		<item name="behemoth claw" chance="16000"/>
+		<item name="crystal coin" countmax="10" chance="16400"/>
+		<item name="giant sword" chance="12200"/>
+		<item name="great health potion" chance="13200"/>
+		<item name="perfect behemoth fang" chance="16800"/>
+		<item name="small amethyst" countmax="5" chance="17400"/>
+		<item name="titan axe" chance="22400"/>
+		<item name="giant emerald" chance="3100"/>
+		<item name="diamond arrow" countmax="80" chance="3100"/>
+		<item name="deepling axe" chance="3100"/>
+	</loot>
+</monster>

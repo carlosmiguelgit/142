@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Madrazos Delivery)" nameDescription="a madrazos delivery" race="blood" experience="90000" speed="480">
+	<health now ="45000" max ="45000"/>
+	<look type="707" corpse="13908"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-103" max ="-1749"/>
+		<attack name="death" interval="2000" chance ="25" target ="1" range ="1" min ="-96" max ="-901"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-93" max ="-891"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="death" interval="2000" chance ="25" target ="1" range ="1" min ="-130" max ="-900"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="15" target ="1" range ="1" min ="-119" max ="-888"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="80" defense ="80">
+		<defense name="healing" interval="2000" chance="20" min="200" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="40"/>
+		<element icePercent="10"/>
+		<element firePercent="30"/>
+		<element holyPercent="50"/>
+		<element earthPercent="50"/>
+		<element physicalPercent="30"/>
+		<element deathPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Let's have a fight!"/>
+		<voice sentence="Welcome to my battleground!"/>
+		<voice sentence="Have you seen princess Lumelia?"/>
+		<voice sentence="I will sing a tune at your grave."/>
+	</voices>
+	<loot>
+		<item name="dragon warrior axe" chance="2300"/>
+		<item name="dragon warrior hand axe" chance="2400"/>
+		<item name="dragon warrior chopper" chance="2600"/>
+		<item name="dragon warrior helmet" chance="2600"/>
+		<item name="dragon warrior armor" chance="2800"/>
+		<item name="dragon warrior legs" chance="2900"/>
+		<item name="crown armor" chance="17400"/>
+		<item name="crown helmet" chance="19400"/>
+		<item name="crown legs" chance="13000"/>
+		<item name="crown shield" chance="23000"/>
+		<item name="crystal coin" countmax="12" chance="24400"/>
+		<item name="fire sword" chance="21200"/>
+		<item name="grapes" chance="13000"/>
+		<item name="meat" countmax="3" chance="14000"/>
+		<item name="red piece of cloth" chance="13200"/>
+		<item name="giant amethyst" chance="2500"/>
+		<item name="diamond arrow" countmax="80" chance="3300"/>
+		<item name="hive bow" chance="3300"/>
+	</loot>
+</monster>

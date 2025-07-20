@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Slave Hunter)" nameDescription="a slave hunter" race="blood" experience="28800" speed="350">
+	<health now ="14400" max ="14400"/>
+	<look type="703" corpse="13899"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="physical" interval="2000" chance ="23" target ="1" range ="6" min ="-77" max ="-493">
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="4" min ="-72" max ="-484">
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="30" target ="1" range ="5" min ="-113" max ="-441">
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="80" defense ="80">
+		<defense name="healing" interval="2000" chance="20" min="200" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="40"/>
+		<element icePercent="10"/>
+		<element firePercent="30"/>
+		<element holyPercent="50"/>
+		<element earthPercent="50"/>
+		<element physicalPercent="30"/>
+		<element deathPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Let's have a fight!"/>
+		<voice sentence="Welcome to my battleground!"/>
+		<voice sentence="Have you seen princess Lumelia?"/>
+		<voice sentence="I will sing a tune at your grave."/>
+	</voices>
+	<loot>
+		<item name="black wizard bow" chance="2900"/>
+		<item name="crown armor" chance="18600"/>
+		<item name="crown helmet" chance="16200"/>
+		<item name="crown legs" chance="13000"/>
+		<item name="crown shield" chance="15000"/>
+		<item name="crystal coin" countmax="5" chance="29400"/>
+		<item name="fire sword" chance="18400"/>
+		<item name="grapes" chance="10600"/>
+		<item name="meat" countmax="3" chance="11800"/>
+		<item name="red piece of cloth" chance="19200"/>
+		<item name="supreme health potion" countmax="5" chance="3300"/>
+		<item name="dragon blood" chance="2700"/>
+		<item name="glooth cape" chance="2700"/>
+	</loot>
+</monster>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Alphabeast)" nameDescription="a Alphabeast" race="blood" experience="80000" speed="550">
+	<health now ="40000" max ="40000"/>
+	<look type="567" corpse="13504"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-111" max ="-1731"/>
+		<attack name="earth" interval="2000" chance ="29" target ="0" radius ="4" min ="-143" max ="-903"><!-- ground -->
+			<attribute key="areaEffect" value="smallplants"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="29" target ="1" range ="1" min ="-143" max ="-903"><!-- shot meele -->
+			<attribute key="shootEffect" value="eartharrow"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="26" target ="1" radius ="3" range ="4" min ="-131" max ="-911"><!-- area -->
+			<attribute key="shootEffect" value="eartharrow"/>
+			<attribute key="areaEffect" value="smallplants"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="26" target ="1" range ="1" min ="-131" max ="-911"><!-- shot meele -->
+			<attribute key="shootEffect" value="eartharrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="85" defense ="85">
+		<defense name="speed" interval="2000" chance="15" speedchange="300" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="80"/>
+		<element holyPercent="30"/>
+		<element firePercent="30"/>
+		<element energyPercent="10"/>
+		<element physicalPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="You're so little!"/>
+		<voice sentence="Human flesh -  delicious!"/>
+		<voice sentence="Crush the intruders!"/>
+	</voices>
+	<loot>		
+		<item name="dwarf blood axe" chance="2200"/>
+		<item name="dwarf blood helmet" chance="2600"/>
+		<item name="crystal coin" countmax="11" chance="17400"/>
+		<item name="giant sword" chance="20800"/>
+		<item name="great health potion" chance="15800"/>
+		<item name="small amethyst" countmax="5" chance="29800"/>
+		<item name="steel boots" chance="12600"/>
+		<item name="titan axe" chance="18000"/>
+		<item name="giant emerald" chance="3000"/>
+		<item name="diamond arrow" countmax="80" chance="3000"/>
+		<item name="ornate mace" chance="3000"/>
+
+	</loot>
+</monster>

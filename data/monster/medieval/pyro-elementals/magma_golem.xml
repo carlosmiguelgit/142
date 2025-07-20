@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Magma Golem)" nameDescription="a magma golem" race="fire" experience="9600" speed="340">
+	<health now ="4800" max ="4800"/>
+	<look type="719" corpse="13940"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-62" max ="-594"/>
+		<attack name="fire" interval="2000" chance ="36" target ="0" radius ="3" min ="-96" max ="-323"><!-- ground -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="36" target ="1" range ="1" min ="-96" max ="-323"><!-- physical -->
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="75" defense ="75"/>
+	<elements>
+		<element energyPercent="25"/>
+		<element physicalPercent="50"/>
+		<element deathPercent="20"/>
+		<element icePercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item name="crystal coin" countmax="4" chance="17400"/>
+		<item name="fire axe" chance="14400"/>
+		<item name="fire sword" chance="23200"/>
+		<item name="magma coat" chance="16600"/>
+		<item name="magma legs" chance="22000"/>
+		<item name="small diamond" chance="20200"/>
+		<item name="wand of inferno" chance="23000"/>
+		<item name="Versicoloured Marble" chance="2100"/>
+		<item name="crystal backpack" chance="2100"/>
+		<item name="the skull of a beast" chance="2100"/>
+	</loot>
+</monster>

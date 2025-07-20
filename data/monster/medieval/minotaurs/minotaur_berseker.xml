@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Minotaur Berseker)" nameDescription="a minotaur berseker" race="blood" experience="24000" speed="300">
+	<health now ="12000" max ="12000"/>
+	<look type="645" corpse="13731"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-100" max ="-897"/>
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="1" min ="-76" max ="-493"><!-- physical -->
+			<attribute key="shootEffect" value="whirlwindaxe"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="21" target ="1" range ="1" min ="-112" max ="-448"><!-- shot meele -->
+			<attribute key="shootEffect" value="whirlwindaxe"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="23" target ="1" range ="1" min ="-102" max ="-474"><!-- physical -->
+			<attribute key="shootEffect" value="whirlwindaxe"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="60" defense ="60"/>
+	<elements>
+		<element firePercent="20"/>
+		<element holyPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Kirrl Karrrl!"/>
+		<voice sentence="Kaplar"/>
+	</voices>
+	<loot>
+		<item name="minotaur chopper" chance="1700"/>
+		<item name="minotaur helmet" chance="2100"/>
+		<item name="minotaur armor" chance="2300"/>
+		<item name="minotaur hammer" chance="2700"/>
+		<item name="minotaur sword" chance="3000"/>
+		<item name="minotaur axe" chance="2000"/>
+		<item name="minotaur mace" chance="2400"/>
+		<item id="7401" chance="15400"/><!-- minotaur trophy-->
+		<item name="crystal coin" countmax="3" chance="21800"/>
+		<item name="blue memory shard" chance="2600"/>
+		<item name="perfume flacon" chance="2600"/>
+		<item name="albino plate" chance="2600"/>
+	</loot>
+</monster>

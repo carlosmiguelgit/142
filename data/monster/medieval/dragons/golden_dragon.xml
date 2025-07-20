@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Golden Dragon)" nameDescription="an Golden Dragon" race="blood" experience="44000" speed="360">
+	<health now ="22000" max ="22000"/>
+	<look type="571" corpse="13517"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-104" max ="-1174"/>
+		<attack name="holy" interval="2000" chance ="28" target ="1" range ="6" min ="-102" max ="-592"><!-- shot -->
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="28" target ="1" range ="1" min ="-102" max ="-592"><!-- physical -->
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+
+		<attack name="holy" interval="2000" chance ="34" target ="0" radius ="4" min ="-103" max ="-567"><!-- ground -->
+			<attribute key="areaEffect" value="holydamage"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-103" max ="-567"><!-- physical -->
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="80" defense ="80">
+		<defense name="healing" interval="2000" chance="15" min="200" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="5"/>
+		<element icePercent="50"/>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity drown="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="FEEEED MY ETERNAL HUNGER!" yell="1"/>
+		<voice sentence="I SENSE LIFE" yell="1"/>
+	</voices>
+	<loot>		
+		<item name="centurion armor" chance="2000"/>
+		<item name="centurion sword" chance="2600"/>
+		<item id="6300" chance="15000"/><!-- death ring-->
+		<item name="assassin star" countmax="5" chance="14800"/>
+		<item name="crystal coin" countmax="6" chance="18800"/>
+		<item name="demonic essence" chance="18000"/>
+		<item name="divine plate" chance="23400"/>
+		<item name="dragon slayer" chance="21200"/>
+		<item name="dragonbone staff" chance="13200"/>
+		<item name="gold ingot" chance="15400"/>
+		<item name="golden armor" chance="16000"/>
+		<item name="great health potion" chance="19200"/>
+		<item name="great mana potion" chance="20000"/>
+		<item name="hardened bone" chance="10200"/>
+		<item name="knight armor" chance="15200"/>
+		<item name="power bolt" countmax="15" chance="8400"/>
+		<item name="royal helmet" chance="12600"/>
+		<item name="skullcracker armor" chance="21600"/>
+		<item name="small sapphire" countmax="2" chance="18600"/>
+		<item name="spellweaver's robe" chance="10400"/>
+		<item name="unholy bone" chance="10000"/>
+		<item name="violet crystal shard" chance="2600"/>
+		<item name="Jester outfits scroll" chance="2600"/>
+		<item name="vampire silk slippers" chance="2600"/>
+	</loot>
+</monster>

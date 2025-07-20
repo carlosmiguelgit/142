@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dranus)" nameDescription="a Dranus" race="blood" experience="192000" speed="420">
+	<health now ="96000" max ="96000"/>
+	<look type="561" corpse="13487"/>
+	<targetchange interval="4000" chance="5"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="366"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-135" max ="-2008"/>
+		<attack name="fire" interval="2000" chance ="34" target ="0" radius ="3" min ="-88" max ="-1001"><!-- ground -->
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-88" max ="-1001"><!-- physical -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance ="26" target ="1" range ="5" min ="-124" max ="-1015"><!-- shot -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="26" target ="1" range ="1" min ="-124" max ="-1015"><!-- physical -->
+			<attribute key="shootEffect" value="flammingarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="75" defense ="75"/>
+	<elements>
+		<element firePercent="10"/>
+		<element icePercent="50"/>
+		<element physicalPercent="-10"/>
+		<element holyPercent="-15"/>
+		<element energyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity death="1"/>
+		<immunity earth="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="EMBRACE MY GIFTS!" yell="1"/>
+		<voice sentence="I WILL FEAST ON YOUR SOUL!" yell="1"/>
+	</voices>
+	<loot>		
+		<item name="dwarf blood legs" chance="1600"/>
+		<item name="dwarf blood crossbow" chance="1800"/>
+		<item id="14333" chance="1800"/><!-- dwarf blood wand-->
+		<item name="dwarf blood axe" chance="2000"/>
+		<item name="dwarf blood bow" chance="2500"/>
+		<item name="dwarf blood armor" chance="2800"/>
+		<item name="dwarf blood helmet" chance="2600"/>
+		<item name="crystal coin" countmax="15" chance="27400"/>
+		<item name="drakinata" chance="18200"/>
+		<item name="guardian boots" chance="14400"/>
+		<item name="jade hat" chance="23400"/>
+		<item name="spellweaver's robe" chance="10400"/>
+		<item name="terra boots" chance="19400"/>
+		<item name="terra legs" chance="18600"/>
+		<item name="twin hooks" chance="11800"/>
+		<item name="Zaoan armor" chance="23400"/>
+		<item name="Zaoan halberd" chance="13600"/>
+		<item name="Zaoan helmet" chance="15000"/>
+		<item name="Zaoan legs" chance="18200"/>
+		<item name="Zaoan shoes" chance="12200"/>
+		<item name="Zaoan sword" chance="14400"/>
+		<item name="giant ruby" chance="3800"/>
+		<item name="gill necklace" chance="3800"/>
+		<item name="depth galea" chance="3800"/>
+
+	</loot>
+</monster>

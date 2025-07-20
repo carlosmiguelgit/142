@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Nether Spiderling)" nameDescription="a Nether Spiderling" race="venom" experience="5760" speed="400">
+	<health now ="2880" max ="2880"/>
+	<look type="501" corpse="13319"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="6"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-59" max ="-334"/>
+		<attack name="physical" interval="2000" chance ="18" target ="1" range ="1" min ="-73" max ="-144"><!-- physical -->
+			<attribute key="shootEffect" value="poisonarrow"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="31" target ="1" range ="1" min ="-35" max ="-209"><!-- shot meele -->
+			<attribute key="shootEffect" value="poisonarrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="45" defense ="45"/>
+	<elements>
+		<element firePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+	</immunities>
+	<loot>
+		<item name="crystal coin" chance="29200"/>
+		<item name="supreme health potion" countmax="5" chance="3900"/>
+		<item name="winged backpack" chance="2700"/>
+		<item name="deepling staff" chance="2700"/>
+	</loot>
+</monster>

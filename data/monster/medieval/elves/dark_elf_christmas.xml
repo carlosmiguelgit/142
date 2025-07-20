@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Dark Elf Christmas)" nameDescription="a dark elf christmas " race="blood" experience="9600" speed="320">
+	<health now ="4800" max ="4800"/>
+	<look type="590" corpse="13570"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-77" max ="-580"/>
+		<attack name="death" interval="2000" chance ="15" target ="1" range ="1" min ="-116" max ="-294"><!-- shot meele -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance ="19" target ="1" range ="1" min ="-65" max ="-295"><!-- physical -->
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="50" defense ="50"/>
+	<elements>
+		<element holyPercent="20"/>
+		<element deathPercent="-1"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Tha'shi Ab'Dendriel!"/>
+		<voice sentence="Feel the sting of my arrows!"/>
+		<voice sentence="Thy blood will quench the soil's thirst!"/>
+		<voice sentence="Evicor guide my arrow!"/>
+		<voice sentence="Your existence will end here!"/>
+	</voices>
+	<loot>
+		<item id="5921" chance="19000"/><!-- heaven blossom-->
+		<item id="13067" chance="100000"/><!-- surprise bag-->
+		<item name="arrow" countmax="12" chance="10600"/>
+		<item name="bow" chance="15400"/>
+		<item name="crystal coin" countmax="4" chance="28400"/>
+		<item name="elven scouting glass" chance="16800"/>
+		<item name="elvish bow" chance="21800"/>
+		<item name="elvish talisman" chance="16600"/>
+		<item name="grapes" chance="19000"/>
+		<item name="poison arrow" countmax="4" chance="12000"/>
+		<item name="Meteoro fire rune" countmax="5" chance="2300"/>
+		<item name="pink fluid" chance="2300"/>
+		<item name="final judgement" chance="2300"/>
+		
+	</loot>
+</monster>

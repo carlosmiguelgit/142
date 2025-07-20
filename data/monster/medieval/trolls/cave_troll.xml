@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="(Cave Troll)" nameDescription="a cave troll" race="blood" experience="5760" speed="340">
+	<health now ="2880" max ="2880"/>
+	<look type="694" corpse="13874"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="15"/>
+		<flag canwalkonenergy="0"/>
+		<flag canwalkonfire="0"/>
+		<flag canwalkonpoison="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min ="-53" max ="-334"/>
+		<attack name="physical" interval="2000" chance ="31" target ="1" range ="1" min ="-98" max ="-168"><!-- physical -->
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+
+		<attack name="earth" interval="2000" chance ="21" target ="1" range ="1" min ="-105" max ="-167"><!-- shot meele -->
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+
+	</attacks>
+	<defenses armor ="60" defense ="60"/>
+	<elements>
+		<element energyPercent="15"/>
+		<element holyPercent="10"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Meee maity!"/>
+		<voice sentence="Grrrr"/>
+		<voice sentence="Whaaaz up!?"/>
+		<voice sentence="Gruntz!"/>
+		<voice sentence="Groar"/>
+	</voices>
+	<loot>
+		<item name="arrow" countmax="5" chance="8400"/>
+		<item name="crystal coin" countmax="3" chance="12000"/>
+		<item name="meat" chance="12200"/>
+		<item name="spear" chance="14000"/>
+		<item name="trollroot" chance="12400"/>
+		<item name="Onyx Marble" chance="3000"/>
+		<item name="crystal backpack" chance="3000"/>
+		<item name="metal spats" chance="3000"/>
+	</loot>
+</monster>
