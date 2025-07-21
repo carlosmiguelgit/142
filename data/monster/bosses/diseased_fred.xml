@@ -19,7 +19,7 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-207" poison="4" />
-		<attack name="lifedrain" interval="2000" min="-90" max="-140" target="1">
+		<attack name="lifedrain" interval="2000" min="-90"  chance="40" max="-140" target="1">
 			<attribute key="areaEffect" value="redshimmer" />
 		</attack>
 		<attack name="physical" interval="1000" chance="40" radius="2" target="0" min="-100" max="-175">

@@ -69,7 +69,7 @@
 		<item id="7368" countmax="10" chance="25000"/> <!-- assassin star -->
 		<item id="2231" chance="900"/> <!-- big bone -->
 		<item id="2144" countmax="4" chance="9200"/> <!-- black pearl -->
-		<item id="18425" chance="12500"/> <!-- blazing bone -->
+		<!-- <item id="18425" chance="12500"/> blazing bone -->
 		<item id="6558" chance="20000"/> <!-- concentrated demonic blood -->
 		<item id="6558" chance="20000"/> <!-- concentrated demonic blood -->
 		<item id="6500" chance="20000"/> <!-- demonic essence -->

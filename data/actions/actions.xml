@@ -1,179 +1,686 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
+	<!-----------------------------------------------------------------------------------------------------------------------------OTHER--->
+	
+	<!-- Change gold -->
+	<action itemid="2148" script="other/other/changegold.lua"/>
+	<action itemid="2152" script="other/other/changegold.lua"/>
+	<action itemid="2160" script="other/other/changegold.lua"/>
+	
+	<!-- Item Rarity system -->	
+	<action fromid="12663" toid="12665" script="other/other/slot.lua"/>
+	
 	<!-- Enchanting -->
-	<action fromid="2146" toid="2147" script="other/enchanting.lua" />
-	<action fromid="2149" toid="2150" script="other/enchanting.lua" />
-	<action itemid="2342" script="other/enchanting.lua" />
-	<action fromid="7759" toid="7762" script="other/enchanting.lua" />
-	<action itemid="24739" script="other/enchanting.lua" />
-
-	<!-- Market -->
-	<action itemid="14405" function="market" />
-
-	<!-- Quests -->
-	<action itemid="1740" script="quests/quests.lua" />
-	<action fromid="1747" toid="1749" script="quests/quests.lua" />
-	<action uniqueid="30015" script="quests/annihilator.lua" />
-
-	<!-- Tools -->
-	<action itemid="2120" script="tools/rope.lua" />
-	<action itemid="2416" script="tools/crowbar.lua" />
-	<action itemid="2420" script="tools/machete.lua" />
-	<action itemid="2442" script="tools/machete.lua" />
-	<action itemid="2550" script="tools/scythe.lua" />
-	<action itemid="2553" script="tools/pick.lua" />
-	<action itemid="2566" script="tools/kitchen_knife.lua" />
-	<action itemid="2580" script="tools/fishing.lua" allowfaruse="1" />
-	<action itemid="2554" script="tools/shovel.lua" />
-	<action itemid="5710" script="tools/shovel.lua" />
-	<action itemid="7731" script="tools/rope.lua" />
-	<action itemid="10511" script="tools/tool_gear.lua" />
-	<action itemid="10513" script="tools/tool_gear.lua" />
-	<action itemid="10515" script="tools/tool_gear.lua" />
-
-	<!-- Transform and decay -->
-	<action fromid="1873" toid="1876" script="other/decayto.lua" />
-	<action fromid="2041" toid="2042" script="other/decayto.lua" />
-	<action fromid="2044" toid="2045" script="other/decayto.lua" />
-	<action fromid="2047" toid="2048" script="other/decayto.lua" />
-	<action fromid="2050" toid="2055" script="other/decayto.lua" />
-	<action fromid="2162" toid="2163" script="other/decayto.lua" />
-	<action fromid="5812" toid="5813" script="other/decayto.lua" />
-	<action itemid="7183" script="other/decayto.lua" />
-	<action itemid="10719" script="other/decayto.lua" />
-	<action itemid="11401" script="other/decayto.lua" />
-	<action fromid="25545" toid="25546" script="other/decayto.lua" />
-	<action fromid="26098" toid="26099" script="other/decayto.lua" />
-
-	<!-- Food -->
-	<action itemid="2362" script="other/food.lua" />
-	<action fromid="2666" toid="2691" script="other/food.lua" />
-	<action fromid="2695" toid="2696" script="other/food.lua" />
-	<action fromid="2787" toid="2796" script="other/food.lua" />
-	<action itemid="5097" script="other/food.lua" />
-	<action itemid="6125" script="other/food.lua" />
-	<action fromid="6278" toid="6279" script="other/food.lua" />
-	<action fromid="6393" toid="6394" script="other/food.lua" />
-	<action itemid="6501" script="other/food.lua" />
-	<action fromid="6541" toid="6545" script="other/food.lua" />
-	<action itemid="6569" script="other/food.lua" />
-	<action itemid="6574" script="other/food.lua" />
-	<action fromid="7158" toid="7159" script="other/food.lua" />
-	<action fromid="7372" toid="7377" script="other/food.lua" />
-	<action fromid="7909" toid="7910" script="other/food.lua" />
-	<action itemid="7963" script="other/food.lua" />
-	<action itemid="8112" script="other/food.lua" />
-	<action fromid="8838" toid="8845" script="other/food.lua" />
-	<action itemid="8847" script="other/food.lua" />
-	<action itemid="9005" script="other/food.lua" />
-	<action itemid="9114" script="other/food.lua" />
-	<action itemid="9996" script="other/food.lua" />
-	<action itemid="10454" script="other/food.lua" />
-	<action itemid="11246" script="other/food.lua" />
-	<action itemid="11370" script="other/food.lua" />
-	<action itemid="11429" script="other/food.lua" />
-	<action fromid="12415" toid="12418" script="other/food.lua" />
-	<action fromid="12637" toid="12639" script="other/food.lua" />
-	<action itemid="13297" script="other/food.lua" />
-	<action itemid="15405" script="other/food.lua" />
-	<action fromid="15487" toid="15488" script="other/food.lua" />
-	<action itemid="16014" script="other/food.lua" />
-	<action itemid="18397" script="other/food.lua" />
-	<action itemid="19737" script="other/food.lua" />
-	<action fromid="20100" toid="20101" script="other/food.lua" />
-	<action itemid="24841" script="other/food.lua" />
-	<action itemid="24843" script="other/food.lua" />
-	<action itemid="26191" script="other/food.lua" />
-	<action itemid="26201" script="other/food.lua" />
-
-	<!-- Music -->
-	<action fromid="2070" toid="2085" script="other/music.lua" />
-	<action itemid="2332" script="other/music.lua" />
-	<action itemid="2364" script="other/music.lua" />
-	<action fromid="2367" toid="2373" script="other/music.lua" />
-	<action fromid="3951" toid="3953" script="other/music.lua" />
-	<action itemid="3957" script="other/music.lua" />
-	<action itemid="5786" script="other/music.lua" />
-	<action fromid="6572" toid="6573" script="other/music.lua" />
-	<action itemid="13759" script="other/music.lua" />
-	<action itemid="23923" script="other/music.lua" />
-
-	<!-- Construction Kits -->
-	<action fromid="3901" toid="3938" script="other/construction_kits.lua" />
-	<action fromid="5086" toid="5088" script="other/construction_kits.lua" />
-	<action itemid="6114" script="other/construction_kits.lua" />
-	<action itemid="6115" script="other/construction_kits.lua" />
-	<action itemid="6372" script="other/construction_kits.lua" />
-	<action itemid="6373" script="other/construction_kits.lua" />
-	<action itemid="8692" script="other/construction_kits.lua" />
-	<action itemid="9974" script="other/construction_kits.lua" />
-	<action itemid="11124" script="other/construction_kits.lua" />
-	<action itemid="11126" script="other/construction_kits.lua" />
-	<action itemid="11133" script="other/construction_kits.lua" />
-	<action itemid="11205" script="other/construction_kits.lua" />
-	<action itemid="14328" script="other/construction_kits.lua" />
-	<action itemid="14329" script="other/construction_kits.lua" />
-	<action itemid="16075" script="other/construction_kits.lua" />
-	<action itemid="16099" script="other/construction_kits.lua" />
-	<action itemid="20254" script="other/construction_kits.lua" />
-	<action itemid="20255" script="other/construction_kits.lua" />
-	<action itemid="20257" script="other/construction_kits.lua" />
-
+	<action fromid="2146" toid="2147" script="other/enchanting/enchanting.lua" />
+	<action fromid="2149" toid="2150" script="other/enchanting/enchanting.lua" />
+	<action itemid="2342" script="other/enchanting/enchanting.lua" />
+	<action fromid="7759" toid="7762" script="other/enchanting/enchanting.lua" />
+		
 	<!-- Fluids -->
-	<action itemid="1775" script="other/fluids.lua" />
-	<action fromid="2005" toid="2009" script="other/fluids.lua" />
-	<action fromid="2011" toid="2015" script="other/fluids.lua" />
-	<action itemid="2023" script="other/fluids.lua" />
-	<action fromid="2031" toid="2034" script="other/fluids.lua" />
-	<action fromid="2574" toid="2577" script="other/fluids.lua" />
-	<action itemid="5553" script="other/fluids.lua" />
-
-	<!-- Potions -->
-	<action itemid="6558" script="other/potions.lua" />
-	<action fromid="7439" toid="7440" script="other/potions.lua" />
-	<action itemid="7443" script="other/potions.lua" />
-	<action fromid="7588" toid="7591" script="other/potions.lua" />
-	<action itemid="7618" script="other/potions.lua" />
-	<action itemid="7620" script="other/potions.lua" />
-	<action fromid="8472" toid="8474" script="other/potions.lua" />
-	<action itemid="8704" script="other/potions.lua" />
-	<action fromid="26029" toid="26031" script="other/potions.lua" />
-
-	<!-- Other -->
-	<action itemid="430" script="other/teleport.lua" />
-	<action itemid="486" script="other/snow_heap.lua" />
-	<action itemid="1369" script="other/teleport.lua" />
-	<action itemid="1386" script="other/teleport.lua" />
-	<action fromid="1728" toid="1731" script="other/watch.lua" />
-	<action fromid="1816" toid="1817" script="other/wall_mirror.lua" />
-	<action fromid="1843" toid="1844" script="other/wall_mirror.lua" />
-	<action fromid="1846" toid="1847" script="other/wall_mirror.lua" />
-	<action fromid="1849" toid="1850" script="other/wall_mirror.lua" />
-	<action itemid="2036" script="other/watch.lua" />
-	<action itemid="2093" script="other/water_pipe.lua" />
-	<action itemid="2095" script="other/bird_cage.lua" />
-	<action itemid="2099" script="other/water_pipe.lua" />
-	<action itemid="2114" script="other/piggy_bank.lua" />
-	<action fromid="2376" toid="2404" script="other/destroy.lua" />
-	<action fromid="2406" toid="2415" script="other/destroy.lua" />
-	<action fromid="2417" toid="2419" script="other/destroy.lua" />
-	<action fromid="2421" toid="2441" script="other/destroy.lua" />
-	<action fromid="2443" toid="2453" script="other/destroy.lua" />
-	<action itemid="2579" script="other/trap.lua" />
-	<action itemid="2692" script="other/create_bread.lua" />
-	<action itemid="2694" script="other/create_bread.lua" />
-	<action itemid="2785" script="other/blueberry_bush.lua" />
-	<action itemid="3678" script="other/teleport.lua" />
-	<action itemid="3900" script="other/watch.lua" />
-	<action itemid="5543" script="other/teleport.lua" />
-	<action fromid="5792" toid="5797" script="other/die.lua" />
-	<action itemid="6092" script="other/watch.lua" />
-	<action itemid="6576" script="other/fireworks_rocket.lua" />
-	<action itemid="6578" script="other/party_hat.lua" />
-	<action itemid="7552" script="other/large_seashell.lua" />
-	<action itemid="7828" script="other/watch.lua" />
-	<action fromid="7904" toid="7907" script="other/bed_modification_kits.lua" />
-	<action fromid="9443" toid="9444" script="other/watch.lua" />
-	<action fromid="18488" toid="18492" script="other/skill_trainer.lua" />
-	<action itemid="20252" script="other/bed_modification_kits.lua" />
+	<action itemid="6558" script="other/fluids/concentratedDemonicBlood.lua" />
+	<action fromid="2005" toid="2009" script="other/fluids/fluids.lua" />
+	<action fromid="2011" toid="2015" script="other/fluids/fluids.lua" />
+	<action actionid="2023" script="other/fluids/fluids.lua" />
+	<action itemid="1775" script="other/fluids/fluids.lua" />
+	<action fromid="2031" toid="2034" script="other/fluids/fluids.lua" />
+	<action fromid="2574" toid="2577" script="other/fluids/fluids.lua" />
+	<action itemid="7498" script="other/fluids/packpotion.lua" />		
+	<action fromid="7588" toid="7591" script="other/fluids/potions.lua" />
+	<action itemid="7618" script="other/fluids/potions.lua" />
+	<action itemid="7620" script="other/fluids/potions.lua" />
+	<action fromid="8472" toid="8474" script="other/fluids/potions.lua" />
+	<action itemid="8704" script="other/fluids/potions.lua" />	
+	<action itemid="7439" script="other/fluids/potionsStrengThening.lua" />
+	<action itemid="7440" script="other/fluids/potionsStrengThening.lua" />
+	<action itemid="7443" script="other/fluids/potionsStrengThening.lua" />
+	<!-- Food -->
+	<action itemid="2362" script="other/food/food.lua" />
+	<action fromid="2666" toid="2691" script="other/food/food.lua" />
+	<action fromid="2695" toid="2696" script="other/food/food.lua" />
+	<action fromid="2787" toid="2796" script="other/food/food.lua" />
+	<action itemid="5097" script="other/food/food.lua" />
+	<action itemid="6125" script="other/food/food.lua" />
+	<action fromid="6278" toid="6279" script="other/food/food.lua" />
+	<action fromid="6393" toid="6394" script="other/food/food.lua" />
+	<action itemid="6501" script="other/food/food.lua" />
+	<action fromid="6541" toid="6545" script="other/food/food.lua" />
+	<action itemid="6569" script="other/food/food.lua" />
+	<action itemid="6574" script="other/food/food.lua" />
+	<action fromid="7158" toid="7159" script="other/food/food.lua" />
+	<action fromid="7372" toid="7377" script="other/food/food.lua" />
+	<action fromid="7909" toid="7910" script="other/food/food.lua" />
+	<action itemid="7963" script="other/food/food.lua" />
+	<action itemid="8112" script="other/food/food.lua" />
+	<action fromid="8838" toid="8845" script="other/food/food.lua" />
+	<action itemid="8847" script="other/food/food.lua" />
+	<action itemid="9005" script="other/food/food.lua" />
+	<action itemid="9114" script="other/food/food.lua" />
+	<action itemid="9111" script="other/food/food.lua" />
+	<action itemid="10454" script="other/food/food.lua" />
+	<action itemid="11246" script="other/food/food.lua" />
+	<action itemid="11370" script="other/food/food.lua" />
+	<action itemid="11429" script="other/food/food.lua" />
+	<action fromid="12415" toid="12418" script="other/food/food.lua" />
+	<action fromid="12637" toid="12639" script="other/food/food.lua" />		
+	<action fromid="9992" toid="10001" script="other/food/jeanpierrefood.lua" />
+	<action itemid="12540" script="other/food/jeanpierrefood.lua" />
+	<action fromid="12542" toid="12544" script="other/food/jeanpierrefood.lua" />
+	<!-- kitchen tools -->
+	<action itemid="6277" script="other/kitchen tools/baking.lua" />
+	<action itemid="8846" script="other/kitchen tools/baking.lua" />
+	<action fromid="2692" toid="2694" script="other/kitchen tools/baking.lua" />
+	<action itemid="9112" script="other/kitchen tools/baking.lua" />
+	<action itemid="5865" script="other/kitchen tools/juiceSqueezer.lua" />
+	<action itemid="2566" script="other/kitchen tools/kitchenknife.lua" />
+	<action itemid="2565" script="other/kitchen tools/spoon.lua" />
+	<!-- kits -->
+	<action fromid="7904" toid="7907" script="other/kits/bedModificationKits.lua" />
+	<action itemid="20252" script="other/kits/bedModificationKits.lua" />
+	<action fromid="3901" toid="3938" script="other/kits/constructionkits.lua" />
+	<action fromid="5086" toid="5088" script="other/kits/constructionkits.lua" />
+	<action itemid="6114" script="other/kits/constructionkits.lua" />
+	<action itemid="6115" script="other/kits/constructionkits.lua" />
+	<action itemid="6372" script="other/kits/constructionkits.lua" />
+	<action itemid="6373" script="other/kits/constructionkits.lua" />
+	<action itemid="8692" script="other/kits/constructionkits.lua" />
+	<action itemid="9974" script="other/kits/constructionkits.lua" />
+	<action itemid="11124" script="other/kits/constructionkits.lua" />
+	<action itemid="11126" script="other/kits/constructionkits.lua" />
+	<action itemid="11133" script="other/kits/constructionkits.lua" />
+	<action itemid="11205" script="other/kits/constructionkits.lua" />		
+	<action fromid="2041" toid="2042" script="other/other/decayTo.lua" />
+	<action fromid="2044" toid="2045" script="other/other/decayTo.lua" />
+	<action fromid="2047" toid="2048" script="other/other/decayTo.lua" />
+	<action fromid="2050" toid="2055" script="other/other/decayTo.lua" />
+	<action itemid="1479" toid="1480" script="other/other/decayTo.lua" />
+	<action itemid="1480" toid="1479" script="other/other/decayTo.lua" />
+	<action itemid="1634" toid="1635" script="other/other/decayTo.lua" />
+	<action itemid="1635" toid="1634" script="other/other/decayTo.lua" />
+	<action itemid="1636" toid="1637" script="other/other/decayTo.lua" />
+	<action itemid="1637" toid="1636" script="other/other/decayTo.lua" />
+	<action itemid="1638" toid="1639" script="other/other/decayTo.lua" />
+	<action itemid="1639" toid="1638" script="other/other/decayTo.lua" />
+	<action itemid="1640" toid="1641" script="other/other/decayTo.lua" />
+	<action itemid="1641" toid="1640" script="other/other/decayTo.lua" />
+	<action itemid="1786" toid="1787" script="other/other/decayTo.lua" />
+	<action itemid="1787" toid="1786" script="other/other/decayTo.lua" />
+	<action itemid="1788" toid="1789" script="other/other/decayTo.lua" />
+	<action itemid="1789" toid="1788" script="other/other/decayTo.lua" />
+	<action itemid="1790" toid="1791" script="other/other/decayTo.lua" />
+	<action itemid="1791" toid="1790" script="other/other/decayTo.lua" />
+	<action itemid="1792" toid="1793" script="other/other/decayTo.lua" />
+	<action itemid="1793" toid="1792" script="other/other/decayTo.lua" />
+	<action itemid="1873" toid="1874" script="other/other/decayTo.lua" />
+	<action itemid="1874" toid="1873" script="other/other/decayTo.lua" />
+	<action itemid="1875" toid="1876" script="other/other/decayTo.lua" />
+	<action itemid="1876" toid="1875" script="other/other/decayTo.lua" />
+	<action itemid="1945" toid="1946" script="other/other/decayTo.lua" />
+	<action itemid="1946" toid="1945" script="other/other/decayTo.lua" />
+	<action itemid="2037" toid="2038" script="other/other/decayTo.lua" />
+	<action itemid="2038" toid="2037" script="other/other/decayTo.lua" />
+	<action itemid="2039" toid="2040" script="other/other/decayTo.lua" />
+	<action itemid="2040" toid="2039" script="other/other/decayTo.lua" />
+	<action itemid="2058" toid="2059" script="other/other/decayTo.lua" />
+	<action itemid="2059" toid="2058" script="other/other/decayTo.lua" />
+	<action itemid="2060" toid="2061" script="other/other/decayTo.lua" />
+	<action itemid="2061" toid="2060" script="other/other/decayTo.lua" />
+	<action itemid="2064" toid="2065" script="other/other/decayTo.lua" />
+	<action itemid="2065" toid="2064" script="other/other/decayTo.lua" />
+	<action itemid="2066" toid="2067" script="other/other/decayTo.lua" />
+	<action itemid="2067" toid="2066" script="other/other/decayTo.lua" />
+	<action itemid="2068" toid="2069" script="other/other/decayTo.lua" />
+	<action itemid="2069" toid="2068" script="other/other/decayTo.lua" />
+	<action itemid="2578" toid="2579" script="other/other/decayTo.lua" />
+	<action itemid="2096" toid="2097" script="other/other/decayTo.lua" />
+	<action itemid="2097" toid="2096" script="other/other/decayTo.lua" />
+	<action itemid="2162" toid="2163" script="other/other/decayTo.lua" />
+	<action itemid="2163" toid="2162" script="other/other/decayTo.lua" />
+	<action itemid="3697" toid="3698" script="other/other/decayTo.lua" />
+	<action itemid="3698" toid="3697" script="other/other/decayTo.lua" />
+	<action itemid="3743" toid="3744" script="other/other/decayTo.lua" />
+	<action itemid="3744" toid="3743" script="other/other/decayTo.lua" />
+	<action itemid="3947" toid="3948" script="other/other/decayTo.lua" />
+	<action itemid="3948" toid="3948" script="other/other/decayTo.lua" />
+	<action itemid="5812" toid="5813" script="other/other/decayTo.lua" />
+	<action itemid="5813" toid="5812" script="other/other/decayTo.lua" />
+	<action itemid="6489" toid="6490" script="other/other/decayTo.lua" />
+	<action itemid="6490" toid="6489" script="other/other/decayTo.lua" />
+	<action itemid="7058" toid="7059" script="other/other/decayTo.lua" />
+	<action itemid="7059" toid="7059" script="other/other/decayTo.lua" />
+	<action itemid="8684" toid="8685" script="other/other/decayTo.lua" />
+	<action itemid="8685" toid="8684" script="other/other/decayTo.lua" />
+	<action itemid="8686" toid="8687" script="other/other/decayTo.lua" />
+	<action itemid="8687" toid="8686" script="other/other/decayTo.lua" />
+	<action itemid="8688" toid="8689" script="other/other/decayTo.lua" />
+	<action itemid="8689" toid="8688" script="other/other/decayTo.lua" />
+	<action itemid="8690" toid="8691" script="other/other/decayTo.lua" />
+	<action itemid="8691" toid="8690" script="other/other/decayTo.lua" />
+	<action itemid="9575" toid="9576" script="other/other/decayTo.lua" />
+	<action itemid="9576" toid="9575" script="other/other/decayTo.lua" />
+	<action itemid="9577" toid="9578" script="other/other/decayTo.lua" />
+	<action itemid="9578" toid="9577" script="other/other/decayTo.lua" />
+	<action itemid="9579" toid="9580" script="other/other/decayTo.lua" />
+	<action itemid="9580" toid="9579" script="other/other/decayTo.lua" />
+	<action itemid="9581" toid="9582" script="other/other/decayTo.lua" />
+	<action itemid="9582" toid="9581" script="other/other/decayTo.lua" />
+	<action itemid="9747" toid="9748" script="other/other/decayTo.lua" />
+	<action itemid="9748" toid="9747" script="other/other/decayTo.lua" />
+	<action itemid="9749" toid="9750" script="other/other/decayTo.lua" />
+	<action itemid="9750" toid="9749" script="other/other/decayTo.lua" />	
+	<action fromid="2376" toid="2404" script="other/other/destroy.lua" />
+	<action itemid="2406" script="other/other/destroy.lua" />
+	<action fromid="2408" toid="2415" script="other/other/destroy.lua" />
+	<action fromid="2417" toid="2419" script="other/other/destroy.lua" />
+	<action fromid="2421" toid="2453" script="other/other/destroy.lua" />
+	<action fromid="1209" toid="1214" script="other/other/doors.lua" />
+	<action fromid="1219" toid="1262" script="other/other/doors.lua" />
+	<action fromid="1539" toid="1542" script="other/other/doors.lua" />
+	<action fromid="2086" toid="2092" script="other/other/doors.lua" />
+	<action fromid="3535" toid="3552" script="other/other/doors.lua" />
+	<action fromid="4913" toid="4918" script="other/other/doors.lua" />
+	<action fromid="5082" toid="5085" script="other/other/doors.lua" />
+	<action fromid="5098" toid="5145" script="other/other/doors.lua" />
+	<action fromid="5278" toid="5295" script="other/other/doors.lua" />
+	<action fromid="5515" toid="5518" script="other/other/doors.lua" />
+	<action fromid="5732" toid="5737" script="other/other/doors.lua" />
+	<action fromid="5745" toid="5749" script="other/other/doors.lua" />
+	<action fromid="6192" toid="6209" script="other/other/doors.lua" />
+	<action fromid="6249" toid="6266" script="other/other/doors.lua" />
+	<action fromid="6795" toid="6802" script="other/other/doors.lua" />
+	<action fromid="6891" toid="6908" script="other/other/doors.lua" />
+	<action fromid="7033" toid="7050" script="other/other/doors.lua" />
+	<action fromid="7054" toid="7057" script="other/other/doors.lua" />
+	<action fromid="8541" toid="8558" script="other/other/doors.lua" />
+	<action fromid="9165" toid="9184" script="other/other/doors.lua" />
+	<action fromid="9267" toid="9284" script="other/other/doors.lua" />
+	<action itemid="10032" script="other/other/doors.lua" />
+	<action fromid="10268" toid="10285" script="other/other/doors.lua" />
+	<action fromid="10468" toid="10486" script="other/other/doors.lua" />
+	<action fromid="10775" toid="10777" script="other/other/doors.lua" />
+	<action fromid="10780" toid="10786" script="other/other/doors.lua" />
+	<action fromid="10789" toid="10792" script="other/other/doors.lua" />
+	<action fromid="12092" toid="12105" script="other/other/doors.lua" />
+	<action fromid="12188" toid="12190" script="other/other/doors.lua" />
+	<action fromid="12193" toid="12199" script="other/other/doors.lua" />
+	<action fromid="12202" toid="12205" script="other/other/doors.lua" />
+	<action fromaid="50030" toaid="50056" script="other/other/thaisExhibition.lua" />	
+	<action fromid="6436" toid="6447" script="other/other/windows.lua" />
+	<action fromid="6450" toid="6473" script="other/other/windows.lua" />
+	<action fromid="6788" toid="6791" script="other/other/windows.lua" />
+	<action fromid="7025" toid="7032" script="other/other/windows.lua" />
+	<action fromid="10264" toid="10267" script="other/other/windows.lua" />
+	<action fromid="10488" toid="10491" script="other/other/windows.lua" />
+	<action fromid="5303" toid="5304" script="other/other/windows.lua" />
+	<action fromid="6448" toid="6449" script="other/other/windows.lua" />	
+	<!-- Party -->
+	<action itemid="6578" script="other/party/partyHat.lua" />
+	<action itemid="6572" script="other/party/partyTrumpet.lua" />
+	<action itemid="6576" script="other/party/fireworksrocket.lua" />
+	<!-- Plants -->
+	<action itemid="2785" script="other/plants/blueberrybush.lua" />
+	<action itemid="5467" script="other/plants/createSugarOat.lua" />
+	<!-- special Items -->	
+	<action fromid="11258" toid="11262" script="other/special Items/blessingCharms.lua" />
+	<action itemid="5928" script="other/special Items/catchFish.lua" />
+	<action itemid="12424" script="other/special Items/checkBless.lua" />
+	<action itemid="6561" script="other/special Items/checkBless.lua" />
+	<action itemid="11339" script="other/special Items/clayLump.lua" />
+	<action itemid="7737" script="other/special Items/costumeBags.lua" />
+	<action itemid="7739" script="other/special Items/costumeBags.lua" />
+	<action itemid="9076" script="other/special Items/costumeBags.lua" />
+	<action fromid="5792" toid="5797" script="other/special Items/dice.lua" />
+	<action itemid="5080" script="other/special Items/dolls.lua" />
+	<action itemid="5669" script="other/special Items/dolls.lua" />
+	<action itemid="6388" script="other/special Items/dolls.lua" />
+	<action itemid="6512" script="other/special Items/dolls.lua" />
+	<action itemid="6566" script="other/special Items/dolls.lua" />
+	<action itemid="8974" script="other/special Items/dolls.lua" />
+	<action itemid="8977" script="other/special Items/dolls.lua" />
+	<action itemid="8981" script="other/special Items/dolls.lua" />
+	<action itemid="8982" script="other/special Items/dolls.lua" />
+	<action itemid="5957" script="other/special Items/lotteryTicket.lua" />
+	<action fromid="2070" toid="2085" script="other/special Items/music.lua" />
+	<action itemid="2332" script="other/special Items/music.lua" />
+	<action itemid="2364" script="other/special Items/music.lua" />
+	<action fromid="2367" toid="2373" script="other/special Items/music.lua" />
+	<action fromid="3951" toid="3953" script="other/special Items/music.lua" />
+	<action itemid="3957" script="other/special Items/music.lua" />
+	<action itemid="5786" script="other/special Items/music.lua" />
+	<action itemid="10309" script="other/special Items/noxiousclaw.lua" />
+	<action itemid="2114" script="other/special Items/piggybank.lua" />
+	<action fromid="6570" toid="6571" script="other/special Items/surprisebag.lua" />	
+	<action itemid="3955" script="other/special Items/voodooDoll.lua" />
+	<!-- teleports -->	
+	<action itemid="430" script="other/teleports/teleport.lua" />
+	<action itemid="1369" script="other/teleports/teleport.lua" />
+	<action itemid="1386" script="other/teleports/teleport.lua" />
+	<action itemid="3678" script="other/teleports/teleport.lua" />
+	<action itemid="5543" script="other/teleports/teleport.lua" />	
+	<action itemid="2360" script="other/teleports/teleportCarpet.lua"/>
+	<!-- Tools -->
+	<action itemid="8613" script="other/tools/bricklayerKit.lua" />
+	<action itemid="2416" script="other/tools/crowbar.lua" />
+	<action itemid="10223" script="other/tools/fish2.lua" allowfaruse="1" />
+	<action itemid="2580" script="other/tools/fishing.lua" allowfaruse="1" />
+	<action itemid="2557" script="other/tools/hammer.lua" />
+	<action itemid="8717" script="other/tools/lockPick.lua" />
+	<action itemid="2420" script="other/tools/machete.lua" />
+	<action itemid="2553" script="other/tools/pick.lua" />
+	<action itemid="2549" script="other/tools/rake.lua" />
+	<action itemid="2120" script="other/tools/rope.lua" />
+	<action itemid="7731" script="other/tools/rope.lua" />
+	<action itemid="9930" script="other/tools/rustremover.lua" />
+	<action itemid="2558" script="other/tools/saw.lua" />
+	<action itemid="2550" script="other/tools/scythe.lua" />
+	<action itemid="5710" script="other/tools/shovel.lua" />
+	<action itemid="2554" script="other/tools/shovel.lua" />
+	<action itemid="2405" script="other/tools/sickle.lua" />
+	<action itemid="5908" script="other/tools/skinning.lua" />
+	<action itemid="5942" script="other/tools/skinning.lua" />
+	<action itemid="10511" script="other/tools/toolgear.lua" />
+	<action itemid="10513" script="other/tools/toolgear.lua" />
+	<action itemid="10515" script="other/tools/toolgear.lua" />
+	<action itemid="2579" script="other/tools/trap.lua" />
+	<action itemid="3900" script="other/tools/watch.lua" />
+	<action itemid="2036" script="other/tools/watch.lua" />
+	<action fromid="1728" toid="1731" script="other/tools/watch.lua" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-----------------------------------------------------------------------------------------------------------------------------MAP--->
+	<!-- Edron -->
+	<action uniqueid="9192" script="Map/edron/orcEdronLever.lua" />
+	<!-- Farmine -->
+	<action fromaid="9118" toaid="9123" script="Map/farmine/elevatorLever.lua" />
+	<action fromaid="12141" toaid="12142" script="Map/farmine/templeOfEquilibriumVines.lua" />
+	<!-- Kazordoon -->
+	<action fromaid="50136" toaid="50159" script="Map/kazordoon/oreWagons.lua" />
+	<action fromaid="50230" toaid="50233" script="Map/kazordoon/oreWagons.lua" />
+	<action fromaid="50011" toaid="50012" script="Map/kazordoon/elevatorLever.lua" />
+	<action actionid="50237" script="Map/kazordoon/stone.lua" />
+	<action actionid="50238" script="Map/kazordoon/trapDoor.lua" />	
+	
+	
+	
+	
+	
+	
+	<!-----------------------------------------------------------------------------------------------------------------------------QUEST--->
+		
+	<!----  SYSTEM	-->	
+	<action actionid="2000" script="quest/systems/system.lua" />
+	<action actionid="2001" script="quest/systems/system2.lua" />
+	<action actionid="2016" script="quest/systems/system.lua" />
+	<action actionid="2215" script="quest/systems/system.lua" />
+	<action actionid="10544" script="quest/systems/system.lua" />
+	<action actionid="12374" script="quest/systems/system.lua" />
+	<action actionid="12513" script="quest/systems/system.lua" />
+	<action actionid="26300" script="quest/systems/system.lua" />
+	<action actionid="27300" script="quest/systems/system.lua" />
+	<action actionid="28300" script="quest/systems/system.lua" />
+	<action itemid="12667" script="quest/systems/eggquest.lua" />
+	
+	<!----  secret library??-->	
+		
+	<!-- Ab'Dendriel-->	
+	<!-- Draconia Quest-->	
+	<action fromaid="4249" toaid="4250" script="quest/Ab'Dendriel/Draconia/draconiaQuestWalls.lua" />
+	
+	
+	<!-- Ankrahmun-->	
+	<!-- Green Djinn Quest -->
+	<action actionid="5390" script="quest/Ankrahmun/green djinn/tear.lua" />	
+	<!-- Hot Cuisine Quest -->
+	<action itemid="10006" script="quest/Ankrahmun/hot cuisine/cookbook.lua" />
+	<action itemid="12497" script="quest/Ankrahmun/hot cuisine/cookbook1.lua" />		
+	<!-- Steal From Thieves Quest-->
+	<action actionid="19910" script="quest/Ankrahmun/Steal From Thieves/stealFromThieves.lua" />	
+	<!-- The Ancient Tombs Quest -->
+	<action actionid="12105" script="quest/Ankrahmun/the ancient tombs/ancientRuinsTombInstruments.lua" />
+	<action actionid="12107" script="quest/Ankrahmun/the ancient tombs/oasisTombLeverDoor.lua" />
+	<action actionid="12120" script="quest/Ankrahmun/the ancient tombs/lever.lua" />
+	<action fromaid="12121" toaid="12123" script="quest/Ankrahmun/the ancient tombs/activeTeleportSwitches.lua" />	
+	<!-- White Pearl Quest -->
+	<action actionid="5632" script="quest/Ankrahmun/White Pearl/serpentineTowerTorch.lua" />
+	<action actionid="5633" script="quest/Ankrahmun/White Pearl/serpentineTowerLever.lua" />
+	
+	
+	
+	<!-- Carlin-->	
+	<!-- Alawar's Vault Quest -->
+	<action actionid="4210" script="quest/Carlin/Alawar's Vault/senjaCastleLever.lua" />
+	<!-- The Exterminator Quest -->
+	<action itemid="8205" script="quest/Carlin/The Exterminator/exterminatorFlask.lua" />
+	<!-- The Queen of the Banshees Quest -->
+	<action fromuid="49998" touid="50002" script="quest/Carlin/the queen of the banshees/theFirstSeal.lua" />
+	<action fromuid="50005" touid="50010" script="quest/Carlin/the queen of the banshees/theSixthSeal.lua" />
+	<action fromuid="50015" touid="50019" script="quest/Carlin/the queen of the banshees/theThirdSeal.lua" />
+	<action actionid="50021" script="quest/Carlin/the queen of the banshees/lastDoor.lua" />
+	
+	
+	<!-- Darashia-->	
+	<!-- Koshei Amulet Quest -->
+	<action itemid="8266" script="quest/Darashia/koshei amulet/boss.lua" />
+	<action uniqueid="3070" script="quest/Darashia/koshei amulet/switch.lua" />
+	<action actionid="40532" script="quest/Darashia/koshei amulet/bag.lua" />
+	
+	
+	<!-- Desert-->
+	<!-- The Desert Dungeon Quest-->
+	<action uniqueid="1912" script="quest/Desert/The Desert Dungeon/desertDungeonLeverQuest.lua" />
+	<!-- Triangle Tower Quest-->
+	<action uniqueid="50023" script="quest/Desert/Triangle Tower/triangleTowerLever.lua" />
+	<!-- Desert-->
+	
+	<!-- Edron-->
+	<!-- Annihilator Quest -->
+	<action actionid="2214" script="quest/Edron/annihilator/door.lua" />
+	<action uniqueid="2208" script="quest/Edron/annihilator/lever.lua" />
+	<!-- Behemoth Quest -->
+	<action uniqueid="2007" script="quest/Edron/behemoth/lever.lua" />
+	<!-- Demon Helmet Quest -->
+	<action uniqueid="2005" script="quest/Edron/demon helmet/lever.lua" />
+	
+	<!-- Elemental Spheres -->
+	<!--<action uniqueid="9024" script="quest/Edron/elemental spheres/lever.lua" />
+	<action fromid="7911" toid="7912" script="quest/Edron/elemental spheres/machine.lua" />
+	<action fromid="7913" toid="7914" script="quest/Edron/elemental spheres/machine2.lua" />
+	<action fromid="7915" toid="7916" script="quest/Edron/elemental spheres/machine.lua" />
+	<action fromuid="9025" touid="9028" script="quest/Edron/elemental spheres/OAELever.lua" />
+	<action fromid="7917" toid="7918" script="quest/Edron/elemental spheres/machine2.lua" />
+	<action fromid="8298" toid="8299" script="quest/Edron/elemental spheres/soils.lua" />
+	<action fromid="8302" toid="8303" script="quest/Edron/elemental spheres/soils.lua" />	
+	<action fromid="8304" toid="8306" script="quest/Edron/elemental spheres/soils2.lua" />
+	<action itemid="8300" script="quest/Edron/elemental spheres/soils2.lua" />-->
+	
+	<!-- Sea of Light Quest -->
+	<action itemid="10614" script="quest/Edron/sea of light/rareCrystal.lua" />
+	<action itemid="10615" script="quest/Edron/sea of light/collectorCorpse.lua" />
+	
+	<!-- Farmine-->
+	<!-- Children of the Revolution Quest -->
+	<action uniqueid="3164" script="quest/Farmine/children of the revolution/Mission3ZeeKillingFieldzzChest.lua" />
+	<action itemid="10760" 	script="quest/Farmine/children of the revolution/Mission3ZeeKillingFieldzzPoisonWater.lua" />
+	<action itemid="11106" script="quest/Farmine/children of the revolution/Mission4ZzeWayofZztonezzLevers.lua" />
+	<action uniqueid="3170" script="quest/Farmine/children of the revolution/ZalamonDoor.lua" />
+	<!-- Father's Burden Quest -->
+	<action fromid="12545" toid="12546" script="quest/Farmine/fathers burden/corpse.lua" />
+	<!-- The New Frontier Quest -->
+	<action uniqueid="3157" script="quest/Farmine/the new frontier/arena.lua" />
+	<action actionid="45440" script="quest/Farmine/the new frontier/outfit.lua" />
+	<action itemid="11100" script="quest/Farmine/the new frontier/beaver.lua" />
+	<action fromaid="8005" toaid="8006" script="quest/Farmine/the new frontier/lever.lua" />
+	<action fromuid="3153" touid="3154" script="quest/Farmine/the new frontier/vine.lua" />
+	<action uniqueid="3156" script="quest/Farmine/the new frontier/retreat.lua" />
+	<!-- Unnatural Selection Quest-->
+	<action uniqueid="12335" script="quest/Farmine/unnatural selection/Mission5RayofLight.lua" />
+	<!-- Wrath of the Emperor Quest-->
+	<action itemid="12284" script="quest/Farmine/wrath of the emperor/Mission01Crate.lua" />
+	<action fromuid="3171" touid="3174" script="quest/Farmine/wrath of the emperor/Mission01Lights.lua" />
+	<action itemid="12285" script="quest/Farmine/wrath of the emperor/Mission02FirstContactRepairTeleport.lua" />
+	<action fromid="12289" toid="12290" script="quest/Farmine/wrath of the emperor/Mission02FirstContactRepairTeleport.lua" />
+	<action itemid="12297" script="quest/Farmine/wrath of the emperor/Mission02FirstContactRepairTeleport.lua" />
+	<action itemid="12300" script="quest/Farmine/wrath of the emperor/Mission02FirstContactRepairTeleport.lua" />
+	<action itemid="12303" script="quest/Farmine/wrath of the emperor/Mission02FirstContactRepairTeleport.lua" />
+	<action itemid="12316" script="quest/Farmine/wrath of the emperor/Mission03TheKeeper.lua" />
+	<action itemid="12320" script="quest/Farmine/wrath of the emperor/Mission03TheKeeper.lua" />
+	<action uniqueid="12354" script="quest/Farmine/wrath of the emperor/Mission04SacramentoftheSnakeSceptre.lua" />
+	<action fromuid="3184" touid="3185" script="quest/Farmine/wrath of the emperor/Mission08UninvitedGuestsLever.lua" />
+	<action itemid="12328" script="quest/Farmine/wrath of the emperor/Mission09TheSleepingDragonMixture.lua" />
+	<action itemid="12318" script="quest/Farmine/wrath of the emperor/Mission10AMessageofFreedomSceptre.lua" />
+	<action uniqueid="3198" script="quest/Farmine/wrath of the emperor/Mission11PaybackTimeLever.lua" />
+	<action uniqueid="3200" script="quest/Farmine/wrath of the emperor/Mission12JustRewards.lua" />
+	
+	
+	<!-- Kazordoon-->
+	<!-- Evil Island Quest-->
+	<action itemid="10152" script="quest/Kazordoon/evil island/hammer.lua" />
+	<action itemid="10119" script="quest/Kazordoon/evil island/hammer.lua" />
+	<!-- Paradox Tower Quest-->	
+	<action actionid="11002" script="quest/Kazordoon/paradox tower/paradox_lvl2.lua"/>
+	<action uniqueid="11001" script="quest/Kazordoon/paradox tower/key.lua"/>
+	<action actionid="11004" script="quest/Kazordoon/paradox tower/paradox_lvl4.lua"/>
+	<action actionid="11005" script="quest/Kazordoon/paradox tower/paradox_lvl5.lua"/>
+	<!-- The Ultimate Booze Quest-->	
+	<action itemid="7496" script="quest/Kazordoon/The Ultimate Booze/UltimateBoozebeerBottle.lua" />
+	
+	
+	
+	<!-- Outfits-->
+	<!-- beggar outfit quest?? -->
+	<!-- Druid Outfit Quest -->
+	<action itemid="5938" script="quest/Outfits/druid outfit/waterskin.lua" />
+	<!----Hay otro archivo -->
+	<!-- Hunter Outfits Quest -->
+	<action fromid="6087" toid="6090" script="quest/Outfits/hunter outfit/MusicSheet.lua" />
+	<action actionid="33216" script="quest/Outfits/hunter outfit/allHymnPianoTeleport.lua" />
+	<!-- Oriental Outfits -->
+	<action actionid="50161" script="quest/Outfits/Oriental Outfits/calassaCombDoor.lua" />
+	
+		
+	<!-- POH-->
+	<!-- Demon Oak -->
+	<action itemid="8293" script="quest/POH/demon oak/demonOak.lua" />
+	<action fromuid="9008" touid="9011" script="quest/POH/demon oak/demonOakChest.lua" />
+	<action uniqueid="9007" script="quest/POH/demon oak/demonOakGravestone.lua" />
+	<!-- Pits Of Inferno Quest -->
+	<action actionid="8815" script="quest/POH/pits of inferno/fountain.lua" />
+	<action actionid="2022" script="quest/POH/pits of inferno/goshnar.lua" />
+	<action fromuid="2050" touid="2065" script="quest/POH/pits of inferno/levers.lua" />
+	<action uniqueid="1021" script="quest/POH/pits of inferno/oil.lua" />
+	<action uniqueid="3300" script="quest/POH/pits of inferno/stoneLever.lua" />
+	<action fromuid="2025" touid="2028" script="quest/POH/pits of inferno/walls.lua" />
+	<action fromuid="3301" touid="3302" script="quest/POH/pits of inferno/ladderLevers.lua" />
+	<action uniqueid="3304" script="quest/POH/pits of inferno/trapLever.lua" />
+	<action fromaid="39511" toaid="39512" script="quest/POH/pits of inferno/bazirMirror.lua" />
+	<action fromuid="50095" touid="50104" script="quest/POH/pits of inferno/bazirWrongLevers.lua" />
+	<action uniqueid="50105" script="quest/POH/pits of inferno/bazirMazeLever.lua" />
+	<action uniqueid="50106" script="quest/POH/pits of inferno/fireThroneLever.lua" />
+	<action actionid="50160" script="quest/POH/pits of inferno/mazeStone.lua" />
+	<!-- The Outlaw Camp Quest -->
+	<action uniqueid="3400" script="quest/POH/the outlaw camp/oven.lua" />
+	<action uniqueid="3401" script="quest/POH/the outlaw camp/powerswitch.lua" />
+	<action uniqueid="3402" script="quest/POH/the outlaw camp/powerburn.lua" />
+	
+	
+	<!-- Port Hope-->
+	<!--- The Ape City Quest -->
+	<action actionid="12129" script="quest/Port Hope/the ape city/Mission9TheDeepestCatacombsLever.lua" />
+	<action uniqueid="12131" script="quest/Port Hope/the ape city/Mission9TheDeepestCatacombsLever.lua" />
+	<action itemid="4846" 	 script="quest/Port Hope/the ape city/Mission9TheDeepestCatacombsSnakeDestroyer.lua" />
+	<action itemid="10523" script="quest/Port Hope/the ape city/deeperBanutaShortcut.lua" />
+	
+	
+	<!-- Rookgaard -->
+	<action actionid="50239" script="quest/Rookgaard/SewerLever.lua" />
+	<action actionid="5637" script="quest/Rookgaard/katanaQuestLever.lua" />
+	<action actionid="1002" script="quest/Rookgaard/katanaQuestDoor.lua" />
+	<action actionid="5638" script="quest/Rookgaard/bearroomQuestLever.lua" />
+	<action actionid="5639" script="quest/Rookgaard/doubletQuest.lua" />
+	<action actionid="5640" script="quest/Rookgaard/honeyflowerQuest.lua" />
+	<action actionid="5641" script="quest/Rookgaard/bananaQuest.lua" />
+	<action actionid="30492" script="quest/Rookgaard/chest.lua" />
+	
+	
+	<!-- Svargrond -->
+	<!-- Barbarian Test Quest -->
+	<action fromid="7174" toid="7176" script="quest/Svargrond/barbarian test/horn.lua" />
+	<action fromid="7140" toid="7141" script="quest/Svargrond/barbarian test/horn.lua" />
+	<action uniqueid="3110" script="quest/Svargrond/barbarian test/mead.lua" />
+	<!-- Ice Islands Quest -->
+	<action fromid="7243" toid="7244" script="quest/Svargrond/ice islands/anthill.lua" />
+	<action itemid="7289" script="quest/Svargrond/ice islands/charm.lua" />
+	<action itemid="7286" script="quest/Svargrond/ice islands/cure.lua" />
+	<action itemid="7253" script="quest/Svargrond/ice islands/paint.lua" />
+	<action itemid="2361" script="quest/Svargrond/ice islands/yakchal.lua" />
+	
+	
+	
+	<!-- Thais -->
+	<!-- Devil Helmet Quest -->
+	<action actionid="20594" script="quest/Thais/devil helmet/lever.lua" />
+	<!-- Life Ring Quest -->
+	<action actionid="50129" script="quest/Thais/Life Ring/lifeRingLever.lua" />
+	<!-- Machinery of War -->
+	<action actionid="45210" script="quest/Thais/Machinery of War/WarPlans.lua"/>
+	<!-- Thais Lighthouse -->
+	<action fromaid="50023" toaid="50024" script="quest/Thais/Thais Lighthouse/thaisLightHouseLever.lua" />
+	
+	
+	
+	<!-- Tibia -->
+	<!-- Explorer Society Quest -->
+	<action itemid="4869" script="quest/Tibia/explorer society/botanist.lua" />
+	<action itemid="4865" script="quest/Tibia/explorer society/butterfly.lua" />
+	<action uniqueid="3017" script="quest/Tibia/explorer society/dragon.lua" />
+	<action itemid="4856" script="quest/Tibia/explorer society/icicle.lua" />
+	<action itemid="7242" script="quest/Tibia/explorer society/resonance.lua" />
+	<action itemid="4851" script="quest/Tibia/explorer society/stone.lua" />
+	<action itemid="4853" script="quest/Tibia/explorer society/tracingpaper.lua" />
+	<action actionid="1098" script="quest/Tibia/explorer society/dwacatradoor.lua" />
+	<action actionid="1097" script="quest/Tibia/explorer society/chorurndoor.lua" />
+	<action actionid="1092" script="quest/Tibia/explorer society/bonelordsdoor.lua" />
+	<action actionid="1096" script="quest/Tibia/explorer society/orcpowderdoor.lua" />
+	<action actionid="1094" script="quest/Tibia/explorer society/edrondoor.lua" />
+	<action actionid="1095" script="quest/Tibia/explorer society/hellgatedoor.lua" />
+	<action actionid="1091" script="quest/Tibia/explorer society/bansheedoor.lua" />
+	<action actionid="1093" script="quest/Tibia/explorer society/calassadoor.lua" />
+	<action uniqueid="9898" script="quest/systems/system.lua" /><!-- Family Brooch -->
+	<action actionid="32700" script="quest/Tibia/explorer society/carvingTPdoor.lua" />
+	<!-- Inquisition Quest -->
+	<action itemid="8753" script="quest/Tibia/inquisition/mw.lua" />
+	<action fromuid="1300" touid="1308" script="quest/Tibia/inquisition/rewards.lua" />
+	<action actionid="1004" script="quest/Tibia/inquisition/ungreez.lua" />
+	<action actionid="2002" script="quest/Tibia/inquisition/vampireHunt.lua" />
+	<action fromuid="9017" touid="9020" script="quest/Tibia/inquisition/brotherLever.lua" />
+	<action uniqueid="9021" script="quest/Tibia/inquisition/rewardDoor.lua" />
+	<!-- Postman Quest -->
+	<action itemid="2330" script="quest/Tibia/postman/package.lua" />
+	<action itemid="2331" script="quest/Tibia/postman/present.lua" />
+	<action uniqueid="3118" script="quest/Tibia/postman/waldosPostHorn.lua" />
+	<!-- Secret Service Quest -->
+	<action itemid="7700" script="quest/Tibia/secret service/amazonDisguiseKit.lua" />
+	<action itemid="7697" script="quest/Tibia/secret service/ring.lua" />
+	<action fromid="7960" toid="7962" script="quest/Tibia/secret service/tools.lua" />
+	<action itemid="7698" script="quest/Tibia/secret service/rustBugs.lua" />
+	<action actionid="12574" script="quest/Tibia/secret service/lever.lua" />
+	<!-- Thieves Guild Quest -->
+	<action itemid="8693" script="quest/Tibia/the thieves guild/dwarfDisguiseKit.lua" />
+	<action itemid="8701" script="quest/Tibia/the thieves guild/note.lua" />
+	<action fromaid="12501" toaid="12502" script="quest/Tibia/the thieves guild/climbingVine.lua" />
+	<action itemid="8762" script="quest/Tibia/the thieves guild/fishnappingKey.lua" />
+	<action actionid="12505" script="quest/Tibia/the thieves guild/fishnappingDoor.lua" />
+	<!-- The Travelling Trader Quest -->
+	<action actionid="1108" script="quest/Tibia/the travelling trader/outlawcampdoor.lua" />
+	<!-- The Lightbearer-->	
+	<action itemid="9956" script="quest/Tibia/TheLightbearer/magical_torch.lua"/>
+	<action itemid="10531" script="quest/Tibia/TheLightbearer/midnight_shard.lua"/>
+	<!-- What a foolish Quest -->
+	<action itemid="7478" script="quest/Tibia/what a foolish/flask.lua" />
+	<action itemid="7482" script="quest/Tibia/what a foolish/crate.lua" />
+	<action itemid="7485" script="quest/Tibia/what a foolish/cushion.lua" />
+	<action itemid="7486" script="quest/Tibia/what a foolish/catbasket.lua" />
+	<action itemid="7490" script="quest/Tibia/what a foolish/contract.lua" />
+	<action itemid="7500" script="quest/Tibia/what a foolish/worncloth.lua" />
+	<action itemid="7502" script="quest/Tibia/what a foolish/disguise.lua" />
+	<action itemid="8187" script="quest/Tibia/what a foolish/watch.lua" />
+	
+	<!-- ToolQuest --> 
+	<!----Posible mover de carpeta a MAP o a TOOLS--> 
+	<action itemid="4863" script="quest/ToolQuest/ectoplasmContainer.lua" />
+	<action itemid="5468" script="quest/ToolQuest/fireBug.lua" />
+	<action actionid="50027" script="quest/ToolQuest/hellGateLever.lua" />
+	<action itemid="7494" script="quest/ToolQuest/holyWater.lua" />
+	<action uniqueid="9177" script="quest/ToolQuest/ironHelmetLever.lua" />
+	
+	
+	<!-- Venore -->
+	<!-- Black Knight Quest -->
+	<action actionid="5558" script="quest/Venore/Black Knight/blackKnightQuest.lua" />
+	<!-- Dreamer Challenge Quest -->
+	<action fromuid="3041" touid="3043" script="quest/Venore/dreamer challenge/lever_nightmare.lua" /> 
+	<action fromuid="3045" touid="3047" script="quest/Venore/dreamer challenge/lever_brotherhood.lua" /> 	
+	<action fromid="7844" toid="7846" script="quest/Venore/dreamer challenge/documents.lua" />
+	<action uniqueid="2004" script="quest/Venore/dreamer challenge/stone_teleport.lua" />
+	<action uniqueid="2272" script="quest/Venore/dreamer challenge/tic_tac.lua" />
+	<action actionid="8033" script="quest/Venore/dreamer challenge/tic_tac_teleport.lua" />
+	<action fromuid="2246" touid="2249" script="quest/Venore/dreamer challenge/walls.lua" />
+	<!-- Plate Armor Quest -->
+	<action actionid="5556" script="quest/Venore/Plate Armor/plateArmorQuest.lua" />
+	<!-- Sams Old Backpack Quest -->
+	<action actionid="42535" script="quest/Venore/sam old backpack/door.lua" />
+	
+	
+	<!-- Yalahar -->
+	<!-- Dwarven Legs Quest -->
+	<action actionid="50109" script="quest/Yalahar/dwarven legs/oreWagon.lua" />
+	<action actionid="42150" script="quest/Yalahar/dwarven legs/oreWagon1.lua" />
+	<action actionid="42139" script="quest/Yalahar/dwarven legs/ladder.lua" />
+	<!-- In Service Of Yalahar Quest -->
+	<action itemid="9737" script="quest/Yalahar/in service of yalahar/charm.lua" />
+	<action itemid="9733" script="quest/Yalahar/in service of yalahar/formula.lua" />
+	<action itemid="9741" script="quest/Yalahar/in service of yalahar/ghost.lua" />
+	<action uniqueid="3086" script="quest/Yalahar/in service of yalahar/lastFight.lua" />
+	<action fromid="9743" toid="9744" script="quest/Yalahar/in service of yalahar/matrix.lua" />
+	<action fromuid="3091" touid="3102" script="quest/Yalahar/in service of yalahar/mechanism.lua" />
+	<action fromuid="9235" touid="9236" script="quest/Yalahar/in service of yalahar/mechanism.lua" />
+	<action fromuid="3081" touid="3082" script="quest/Yalahar/in service of yalahar/mrWestDoor.lua" />
+	<action fromuid="3088" touid="3090" script="quest/Yalahar/in service of yalahar/reward.lua" />
+	<action uniqueid="9031" script="quest/Yalahar/in service of yalahar/morikSummon.lua" />
+	<action fromaid="23700" toaid="23701" script="quest/Yalahar/in service of yalahar/YalaharMachineWargolems.lua" />
+	<!-- The Hidden City of Beregar -->
+	<action actionid="50128" script="quest/Yalahar/the hidden city of beregar/deeperMineWagon.lua" />
+	<action fromaid="50098" toaid="50108" script="quest/Yalahar/the hidden city of beregar/oreWagon.lua" />
+	<action actionid="50112" script="quest/Yalahar/the hidden city of beregar/gapWagon.lua" />
+	<action actionid="50115" script="quest/Yalahar/the hidden city of beregar/tunnelWagon.lua" />
+	<action actionid="50117" script="quest/Yalahar/the hidden city of beregar/coalWagon.lua" />
+	<action fromuid="50108" touid="50111" script="quest/Yalahar/the hidden city of beregar/coalLevers.lua" />
+	<action fromaid="50122" toaid="50125" script="quest/Yalahar/the hidden city of beregar/coalExitWagons.lua" />
+	<action fromuid="50113" touid="50123" script="quest/Yalahar/the hidden city of beregar/wagonMazeLevers.lua" />
+	<action uniqueid="50124" script="quest/Yalahar/the hidden city of beregar/wagonMazeExit.lua" />
+	
+	<!-- MOD -->
+	<action itemid="13067" script="other/special Items/surprisebagMOD.lua" />	
+	<action fromid="12806" toid="12808" script="other/fluids/MODpotions.lua" />
+	<action fromid="13031" toid="13038" script="other/special Items/outfitsMOD.lua" />	
+	
+	<action itemid="12801" script="other/fluids/MODpotionsStrengThening.lua" />	
+	<action itemid="12802" script="other/fluids/MODpotionsStrengThening.lua" />	
+	<action itemid="12803" script="other/fluids/MODpotionsStrengThening.lua" />	
+	<action itemid="12804" script="other/fluids/MODpotionsStrengThening.lua" />	
+	<action itemid="12805" script="other/fluids/MODpotionsStrengThening.lua" />	
+	<action itemid="12809" script="other/fluids/MODpotionsStrengThening.lua" />	
+	<action itemid="12811" script="other/fluids/MODpotionsStrengThening.lua" />	
+	<action itemid="12813" script="other/fluids/MODpotionsStrengThening.lua" />	
+	<action itemid="12816" script="other/fluids/MODpotionsStrengThening.lua" />	
+	<action itemid="12817" script="other/fluids/MODpotionsStrengThening.lua" />	
+	<action itemid="12820" script="other/fluids/MODpotionsStrengThening.lua" />	
+	<action itemid="12822" script="other/fluids/MODpotionsStrengThening.lua" />	
+	<action itemid="12824" script="other/fluids/MODpotionsStrengThening.lua" />	
+	<action itemid="12825" script="other/fluids/MODpotionsStrengThening.lua" />	
+	<action itemid="12827" script="other/fluids/MODpotionsStrengThening.lua" />	
+	
+	<action itemid="13029" script="other/special Items/premium_scroll.lua" />	
+	<action fromid="13175" toid="13179" script="other/other/offlineTraining.lua" />
+	<action itemid="13181" script="other/special Items/weed.lua" />	
+	
+	
+	
+	<!-- VIP Scrolls -->
+	<action fromid="13263" toid="13284" script="other/other/vipscrolls.lua" />
+	<action fromaid="45201" toaid="45204" script="other/other/vipcraft.lua" />
+	
+	
+	<!-- INFINITY WAR -->
+	<action uniqueid="54001" script="quest/infinitywar/energy.lua" />
+	
+	
+	
+	
 </actions>

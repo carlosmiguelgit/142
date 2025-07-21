@@ -29,15 +29,6 @@ local reloadTypes = {
 	["mount"] = RELOAD_TYPE_MOUNTS,
 	["mounts"] = RELOAD_TYPE_MOUNTS,
 
-	["aura"] = RELOAD_TYPE_AURAS,
-	["auras"] = RELOAD_TYPE_AURAS,
-
-	["wing"] = RELOAD_TYPE_WINGS,
-	["wings"] = RELOAD_TYPE_WINGS,
-
-	["shader"] = RELOAD_TYPE_SHADERS,
-	["shaders"] = RELOAD_TYPE_SHADERS,
-
 	["move"] = RELOAD_TYPE_MOVEMENTS,
 	["movement"] = RELOAD_TYPE_MOVEMENTS,
 	["movements"] = RELOAD_TYPE_MOVEMENTS,
@@ -66,13 +57,13 @@ local reloadTypes = {
 }
 
 function onSay(player, words, param)
-	if not player:getGroup():getAccess() then
-		return true
-	end
+	--if not player:getGroup():getAccess() then
+		--return true
+	--end
 
-	if player:getAccountType() < ACCOUNT_TYPE_GOD then
-		return false
-	end
+	--if player:getAccountType() < ACCOUNT_TYPE_GOD then
+		--return false
+	--end
 
 	logCommand(player, words, param)
 
@@ -80,11 +71,6 @@ function onSay(player, words, param)
 	if not reloadType then
 		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Reload type not found.")
 		return false
-	end
-
-	-- need to clear EventCallback.data or we end up having duplicated events on /reload scripts
-	if table.contains({RELOAD_TYPE_SCRIPTS, RELOAD_TYPE_ALL}, reloadType) then
-		EventCallback:clear()
 	end
 
 	Game.reload(reloadType)

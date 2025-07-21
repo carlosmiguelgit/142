@@ -1223,52 +1223,52 @@ MonsterType* Monsters::loadMonster(const std::string& file, const std::string& m
 			if ((attr = elementNode.attribute("physicalPercent"))) {
 				mType->info.elementMap[COMBAT_PHYSICALDAMAGE] = pugi::cast<int32_t>(attr.value());
 				if (mType->info.damageImmunities & COMBAT_PHYSICALDAMAGE) {
-					std::cout << "[Warning - Monsters::loadMonster] Same element \"physical\" on immunity and element tags. " << file << std::endl;
+					//std::cout << "[Warning - Monsters::loadMonster] Same element \"physical\" on immunity and element tags. " << file << std::endl;
 				}
 			} else if ((attr = elementNode.attribute("icePercent"))) {
 				mType->info.elementMap[COMBAT_ICEDAMAGE] = pugi::cast<int32_t>(attr.value());
 				if (mType->info.damageImmunities & COMBAT_ICEDAMAGE) {
-					std::cout << "[Warning - Monsters::loadMonster] Same element \"ice\" on immunity and element tags. " << file << std::endl;
+					//std::cout << "[Warning - Monsters::loadMonster] Same element \"ice\" on immunity and element tags. " << file << std::endl;
 				}
 			} else if ((attr = elementNode.attribute("poisonPercent")) || (attr = elementNode.attribute("earthPercent"))) {
 				mType->info.elementMap[COMBAT_EARTHDAMAGE] = pugi::cast<int32_t>(attr.value());
 				if (mType->info.damageImmunities & COMBAT_EARTHDAMAGE) {
-					std::cout << "[Warning - Monsters::loadMonster] Same element \"earth\" on immunity and element tags. " << file << std::endl;
+					//std::cout << "[Warning - Monsters::loadMonster] Same element \"earth\" on immunity and element tags. " << file << std::endl;
 				}
 			} else if ((attr = elementNode.attribute("firePercent"))) {
 				mType->info.elementMap[COMBAT_FIREDAMAGE] = pugi::cast<int32_t>(attr.value());
 				if (mType->info.damageImmunities & COMBAT_FIREDAMAGE) {
-					std::cout << "[Warning - Monsters::loadMonster] Same element \"fire\" on immunity and element tags. " << file << std::endl;
+					//std::cout << "[Warning - Monsters::loadMonster] Same element \"fire\" on immunity and element tags. " << file << std::endl;
 				}
 			} else if ((attr = elementNode.attribute("energyPercent"))) {
 				mType->info.elementMap[COMBAT_ENERGYDAMAGE] = pugi::cast<int32_t>(attr.value());
 				if (mType->info.damageImmunities & COMBAT_ENERGYDAMAGE) {
-					std::cout << "[Warning - Monsters::loadMonster] Same element \"energy\" on immunity and element tags. " << file << std::endl;
+					//std::cout << "[Warning - Monsters::loadMonster] Same element \"energy\" on immunity and element tags. " << file << std::endl;
 				}
 			} else if ((attr = elementNode.attribute("holyPercent"))) {
 				mType->info.elementMap[COMBAT_HOLYDAMAGE] = pugi::cast<int32_t>(attr.value());
 				if (mType->info.damageImmunities & COMBAT_HOLYDAMAGE) {
-					std::cout << "[Warning - Monsters::loadMonster] Same element \"holy\" on immunity and element tags. " << file << std::endl;
+					//std::cout << "[Warning - Monsters::loadMonster] Same element \"holy\" on immunity and element tags. " << file << std::endl;
 				}
 			} else if ((attr = elementNode.attribute("deathPercent"))) {
 				mType->info.elementMap[COMBAT_DEATHDAMAGE] = pugi::cast<int32_t>(attr.value());
 				if (mType->info.damageImmunities & COMBAT_DEATHDAMAGE) {
-					std::cout << "[Warning - Monsters::loadMonster] Same element \"death\" on immunity and element tags. " << file << std::endl;
+					//std::cout << "[Warning - Monsters::loadMonster] Same element \"death\" on immunity and element tags. " << file << std::endl;
 				}
 			} else if ((attr = elementNode.attribute("drownPercent"))) {
 				mType->info.elementMap[COMBAT_DROWNDAMAGE] = pugi::cast<int32_t>(attr.value());
 				if (mType->info.damageImmunities & COMBAT_DROWNDAMAGE) {
-					std::cout << "[Warning - Monsters::loadMonster] Same element \"drown\" on immunity and element tags. " << file << std::endl;
+					//std::cout << "[Warning - Monsters::loadMonster] Same element \"drown\" on immunity and element tags. " << file << std::endl;
 				}
 			} else if ((attr = elementNode.attribute("lifedrainPercent"))) {
 				mType->info.elementMap[COMBAT_LIFEDRAIN] = pugi::cast<int32_t>(attr.value());
 				if (mType->info.damageImmunities & COMBAT_LIFEDRAIN) {
-					std::cout << "[Warning - Monsters::loadMonster] Same element \"lifedrain\" on immunity and element tags. " << file << std::endl;
+					//std::cout << "[Warning - Monsters::loadMonster] Same element \"lifedrain\" on immunity and element tags. " << file << std::endl;
 				}
 			} else if ((attr = elementNode.attribute("manadrainPercent"))) {
 				mType->info.elementMap[COMBAT_MANADRAIN] = pugi::cast<int32_t>(attr.value());
 				if (mType->info.damageImmunities & COMBAT_MANADRAIN) {
-					std::cout << "[Warning - Monsters::loadMonster] Same element \"manadrain\" on immunity and element tags. " << file << std::endl;
+					//std::cout << "[Warning - Monsters::loadMonster] Same element \"manadrain\" on immunity and element tags. " << file << std::endl;
 				}
 			} else {
 				std::cout << "[Warning - Monsters::loadMonster] Unknown element percent. " << file << std::endl;

@@ -114,7 +114,7 @@ bool Weapons::registerEvent(Event_ptr event, const pugi::xml_node&)
 
 	auto result = weapons.emplace(weapon->getID(), weapon);
 	if (!result.second) {
-		std::cout << "[Warning - Weapons::registerEvent] Duplicate registered item with id: " << weapon->getID() << std::endl;
+		//std::cout << "[Warning - Weapons::registerEvent] Duplicate registered item with id: " << weapon->getID() << std::endl;
 	}
 	return result.second;
 }

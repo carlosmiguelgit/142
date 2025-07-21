@@ -1,5 +1,5 @@
 function onSay(player, words, param)
-	if player:getAccountType() <= ACCOUNT_TYPE_SENIORTUTOR then
+	if player:getAccountType() <= ACCOUNT_TYPE_TUTOR then
 		return true
 	end
 

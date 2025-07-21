@@ -24,15 +24,15 @@
 		</attack>
 
 		<attack name="physical" interval="2000" chance ="34" target ="1" range ="1" min ="-58" max ="-436"><!-- physical -->
-			<attribute key="shootEffect" value="diamondarrow"/>
+			<attribute key="shootEffect" value="arrow"/>
 		</attack>
 
 		<attack name="energy" interval="2000" chance ="26" target ="1" range ="5" min ="-94" max ="-450"><!-- shot -->
-			<attribute key="shootEffect" value="diamondarrow"/>
+			<attribute key="shootEffect" value="arrow"/>
 		</attack>
 
 		<attack name="physical" interval="2000" chance ="26" target ="1" range ="1" min ="-94" max ="-450"><!-- physical -->
-			<attribute key="shootEffect" value="diamondarrow"/>
+			<attribute key="shootEffect" value="arrow"/>
 		</attack>
 
 	</attacks>

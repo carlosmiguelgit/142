@@ -115,3 +115,214 @@ Login to 127.0.0.1:7172
 Exiting application..
 WARNING: attempt to destroy widget 'widget18' two times
 WARNING: widget 'widget572' was not explicitly destroyed
+GPU ANGLE (Intel(R) HD Graphics 4000 Direct3D11 vs_5_0 ps_5_0) (Google Inc.)
+OpenGL OpenGL ES 3.0.0 (ANGLE 2.1.0.54a3d7cbcadb)
+[Atlas] Texture size is: 4096x4096 (max: 16384x16384)
+Found work dir at 'C:/Users/home/Documents/GitHub/142/tools/client/'
+== application started at Jul 20 2025 18:27:48
+Old Retro 3.1 rev 232 (dev) made by otclient.net built on Jul 11 2022 for arch x86
+ERROR: Layour retro doesn't exist, using default
+Connecting to: 127.0.0.1:7171
+Login to 127.0.0.1:7172
+ERROR: ProtocolGame parse message exception (12523 bytes, 7576 unread, last opcode is 0x78 (120), prev opcode is 0x78 (120)): unable to create item with invalid id 0
+Packet has been saved to packet.log, you can use it to find what was wrong. (Protocol: 1098)
+Login to 127.0.0.1:7172
+ERROR: ProtocolGame parse message exception (11663 bytes, 7576 unread, last opcode is 0x78 (120), prev opcode is 0x78 (120)): unable to create item with invalid id 0
+Packet has been saved to packet.log, you can use it to find what was wrong. (Protocol: 1098)
+Exiting application..
+WARNING: attempt to destroy widget 'widget18' two times
+WARNING: widget 'widget572' was not explicitly destroyed
+GPU ANGLE (Intel(R) HD Graphics 4000 Direct3D11 vs_5_0 ps_5_0) (Google Inc.)
+OpenGL OpenGL ES 3.0.0 (ANGLE 2.1.0.54a3d7cbcadb)
+[Atlas] Texture size is: 4096x4096 (max: 16384x16384)
+Found work dir at 'C:/Users/home/Documents/GitHub/142/tools/client/'
+== application started at Jul 20 2025 23:13:05
+Old Retro 3.1 rev 232 (dev) made by otclient.net built on Jul 11 2022 for arch x86
+ERROR: Layour retro doesn't exist, using default
+Connecting to: 127.0.0.1:7171
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Connecting to: 127.0.0.1:7171
+Connecting to: 127.0.0.1:7171
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Exiting application..
+WARNING: attempt to destroy widget 'widget18' two times
+WARNING: widget 'widget572' was not explicitly destroyed
+WARNING: widget 'widget1245' was not explicitly destroyed
+GPU ANGLE (Intel(R) HD Graphics 4000 Direct3D11 vs_5_0 ps_5_0) (Google Inc.)
+OpenGL OpenGL ES 3.0.0 (ANGLE 2.1.0.54a3d7cbcadb)
+[Atlas] Texture size is: 4096x4096 (max: 16384x16384)
+Found work dir at 'C:/Users/home/Documents/GitHub/142/tools/client/'
+== application started at Jul 20 2025 23:18:43
+Old Retro 3.1 rev 232 (dev) made by otclient.net built on Jul 11 2022 for arch x86
+ERROR: Layour retro doesn't exist, using default
+Connecting to: 127.0.0.1:7171
+Login to 127.0.0.1:7172
+ERROR: ProtocolGame parse message exception (12274 bytes, 7861 unread, last opcode is 0x78 (120), prev opcode is 0x78 (120)): unable to create item with invalid id 0
+Packet has been saved to packet.log, you can use it to find what was wrong. (Protocol: 1098)
+ERROR: protected lua call failed: /modules/game_inventory/inventory.otui:305: [@onClick]:2: attempt to index field 'game_exph' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/modules/game_inventory/inventory.otui:305: [@onClick]:2: in function </modules/game_inventory/inventory.otui:305: [@onClick]:1>
+ERROR: protected lua call failed: /modules/game_store/store.lua:451: attempt to index a nil value
+stack traceback:
+	[C]: in function '__index'
+	/modules/game_store/store.lua:451: in function 'show'
+	/modules/game_store/store.lua:444: in function 'toggle'
+	/modules/game_inventory/inventory.otui:282: [@onClick]:2: in function </modules/game_inventory/inventory.otui:282: [@onClick]:1>
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+ERROR: ProtocolGame parse message exception (12862 bytes, 7864 unread, last opcode is 0x78 (120), prev opcode is 0x78 (120)): unable to create item with invalid id 0
+Packet has been saved to packet.log, you can use it to find what was wrong. (Protocol: 1098)
+WARNING: attempt to destroy widget 'widget1245' two times
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Exiting application..
+WARNING: attempt to destroy widget 'widget18' two times
+WARNING: widget 'widget572' was not explicitly destroyed
+GPU ANGLE (Intel(R) HD Graphics 4000 Direct3D11 vs_5_0 ps_5_0) (Google Inc.)
+OpenGL OpenGL ES 3.0.0 (ANGLE 2.1.0.54a3d7cbcadb)
+[Atlas] Texture size is: 4096x4096 (max: 16384x16384)
+Found work dir at 'C:/Users/home/Documents/GitHub/142/tools/client/'
+== application started at Jul 20 2025 23:40:01
+Old Retro 3.1 rev 232 (dev) made by otclient.net built on Jul 11 2022 for arch x86
+ERROR: Layour retro doesn't exist, using default
+Connecting to: 127.0.0.1:7171
+Login to 127.0.0.1:7172
+ERROR: ProtocolGame parse message exception (12915 bytes, 7917 unread, last opcode is 0x78 (120), prev opcode is 0x78 (120)): unable to create item with invalid id 0
+Packet has been saved to packet.log, you can use it to find what was wrong. (Protocol: 1098)
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Login to 127.0.0.1:7172
+Exiting application..
+WARNING: attempt to destroy widget 'widget18' two times
+WARNING: widget 'widget572' was not explicitly destroyed
+GPU ANGLE (Intel(R) HD Graphics 4000 Direct3D11 vs_5_0 ps_5_0) (Google Inc.)
+OpenGL OpenGL ES 3.0.0 (ANGLE 2.1.0.54a3d7cbcadb)
+[Atlas] Texture size is: 4096x4096 (max: 16384x16384)
+Found work dir at 'C:/Users/home/Documents/GitHub/142/tools/client/'
+== application started at Jul 21 2025 00:07:03
+Old Retro 3.1 rev 232 (dev) made by otclient.net built on Jul 11 2022 for arch x86
+ERROR: Layour retro doesn't exist, using default
+Connecting to: 127.0.0.1:7171
+Login to 127.0.0.1:7172
+ERROR: ProtocolGame parse message exception (13357 bytes, 7917 unread, last opcode is 0x78 (120), prev opcode is 0x78 (120)): unable to create item with invalid id 0
+Packet has been saved to packet.log, you can use it to find what was wrong. (Protocol: 1098)
+Exiting application..
+WARNING: attempt to destroy widget 'widget18' two times
+WARNING: widget 'widget572' was not explicitly destroyed
+WARNING: widget 'widget1245' was not explicitly destroyed
+GPU ANGLE (Intel(R) HD Graphics 4000 Direct3D11 vs_5_0 ps_5_0) (Google Inc.)
+OpenGL OpenGL ES 3.0.0 (ANGLE 2.1.0.54a3d7cbcadb)
+[Atlas] Texture size is: 4096x4096 (max: 16384x16384)
+Found work dir at 'C:/Users/home/Documents/GitHub/142/tools/client/'
+== application started at Jul 21 2025 00:23:52
+Old Retro 3.1 rev 232 (dev) made by otclient.net built on Jul 11 2022 for arch x86
+ERROR: Layour retro doesn't exist, using default
+Connecting to: 127.0.0.1:7171
+Login to 127.0.0.1:7172
+ERROR: ProtocolGame parse message exception (15346 bytes, 7973 unread, last opcode is 0x78 (120), prev opcode is 0x78 (120)): unable to create item with invalid id 0
+Packet has been saved to packet.log, you can use it to find what was wrong. (Protocol: 1098)
+Exiting application..
+WARNING: attempt to destroy widget 'widget18' two times
+WARNING: widget 'widget572' was not explicitly destroyed
+WARNING: widget 'widget1245' was not explicitly destroyed
+GPU ANGLE (Intel(R) HD Graphics 4000 Direct3D11 vs_5_0 ps_5_0) (Google Inc.)
+OpenGL OpenGL ES 3.0.0 (ANGLE 2.1.0.54a3d7cbcadb)
+[Atlas] Texture size is: 4096x4096 (max: 16384x16384)
+Found work dir at 'C:/Users/home/Documents/GitHub/142/tools/client/'
+== application started at Jul 21 2025 12:17:29
+Old Retro 3.1 rev 232 (dev) made by otclient.net built on Jul 11 2022 for arch x86
+ERROR: Layour retro doesn't exist, using default
+Exiting application..
+WARNING: attempt to destroy widget 'widget18' two times
+WARNING: widget 'widget572' was not explicitly destroyed
+WARNING: widget 'widget1245' was not explicitly destroyed
+GPU ANGLE (Intel(R) HD Graphics 4000 Direct3D11 vs_5_0 ps_5_0) (Google Inc.)
+OpenGL OpenGL ES 3.0.0 (ANGLE 2.1.0.54a3d7cbcadb)
+[Atlas] Texture size is: 4096x4096 (max: 16384x16384)
+Found work dir at 'C:/Users/home/Documents/GitHub/142/tools/client/'
+== application started at Jul 21 2025 12:27:11
+Old Retro 3.1 rev 232 (dev) made by otclient.net built on Jul 11 2022 for arch x86
+ERROR: Layour retro doesn't exist, using default
+Connecting to: 127.0.0.1:7171
+Login to 127.0.0.1:7172
+ERROR: ProtocolGame parse message exception (15346 bytes, 7973 unread, last opcode is 0x78 (120), prev opcode is 0x78 (120)): unable to create item with invalid id 0
+Packet has been saved to packet.log, you can use it to find what was wrong. (Protocol: 1098)
+Login to 127.0.0.1:7172
+ERROR: ProtocolGame parse message exception (15096 bytes, 7923 unread, last opcode is 0x78 (120), prev opcode is 0x78 (120)): unable to create item with invalid id 0
+Packet has been saved to packet.log, you can use it to find what was wrong. (Protocol: 1098)
+WARNING: attempt to destroy widget 'widget1245' two times
+Login to 127.0.0.1:7172
+ERROR: ProtocolGame parse message exception (15714 bytes, 7920 unread, last opcode is 0x78 (120), prev opcode is 0x78 (120)): unable to create item with invalid id 0
+Packet has been saved to packet.log, you can use it to find what was wrong. (Protocol: 1098)
+Exiting application..
+WARNING: attempt to destroy widget 'widget18' two times
+WARNING: widget 'widget572' was not explicitly destroyed

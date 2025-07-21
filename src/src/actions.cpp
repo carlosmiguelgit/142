@@ -200,7 +200,7 @@ bool Actions::registerLuaEvent(Action* event)
 		for (auto id : range) {
 			auto result = useItemMap.emplace(id, *action);
 			if (!result.second) {
-				std::cout << "[Warning - Actions::registerLuaEvent] Duplicate registered item with id: " << id << " in range from id: " << range.front() << ", to id: " << range.back() << std::endl;
+				//std::cout << "[Warning - Actions::registerLuaEvent] Duplicate registered item with id: " << id << " in range from id: " << range.front() << ", to id: " << range.back() << std::endl;
 			}
 		}
 		return true;
@@ -224,7 +224,7 @@ bool Actions::registerLuaEvent(Action* event)
 		return true;
 	}
 
-	std::cout << "[Warning - Actions::registerLuaEvent] There is no id / aid / uid set for this event" << std::endl;
+	//std::cout << "[Warning - Actions::registerLuaEvent] There is no id / aid / uid set for this event" << std::endl;
 	return false;
 }
 

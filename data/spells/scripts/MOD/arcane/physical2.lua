@@ -1,0 +1,19 @@
+local combat = COMBAT_PHYSICALDAMAGE
+local effect = CONST_ME_HITAREA
+local disteffect = CONST_ANI_WHIRLWINDSWORD
+
+function onGetFormulaValues(player, level, magicLevel)
+	local min = (2*level / 5) + (magicLevel * 5.3) + 900
+	local max = (2*level / 5) + (magicLevel * 7.4) + 1200
+	return -min, -max
+end
+
+local combat1 = Combat()
+combat1:setParameter(COMBAT_PARAM_TYPE, combat)
+combat1:setParameter(COMBAT_PARAM_EFFECT, effect)
+combat1:setParameter(COMBAT_PARAM_DISTANCEEFFECT, disteffect)
+combat1:setCallback(CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
+
+function onCastSpell(creature, variant, isHotkey)
+	return combat1:execute(creature, variant)
+end

@@ -353,7 +353,7 @@ void MoveEvents::addEvent(MoveEvent moveEvent, int32_t id, MoveListMap& map)
 		std::list<MoveEvent>& moveEventList = it->second.moveEvent[moveEvent.getEventType()];
 		for (MoveEvent& existingMoveEvent : moveEventList) {
 			if (existingMoveEvent.getSlot() == moveEvent.getSlot()) {
-				std::cout << "[Warning - MoveEvents::addEvent] Duplicate move event found: " << id << std::endl;
+				//std::cout << "[Warning - MoveEvents::addEvent] Duplicate move event found: " << id << std::endl;
 			}
 		}
 		moveEventList.push_back(std::move(moveEvent));
@@ -433,7 +433,7 @@ void MoveEvents::addEvent(MoveEvent moveEvent, const Position& pos, MovePosListM
 	} else {
 		std::list<MoveEvent>& moveEventList = it->second.moveEvent[moveEvent.getEventType()];
 		if (!moveEventList.empty()) {
-			std::cout << "[Warning - MoveEvents::addEvent] Duplicate move event found: " << pos << std::endl;
+			//std::cout << "[Warning - MoveEvents::addEvent] Duplicate move event found: " << pos << std::endl;
 		}
 
 		moveEventList.push_back(std::move(moveEvent));

@@ -20264,7 +20264,6 @@
 	<item fromid="11631" toid="11637" article="a" name="small mudpit" />
 	<item fromid="11647" toid="11649" article="a" name="sulphur puddle" />
 	<item fromid="11662" toid="11666" article="a" name="sulphur puddle" />
-	<item id="11683" article="a" name="dreadcoil" />
 	<item id="11700" article="a" name="stone wall" />
 	<item id="11702" article="a" name="stone wall" />
 	<item fromid="11729" toid="11752" name="ground" />
@@ -20289,7 +20288,6 @@
 		<attribute key="decayTo" value="11756" />
 		<attribute key="duration" value="2" />
 	</item>
-	<item id="11759" name="branch" />
 	<item id="11773" article="a" name="bag of oriental spices">
 		<attribute key="description" value="Those spices were gathered all around the world." />
 		<attribute key="weight" value="1508" />
@@ -24584,7 +24582,7 @@
 		<attribute key="attack" value="37" />		
 		<attribute key="weaponType" value="ammunition" />
 		<attribute key="ammoType" value="arrow" />
-		<attribute key="shootType" value="diamondarrow" />
+		<attribute key="shootType" value="arrow" />
 		<attribute key="maxHitChance" value="100" />		
 	</item>
 	<item id="13107" article="a" name="spectral bolt">
@@ -24593,7 +24591,7 @@
 		<attribute key="attack" value="78" />
 		<attribute key="weaponType" value="ammunition" />
 		<attribute key="ammoType" value="bolt" />
-		<attribute key="shootType" value="spectralbolt" />
+		<attribute key="shootType" value="bolt" />
 		<attribute key="maxHitChance" value="100" />		
 	</item>
 	<item id="13108" article="a" name="royal star">
@@ -24603,7 +24601,7 @@
 		<attribute key="maxHitChance" value="100" />
 		<attribute key="weaponType" value="distance" />
 		
-		<attribute key="shootType" value="royalstar" />
+		<attribute key="shootType" value="throwingstar" />
 		<attribute key="range" value="5" />
 	</item>
 	<item id="13109" article="a" name="lisa's doll">		

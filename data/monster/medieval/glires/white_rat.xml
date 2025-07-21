@@ -14,7 +14,7 @@
 		<flag staticattack="70"/>
 		<flag lightlevel="0"/>
 		<flag lightcolor="0"/>
-		<flag targetdistance="0"/>
+		<flag targetdistance="1"/>
 		<flag runonhealth="15"/>
 		<flag canwalkonenergy="0"/>
 		<flag canwalkonfire="0"/>

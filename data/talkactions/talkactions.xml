@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talkactions>
 	<!-- commands -->
-	<talkaction words="/attr" separator=" " script="attributes.lua" />
 	<talkaction words="/ban" separator=" " script="ban.lua" />
 	<talkaction words="/ipban" separator=" " script="ipban.lua" />
 	<talkaction words="/unban" separator=" " script="unban.lua" />
@@ -44,8 +43,17 @@
 	<talkaction words="!uptime" script="uptime.lua" />
 	<talkaction words="!deathlist" script="deathlist.lua" />
 	<talkaction words="!kills" script="kills.lua" />
-	<talkaction words="!online;/online" script="online.lua" />
+	<talkaction words="!online" script="online.lua" />
 	<talkaction words="!serverinfo" script="serverinfo.lua" />
+	<talkaction words="!quest" script="quest.lua" />
+	<talkaction words="!marks" separator=" " script="marks.lua" />
+	<talkaction words="!archive" script="archive.lua" />
+	<talkaction words="!bless" script="bless.lua"/>
+    <talkaction words="!aol" script="aol.lua"/>
+	
+	<talkaction words="!hunt" separator=" " script="bounty_hunter.lua" />
+	<talkaction words="!huntinfo" separator=" " script="bounty_hunter_Info.lua" />
+	<talkaction words="!autoloot" separator=" " script="autoloot.lua" />
 
 	<!-- test talkactions -->
 	<talkaction words="!z" separator=" " script="magiceffect.lua" />

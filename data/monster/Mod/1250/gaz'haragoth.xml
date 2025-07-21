@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Gaz'haragoth" nameDescription="a Gaz'haragoth" race="undead" experience="1000000" speed="500">
+<monster name="Gaz'haragoth" nameDescription="a Gaz'haragoth" race="undead" experience="100000" speed="500">
 	<health now="85000" max="85000" />
 	<look type="412" corpse="13152"/>
 	<targetchange interval="10000" chance="20" />
